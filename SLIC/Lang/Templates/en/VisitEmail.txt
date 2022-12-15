@@ -1,0 +1,17 @@
+﻿Visit Details of <%JobNo%> visited on <%TimeVisited%> <br/>
+============================================================================================ <br/><br/>
+
+Information <br/>
+=================== <br/>
+Job Number            : <%JobNo%> <br/>
+Submission Type    : <%SubmissionType%> <br/>
+Time Visited           : <%TimeVisited%> <br/>
+Time Submitted      : <%TimeSubmitted%> <br/>
+Visit By                 : <%CSR_UserName%> <br/>
+Comment               : <%Comment%> <br/><br/>
+
+============================================================================================ <br/>
+This mail is automatically generated from the SLIC Motor Claim Insurance System.<br/>
+© Sri Lanka Insurance Co-operation LTD. 2013 <br/>
+
+

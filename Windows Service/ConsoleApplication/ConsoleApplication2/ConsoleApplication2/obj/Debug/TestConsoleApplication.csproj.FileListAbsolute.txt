@@ -1,0 +1,2 @@
+G:\projects\Ellipsis\Windows Service\ConsoleApplication\ConsoleApplication2\ConsoleApplication2\obj\Debug\TestConsoleApplication.csprojAssemblyReference.cache
+G:\projects\Ellipsis\Windows Service\ConsoleApplication\ConsoleApplication2\ConsoleApplication2\obj\Debug\TestConsoleApplication.csproj.CoreCompileInputs.cache

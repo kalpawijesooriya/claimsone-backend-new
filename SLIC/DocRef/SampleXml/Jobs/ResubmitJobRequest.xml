@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Request>
+  <Data>
+    <Job action="resubmission">
+      <FieldList>
+        <JobNo>J1001</JobNo>
+        <RefNo>340</RefNo>
+        <CSRUserName>Rajith</CSRUserName>
+        <Comment>Comment comes here.</Comment>
+        <ImageCount>24</ImageCount>
+        <TimeVisited>12-09-2011 10:12PM</TimeVisited>
+        <SubmissionType>DSR,Accident Images</SubmissionType>
+      </FieldList>
+    </Job>
+    <DateTime></DateTime>
+  </Data>
+</Request>

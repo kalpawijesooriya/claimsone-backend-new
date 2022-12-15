@@ -1,0 +1,188 @@
+﻿Error Codes
+[Allocated for Special Purposes]
+-------------------------------------------------------------------------------------------------------------
+99  - unknown Exception
+120 - Success
+
+[Authentication(100-199)]
+-------------------------------------------------------------------------------------------------------------
+LogOn
+/* Error codes related to adding a login and logout comes here. */
+100,	"Login Success"					-GenException
+101,	"Please Log In"					-GenException
+102,	"Username cannot be empty"			-GenException
+103,	"Password cannot be empty"			-GenException
+104,	"Incorrect User Name or Password"	-GenException
+105,	"Your account has been locked.Please contact the administrator."	-GenException
+106,	"Your account has been deactivated. Please contact the administrator."	-GenException
+107,	"Your account has been deleted. Please contact the administrator."	-GenException
+
+
+Change Password
+/* Error codes related to adding a password chaning comes here. */
+122,	"The current password is incorrect or the new password is invalid."	-GenException
+123,	"The new password and confirmation password do not match."
+124,	"{0} must be at least {1} characters long."
+
+[Jobs and Visits(600-699)]
+-------------------------------------------------------------------------------------------------------------
+SearchJob, Job List, Visit List
+/* Error codes related to searching jobs comes here. */
+600,	"Error occurred while retrieving search results. Please try again later."
+601,	"Error occurred while retrieving visits. Please try again later."
+
+Get Job/ Get Visit
+/* Error codes related to getting a job detail comes here. */
+
+605,	"Job not found or deleted."
+606,	"Error occurred while retrieving job data. Please try again later."
+607,	"Visit not found or deleted."
+608,	"Error occurred while retrieving visit data. Please try again later."
+
+Add Job / Add Visit
+/* Error codes related to adding a job comes here. */
+
+620,	"Job can only be added via the tablet"
+621,	"Error occured while processing the job. Please try again later."
+622,	"Job number already exists"
+623,	"Error occured while adding the job. Please try again later."
+624,	"Search results cannot be retrived. Please try again later."
+625,	"Please enter search text"
+626,	"Visit can only be added via the tablet"
+627,	"Configuration Error. Only visits can be added by this action"
+628,	"Configuration Error. Job action not mentioned."
+629,	"Error occured while processing the visit. Please try again later."
+630,	"You must add images or a comment for visit."
+631,	"Error occured while adding the visit. Please try again later."
+632_sys,"Error on xml. Job node not found!"
+633,	"Invalid CSR User Name. Please Login again with valid credentials!"
+634_sys,"Configuration Error. Visit type not mentioned."
+635,	"Please enter a valid Time Visited value."
+636,	"Please enter a valid Time Reported value."
+637,	"Please enter a valid Accident Time."
+638,	"Original Time Reported is not in the correct format."
+639,	"Please enter a valid Policy/ Cover Note Start Date."
+640,	"Please enter a valid Policy/ Cover Note End Date."
+641,	"Please select a valid Driver Competence."
+642,	"Please select a valid Driver Relationship."
+643,	"Please enter a valid Meter Reading."
+644,	"Please enter a valid License Expiry Date."
+645,	"Please select a valid License Type."
+646,	"Please select a valid License New/ Old value"
+647,	"Please enter a valid PAV Value."
+648,	"Please select a valid Claim Processing Branch."
+649,	"Please enter a valid On Site Estimation Value."
+650,	"Please enter a valid Approximate Repair Cost Value."
+651,	"Please select a valid CSR Consistency."
+652,	"Please select a valid set of  Vehicle Classes."
+653,	"Please enter a valid Goods Weight value."
+654,	"Please select a valid Is Over Load Contributory value."
+655,	"Please select a valid value for Is Over Loaded."
+656,	"Please select a valid Tyre {0} Condition."
+657,	"Please select a valid Is Tyre Contributory value."
+658,	"Please select a valid value for Journey Purpose."
+
+
+670_sys,"Error occured while converting visit entity to dictionary values."
+671,	"Please enter comment."
+672,	"Error occurred while saving the comment."
+673,	"No Comments found."
+674,	"Error occurred while retieving the comments list."
+
+[User Managment(700-799)]
+-------------------------------------------------------------------------------------------------------------
+Create/ Update / Activate/ Deactivate/ Delete User
+/* Error codes related to User creation and update here. */
+700,	"Error occurred while creating the user. Please try again later."
+701,	"User already exists. Please type a unique username."
+702,	"Username is invalid. Please select a proper username."
+703,	"You are not authorized to create user of this branch"
+704,	"User not found or deleted"
+705,	"Error occurred while assigning a user role"
+706,	"The system does not allow you to create more system administrators. The limit has exceeded."
+
+710,	"Error occurred while updating the user. Please try again later."
+711,	"Error occurred while getting the user details. Please try again later."
+712,	"Error occurred while updating your profile. Please try again later."
+713,	"Error occurred while getting your profile details. Please try again later."
+714,	"Error occurred while activating the user. Please try again later."
+715,	"Error occurred while deactivating the user. Please try again later."
+716,	"Error occurred while deleting the user. Please try again later."
+717,	"Error occurred while resetting the password of the user. Please try again later."
+
+
+User List / Unlock Users
+720,	"Error occurred while unlocking the users. Please try again later."
+721,	"Unable to unlock following users: ."
+722,	"Please select users to unlock."
+
+[Region/ Branch Managment(800-849)]
+-------------------------------------------------------------------------------------------------------------
+Create/ Update Region
+800,	"Error occurred while creating the region. Please try again later."
+801,	"Region code already taken. Please try another."
+802,	"Region name already exists."
+803,	"Error occurred while updating the region. Please try again later."
+804,	"Region not found or deleted."
+805,	"Error occurred while getting region details. Please try again later."
+806,	"Error occurred while activating the region. Please try again later."
+807,	"Error occurred while deactivating the region. Please try again later."
+808,	"Error occurred while deleting the region. Please try again later."
+809,	"{0} region has {1} branch/es. Please delete all the branch/es in order to delete this region. Please delete all the user/s in order to delete this branch. Please inform all CSR users to relogin to the Motor Insuarance Application."
+810,	{0} region has {1} engineer/s. Please delete all the engineer/s in order to delete this region.
+
+Create/ Update Branch
+820,	"Error occurred while creating the branch. Please try again later."
+821,	"Branch code already taken. Please try another."
+822,	"Branch name already exists."
+823,	"Error occurred while updating the branch. Please try again later."
+824,	"Branch not found or deleted."
+825,	"Error occurred while getting branch details. Please try again later."
+826,	"Error occurred while activating the branch. Please try again later."
+827,	"Error occurred while deactivating the branch. Please try again later."
+828,	"Error occurred while deleting the branch. Please try again later."
+829,	"{0} branch has {1} user/s. Please delete all the user/s in order to delete this branch. Please inform all CSR users to relogin to the Motor Insuarance Application."
+
+[Image (850-899)]
+-----------------------------------------------------------------------------------------------------------
+Upload Image
+/* Error codes related to uploading images comes here. */
+850_sys,"Upload does not contains two files"										-GenException
+851,	"Error occured while reading the image xml."
+852,	"Request does not contain an xml file."
+853,	"Uploaded Image does not have a visit."
+854,	"Please upload an image."
+855,	"Image name cant be empty"
+856,	"Image Type has not been mentioned."
+857,	"Invalid Image Type."
+858,	"Job/ Visit for this image not found"
+859,	"Image Already exists"
+860,	"Image not found."
+861,	"Image path not found in the database."
+862_sys,"Configuration Error. Image path not configured."
+863,	"Image does not exists"
+864,	"Error occurred while reading the image from the path."
+865,	"Error occurred while getting the image. Please try again later."
+866,	"Image ID can not be null"
+
+[Database(900-949)]
+-----------------------------------------------------------------------------------------------------------
+900, "Cannot connect to the server. Please try again later"	(SQL server time out)	- SqlException
+901, "An Unexpected error occured in the server. Please try again later."	(SQL server time out)	- SqlException
+
+[General and Other /XML  (950-999)]
+-----------------------------------------------------------------------------------------------------------
+950,	"Please fill all the required fields."
+
+//Change codes below
+951,	"Unknown XML Exception"- XmlException
+952,	"Request xml is not in the correct format." - XmlException
+953_sys,"Configuration Error. Error occurred while processing xml" - XmlException
+954,	"No request input-stream attached"
+955,	"Please avoid using '<' '>' '&' characters"
+956,    "Please enter job number" // Temp error code for Temp Delete of incomplete jobs
+
+
+[Print (1000-1050)]
+-----------------------------------------------------------------------------------------------------------
+1000,	No data available to print.

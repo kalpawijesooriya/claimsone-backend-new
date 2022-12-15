@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="Controller Classes">
+    <Position X="0.5" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Entity Classes">
+    <Position X="9.75" Y="6" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Enums">
+    <Position X="9.622" Y="10.91" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Models">
+    <Position X="0.5" Y="4.791" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Validation Classes">
+    <Position X="9.932" Y="2.558" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Other">
+    <Position X="10.056" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="To be Deleted">
+    <Position X="9.662" Y="13.695" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="com.IronOne.SLIC2.Controllers.AdminController" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEkAEBIAAQIQIACUAIAEAQUAoUAAARCAQQEAAEIAhAA=</HashCode>
+      <FileName>Controllers\AdminController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Controllers.BaseController" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAEECAIAAAAAAAAAAAAQQAEAgAAAAAAAAEAAgAAQAA=</HashCode>
+      <FileName>Controllers\BaseController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Controllers.DefaultController" Collapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAEQQAAACAAEAAAACAAEAABAAAABAAEAAACAAAA=</HashCode>
+      <FileName>Controllers\DefaultController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Controllers.ResultModel" Collapsed="true">
+    <Position X="12" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\DefaultController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Controllers.ErrorController" Collapsed="true">
+    <Position X="0.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Controllers\ErrorController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Controllers.GenException" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\GenException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Controllers.JobController" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEkEEIAASIAAAAGAAABAwGAAAAAAAAAAAgAAAAkQQA=</HashCode>
+      <FileName>Controllers\JobController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Controllers.LogOnController" Collapsed="true">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEICAAAAChAAAAAAAAQAAAAAAAAAEAAAAAAQAAAA=</HashCode>
+      <FileName>Controllers\LogOnController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Diagnosis" Collapsed="true">
+    <Position X="17.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAiAAAAgAAAAAIAAAAAAAAQAAAAFBAAAAQIgAgA=</HashCode>
+      <FileName>Diagnosis.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.MvcApplication" Collapsed="true">
+    <Position X="21" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.HandlerClasses.ApplicationSettings" Collapsed="true">
+    <Position X="15.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAQAAAAAKAAAAABCAABAAAAAAhAABEEAASAgAAAQAA=</HashCode>
+      <FileName>HandlerClasses\ApplicationSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Lang.Resources" Collapsed="true">
+    <Position X="19.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>aUZKO/gn4BIU1yMSumyFMGYUkTKz8A3CWzaEBIDlSJQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Administration.BranchDataModel" Collapsed="true">
+    <Position X="4" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQkEAAAAAgAAAAABAEBAAEAAAAAAAACCgAAAQMAAAE=</HashCode>
+      <FileName>Models\Administration\BranchDataModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Administration.RegionDataModel" Collapsed="true">
+    <Position X="0.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAEEYAAAAgAAAAAAAEAAAAAAAAAAAAACgAAAQIAAAE=</HashCode>
+      <FileName>Models\Administration\RegionDataModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Administration.UserDataModel" Collapsed="true">
+    <Position X="4.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAmAEIAACgAAQAAAQMBAAwABAgIAAACAAAAEQAAIAo=</HashCode>
+      <FileName>Models\Administration\UserDataModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Auth.AccountMembershipService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAgAAAAQAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\Auth\AccountMembershipService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Auth.FormsAuthenticationService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Auth\FormsAuthenticationService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Auth.RoleAuthorizationService" Collapsed="true">
+    <Position X="4.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAgAAAACAgAAAAAECAAAgAAAACAAAAA=</HashCode>
+      <FileName>Models\Auth\RoleAuthorizationService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.LogOnModel" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQCAAAAgAAA=</HashCode>
+      <FileName>Models\Auth\LogOnModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.ChangePasswordModel" Collapsed="true">
+    <Position X="2.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAEAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Models\Auth\LogOnModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.PropertiesMustMatchAttribute" Collapsed="true">
+    <Position X="14" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAoAAAAAAAAAAgAAAAAAAAIQAAgAAAAAAAAAAg=</HashCode>
+      <FileName>Models\Auth\LogOnModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.ValidatePasswordLengthAttribute" Collapsed="true">
+    <Position X="18" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAgAAAAAAABAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\Auth\LogOnModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.DataObjectFactory" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAACAAEA=</HashCode>
+      <FileName>Models\EntityModel\DataObjectFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.Job" Collapsed="true">
+    <Position X="0.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAgAAAAAAHAgAAAAAAAAAEAAAAAAAAQAAAAAAAAIA=</HashCode>
+      <FileName>Models\EntityModel\Job.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.MotorClaimEntities" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UYFExXgAQAIgDazgAGUIgGLjQAAkoByACjCQTAkIfCw=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.aspnet_Membership" Collapsed="true">
+    <Position X="15" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FTABICgEAKhLbFLIBaAECEyTAAWrGZJSEAhRBAS8BR4=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.aspnet_Roles" Collapsed="true">
+    <Position X="16.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAkgqBAAIQAAgABAAAAAABCEIEQAFAAgAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.aspnet_Users" Collapsed="true">
+    <Position X="18.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACFAAgAMKAAIgQIAAAwgEAUEBEBAARAAVAA0UAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.Branch" Collapsed="true">
+    <Position X="20.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ISQmEDHFgAAgAAwAGEUBKigIBEAACMQUCs0BgQIIQgE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.Comment" Collapsed="true">
+    <Position X="22" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQhAAEAQoAwQIYAAQEBKiCIBAQAAAC0AAAwAAAQQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.ImageGallery" Collapsed="true">
+    <Position X="25.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQSgBgkATgA2gE4AAAABKrAIQIAAFAEUAAAIBIQQMCE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.PoliceStation" Collapsed="true">
+    <Position X="9.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAApAAAEAAAAAAAAQASAAAAAAAQAgACAAAAQAAASAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.Region" Collapsed="true">
+    <Position X="24" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYQEEaHAAAggAQQCAGUBKigIgAAACMQUCokHgSIAQgE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.SAForm_level1" Collapsed="true">
+    <Position X="11.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CJYBtCM5fhS5mxwbCz5JaiAoHmmsLhxU9uJQkYSxyGw=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.SAForm_level2" Collapsed="true">
+    <Position X="25.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jxXCDM0QZiBwLAQeoBpfKrAoCwERwJBVSIWAIUjRCtg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.SAForm_VehicleClasses" Collapsed="true">
+    <Position X="13.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAABAAQgAAAAAAAAAQAiAEAAAAAAAAAAAAACAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.User" Collapsed="true">
+    <Position X="20.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CpQkEUHQwQkmAAwNEVUpKiwIBAgAHJwUCs0Js0IA4gk=</HashCode>
+      <FileName>Models\EntityModel\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.Visit" Collapsed="true">
+    <Position X="22" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAVRkBlARiAgNCQQAUGEKmTIJAFACEQWAtngAaIaeiE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.VisitDetail" Collapsed="true">
+    <Position X="9.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYEgAMAQgAwAAQCAAAAKiAIAAAAAAAcAAAAEEAQAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_AllComments" Collapsed="true">
+    <Position X="11.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQwAAgEQqAAEIIAAQAAAAAAJABAAACAAMAQAIASAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_Branches" Collapsed="true">
+    <Position X="13.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQmFIDFAAgAAQwAEEUBAAgABEAACIQEAoUAgSAIAgE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_Comments" Collapsed="true">
+    <Position X="15" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQgAAgEQoAAAIIAAQAAAAAAFAAAAACAAAAQAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_ImageGallery" Collapsed="true">
+    <Position X="16.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQQgAggATgAAAEoAIAABAoAAQIAAFAEAAAAABIQQECE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_SAForm_Damages" Collapsed="true">
+    <Position X="18.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jxXCDMwQZgBALAQeoBpPCJAgCQERwJBBSIWAIUBRClg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_SAForm_General" Collapsed="true">
+    <Position X="20.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAVRlGBw1iWJkxAZCldkAEwsKGFIMBwW6vUQAYDzEi0=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_SAForm_OtherDetails" Collapsed="true">
+    <Position X="22" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQBAAAgQgAgCBQAAiIQAgAIAiGAAIIACAAQAAyQCMw=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_SAForm_PolicyDetails" Collapsed="true">
+    <Position X="23.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAIIpYgAAAAgYCAAIAAAIBigkAABAAgBAgAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_SAForm_VehDriverDetails" Collapsed="true">
+    <Position X="9.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIYANAEQehQAEgQKAQgBQAAIEAgALgAENEJAEYAwwEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_SAFormDetails" Collapsed="true">
+    <Position X="11.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>z7fzvO85fjTtvxwfqz9/StgqP2n/7pRX/vfRsczz2vw=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_UserDetails" Collapsed="true">
+    <Position X="13.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AjAkEMORwAkGCRwNMBcpAgwABAgAHIiECcQIs2gAkAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_UserLoginDetails" Collapsed="true">
+    <Position X="15" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAEIQgAEiCBQJIBcpAAwAAAAAHAiECcQAkQAAEAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_VisitDetails" Collapsed="true">
+    <Position X="16.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAfQgAJARiAAEAASAEEEQEAIIEFAAAQOAlEAEdASEyE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.EntityModel.vw_Visits" Collapsed="true">
+    <Position X="18.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAVQiQBAxiAAUAIQAEMkREAIIEFAEAwGAlEAAZASEiE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Job.AdvancedSearch" Collapsed="true">
+    <Position X="5.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkAAAAAAgAAAAAAQABAAkAAABAABAAAAAAAAAEAAA=</HashCode>
+      <FileName>Models\Job\AdvancedSearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Job.CommentModel" Collapsed="true">
+    <Position X="0.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Job\CommentModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Job.JobDamageModel" Collapsed="true">
+    <Position X="2.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAECQSACCgEgAAACAEEABAAQA0AQABABgATABACA=</HashCode>
+      <FileName>Models\Job\JobDamageModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Job.JobDataModel" Collapsed="true">
+    <Position X="4" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAADAAAAAAAAIACAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Models\Job\JobDataModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Job.JobVehDriverModel" Collapsed="true">
+    <Position X="2.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgQEABAEQIAAAAACJQAAIAAEBACAAAIIAACAAAAABAA=</HashCode>
+      <FileName>Models\Job\JobDriverModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Job.JobGeneralModel" Collapsed="true">
+    <Position X="3.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAIAAABAACAAAAAgBAAIEQAAAAIAAABAAAAAAAAAA=</HashCode>
+      <FileName>Models\Job\JobGeneralModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Job.JobOtherModel" Collapsed="true">
+    <Position X="5.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAQAAAAAAICQUAAAAEAAQAIAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\Job\JobOtherModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Job.JobPolicyModel" Collapsed="true">
+    <Position X="0.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAQQAAAAAAAAAAAAQAAAAAAAIAAQAI=</HashCode>
+      <FileName>Models\Job\JobPolicyModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Job.JQueryDataTableParamModel" Collapsed="true">
+    <Position X="6" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIAAAAAAAAAAAAAAAAAABAkAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Models\Job\JQueryDataTableParamModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Job.Search" Collapsed="true">
+    <Position X="5.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Job\Search.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Reports.AccessLogModel" Collapsed="true">
+    <Position X="0.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAUAAAAAAAAAAAAAQABAAkAAABAABAAAAAAABAEAAA=</HashCode>
+      <FileName>Models\Reports\AccessLogModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SLIC.Models.Reports.InqueryModel" Collapsed="true">
+    <Position X="5.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAQAAAAkAAABAABgAAAAAAAAEAAA=</HashCode>
+      <FileName>Models\Reports\InqueryModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Validations.ComparisonValidation" Collapsed="true">
+    <Position X="14" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Validations\ComparisonValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Validations.PropertiesMustMatchAttribute" Collapsed="true">
+    <Position X="16" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAoAAAAAAAAAAgAAAAAAAAIQAAgAAAAAAAAAAg=</HashCode>
+      <FileName>Models\Validations\ComparisonValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Validations.PropertiesMustMatchOnCondition" Collapsed="true">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAoAAAAACAEQAgAAAAAAAAIQAAgAAAAAAAAAAg=</HashCode>
+      <FileName>Models\Validations\ComparisonValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Validations.DateValidation" Collapsed="true">
+    <Position X="16" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Validations\DateValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Validations.DropdownValidation" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Validations\DropdownValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Validations.RoleDropdownValidation" Collapsed="true">
+    <Position X="18" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Validations\DropdownValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Validations.DropdownValidationOnRole" Collapsed="true">
+    <Position X="10" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAgDAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Models\Validations\DropdownValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Validations.RequiredOnConditon" Collapsed="true">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAQAAAIAAAAAAAEQAgAAAAAAAQAQAAgAAAABAQAAAA=</HashCode>
+      <FileName>Models\Validations\RequiredOnConditon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.VehicleArrays.Bus" Collapsed="true">
+    <Position X="14" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\VehicleArrays\Bus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.VehicleArrays.Car" Collapsed="true">
+    <Position X="17.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\VehicleArrays\Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.VehicleArrays.Lorry" Collapsed="true">
+    <Position X="21.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\VehicleArrays\Lorry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.VehicleArrays.Motorcycle" Collapsed="true">
+    <Position X="16" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Models\VehicleArrays\Motorcycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.VehicleArrays.ThreeWheeler" Collapsed="true">
+    <Position X="19.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\VehicleArrays\ThreeWheeler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.VehicleArrays.Van" Collapsed="true">
+    <Position X="14.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\VehicleArrays\Van.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Visit.VisitDetailModel" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Visit\VisitDetailModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="com.IronOne.SLIC2.Models.Visit.VisitModel" Collapsed="true">
+    <Position X="1.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEAgAAgQAAAAAAAAAAAAAAAIABAAAAAAAAAABAAEAE=</HashCode>
+      <FileName>Models\Visit\VisitModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="com.IronOne.SLIC2.Models.Auth.IFormsAuthenticationService" Collapsed="true">
+    <Position X="10" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Auth\IFormsAuthenticationService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="com.IronOne.SLIC2.Models.Auth.IMembershipService" Collapsed="true">
+    <Position X="11.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAQAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\Auth\IMembershipService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.LogPoint" Collapsed="true">
+    <Position X="20.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQAAAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.LicenseType" Collapsed="true">
+    <Position X="18.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hABAAAAAAAAAAAAAAAAAAAAAAAAIBAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.LicenseIsNew" Collapsed="true">
+    <Position X="16.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.OldLicenseVehClasses" Collapsed="true">
+    <Position X="23.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAFAAAAvkEAAAA=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.NewLicenseVehClasses" Collapsed="true">
+    <Position X="22" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABCAAAAAAAAAAAAAAAAAGANAAAArAEBAAA=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.JourneyPurpose" Collapsed="true">
+    <Position X="15" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQACAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.RelationshipType" Collapsed="true">
+    <Position X="11.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAACAgAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.FieldName" Collapsed="true">
+    <Position X="13.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAgAAAEQAAAAAAiAABAAECDAIEgAAEACAAQAAAAE=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.TyreConditon" Collapsed="true">
+    <Position X="13.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAACAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.Confirmation" Collapsed="true">
+    <Position X="9.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.CSR_Consistency" Collapsed="true">
+    <Position X="11.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.Vehicles" Collapsed="true">
+    <Position X="15" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAEAAAASAAAAAAAAAAQAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.OnSiteEstimation" Collapsed="true">
+    <Position X="9.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="com.IronOne.SLIC2.Models.Enums.VisitType" Collapsed="true">
+    <Position X="16.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAgAAAEAAAAAAACAABgAAABAIEgAAEACAAQAAAAE=</HashCode>
+      <FileName>Models\Enums\EnumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

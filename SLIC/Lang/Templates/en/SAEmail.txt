@@ -1,0 +1,103 @@
+﻿Job Details of <%JobNo%> <br/>
+============================================================================================ <br/><br/>
+
+General Information <br/>
+=================== <br/>
+Job Number           : <%JobNo%> <br/>
+Time Reported       : <%TimeReported%> <br/>
+Contact Number     : <%Caller_ContactNo%> <br/>
+Name of Caller       : <%Caller_Name%> <br/>
+Vehicle Number      : <%VehicleNo%> <br/>
+Vehicle Type 
+and Color               : <%VehicleDescription%> <br/>
+Time of Accident     : <%Acc_Time%> <br/>
+Location of 
+Accident/Inspection : <%Acc_Location%> <br/>
+Time Visited            : <%TimeVisited%> <br/><br/>
+
+Policy/Cover Note Information <br/>
+============================== <br/>
+Name of Insured     : <%Insured_Name%> <br/>
+Contact Number
+of the Insured         : <%Insured_ContactNo%> <br/>
+Policy/Cover No.     : <%Policy_CN_No%> <br/>
+Policy/Cover Period : <%Policy_CN_StartDate%> to <%Policy_CN_EndDate%> <br/>
+Policy/Cover 
+Serial No.               : <%Policy_CN_SerialNo%><br/>
+Cover Issued By      : <%CN_IssuedBy%> <br/>
+Reasons for issuing
+cover note               : <%CN_Reasons%> <br/><br/>
+
+Driver and License Information <br/>
+============================== <br/>
+Driver's Name         : <%DriverName%> <br/>
+Relationship between
+Driver & Insured      : <%DriverRelationship%> <br/>
+NIC of the Driver      : <%DriverNIC%> <br/>
+Driving License No. : <%License_No%> <br/>
+Expiry Date 
+of License              : <%License_ExpiryDate%> <br/>
+Type of D/L             : <%License_Type%> <br/>
+D/L Category          : <%License_IsNew%> <br/>
+Competence           : <%DriverCompetence%> <br/>
+Vehicle Class          : <%VehicleClasses%> <br/><br/>
+
+Vehicle Information <br/>
+=================== <br/>
+Chassis No.           : <%ChassyNo%> <br/>
+Engine No.             : <%EngineNo%> <br/>
+Meter Reading        : <%MeterReading%> <br/>
+Damaged Items      : <%DamagedItems%> <br/>
+Other Damaged Items : <%DamagedItems_Other%> <br/>
+Pre Accident Damages: <%PreAccDamages%> <br/>
+Other Pre Accident Damages : <%PreAccDamages_Other%> <br/>
+Possible D/R          : <%PossibleDR%> <br/>
+Other Possible D/R	 : <%PossibleDR_Other%> <br/>
+Tyre Condition <br/>
+-------------- <br/>
+F/L                        : <%Tyre_FL_Status%> <br/>
+F/R                        : <%Tyre_FR_Status%> <br/>
+R/L/L                     : <%Tyre_RLL_Status%> <br/>
+R/L/R                    : <%Tyre_RLR_Status%> <br/>
+R/R/L                    : <%Tyre_RRL_Status%> <br/>
+R/R/R                    : <%Tyre_RRR_Status%> <br/>
+
+Are they 
+contributory            : <%Tyre_IsContributory%> <br/><br/>
+
+Damage Information <br/>
+================== <br/>
+Type of goods 
+carried                   : <%Goods_Type%> <br/>
+Weight of goods 
+carried                   : <%Goods_Weight%> <br/>
+Damages to the 
+goods                    : <%Goods_Damage%> <br/>
+Over Loaded           : <%IsOverLoaded%> <br/>
+Is Over Weight
+contributory            : <%Is_OL_Contributory%> <br/>
+Other Vehicles 
+involved                  : <%OtherVeh_Involved%> <br/>
+Third Party Damages : <%ThirdParty_Damage%> <br/>
+Injuries (Insured + 
+3rd Party)               : <%Injuries%> <br/><br/>
+
+
+Other Information <br/>
+================= <br/>
+Purpose of Journey  : <%Journey_PurposeId%> <br/>
+Nearest 
+Police Station         : <%Nearest_PoliceStation%> <br/>
+Claim Processing
+Branch                   : <%ProcessingBranchId%> <br/>
+PAV Value (Rs.)       :  <%PavValue%> <br/>
+Consistency by CSR  : <%CSR_Consistency%> <br/>
+Comment               : <%Comment%> <br/>
+Approximate Cost
+Of Repair                : <%Approx_RepairCost%> <br/>
+On Site Estimation  : <%SiteEstimation%> <br/>
+Name of CSR          : <%CSR_UserName%> <br/><br/>
+
+============================================================================================<br/>
+This mail is automatically generated from the SLIC Motor Claim Insurance System.<br/>
+© Sri Lanka Insurance Co-operation LTD. 2013<br/>

@@ -1,0 +1,500 @@
+ /* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #b94a48;
+    display: block;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #b94a48;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #b94a48;
+}
+.form-actions-notop{ margin-top: 0px!important}
+.validation-summary-valid
+{
+    display: none;
+}
+.top-button-right{ float: right; margin: 6px 6px 0 0;}
+.redStar
+{
+    font-weight: bold !important;
+    display: inline !important;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+    color: red !important;
+    float: left !important;
+    padding-top: 5px !important;
+    text-align: left !important;
+}
+
+#ajaxLoader
+{
+    display: none;
+    background: url('../img/loading.gif') no-repeat;
+    float: left;
+    padding-left: 32px;
+    padding-top: 2px;
+    height: 40px;
+    margin-top: 25px;
+}
+.login-actions
+{
+    height: 60px !important;
+}
+.submitinfo
+{
+   text-align:center !important;
+    width: 60%; 
+    margin-top: 18px;
+   margin-left:20%;
+}
+.submitbutton
+{
+    float: right;
+    width: 30%;
+}
+.modal.fade.in {
+  top: 3%;
+  overflow: hidden; 
+}
+.modalbig
+{
+    width: 85%; /* SET THE WIDTH OF THE MODAL */
+    height: 700px;
+    margin: 0% 0 0 0%; /* CHANGE MARGINS TO ACCOMODATE THE NEW WIDTH (original = margin: -250px 0 0 -280px;) */  
+    top: 5%;
+    left:7.5%;
+}
+
+.modalbody-big
+{
+    max-height: 90%;
+    height: 75.5%;
+}
+
+
+.Grid-bottom-buttons
+{
+    margin-top:50px;
+    }
+    
+ .grid-table-background
+ {
+     padding-bottom:2px;     
+    }
+ .control-group-width-half
+ {
+     width:50%;
+     float:left;
+     }
+      .control-group-width-3
+    {
+     width:30%;
+     float:left;
+     }
+       .control-group-width-4
+    {
+     width:10%;
+     float:left;
+     }
+     .control-group-width-3 .controls {
+    margin-left: 150px;
+    }
+  .form-actions-full{ width:100%; clear:both}
+  
+  .form-horizontal .form-actions {
+    padding-left: 185px;
+}
+form, .form-actions { margin-bottom:0px!important;}
+
+.dataTables_length, .dataTables_filter, .dataTables_info, .paging_full_numbers{padding: 0 10px;}
+  
+  
+/******** paginate   *******/
+div.dataTables_processing 
+{
+    text-align:center;
+    background: url('../../../../Content/img/loading.gif') no-repeat 440px 6px;
+    height:40px;
+    padding-top: 8px;
+}
+div.dataTables_info{ width:auto; float:left}
+div.dataTables_paginate{ width:50%; text-align: right }
+div.dataTables_paginate a
+{
+    background-color: #E9E9E9; 
+	border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    color: #555555;
+    line-height: 28px;
+    margin: 0 0.25em;
+    padding: 5px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    background-image: linear-gradient(top, #FAFAFA, #E9E9E9);
+}
+div.dataTables_paginate a.previous, div.dataTables_paginate a.next
+{
+    background-color: #7c7c7c; 
+	border: 1px solid #8b8b8b;
+    border-radius: 4px 4px 4px 4px;
+    color: #fff;
+    line-height: 28px;
+    margin: 0 0.25em;
+    padding: 5px 8px;
+    background-image: linear-gradient(top, #9f9f9f, #7c7c7c);
+}
+div.dataTables_paginate span a.paginate_active
+{
+    background-color: #F89406; 
+	border: 1px solid #E68E0B;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset;
+    color: #FFFFFF;
+    background-image: linear-gradient(top, #FBB450, #F89406);
+}
+/******** end paginate   *******/
+
+.control-group td{ vertical-align: top;
+                   width: 380px;
+                   }
+                   
+#panel .widget{
+	opacity:1;
+    filter:alpha(opacity=100);  
+    -moz-opacity:1;
+}
+
+#panel #VisitsTable_paginate 
+{
+    display:none
+}
+                   
+.top-accordion-grid-with-search .accordion-inner,.top-accordion-grid-with-search .widget-content{padding: 9px 0px 0px;}
+
+
+
+.top-accordion-grid-with-search .alert
+{
+      -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+          margin-bottom:0px;
+}
+
+.top-accordion-grid-with-search .dataTables_length, .top-accordion-grid-with-search .dataTables_filter, .top-accordion-grid-with-search #AllJobsTableView_processing, #AllLogsTableView_wrapper .dataTables_processing
+{
+    display:none;
+}
+
+div.dataTables_paginate{
+    top: 10px !important;
+ }
+div.dataTables_info {
+    padding-top: 16px !important;
+}
+#myModal div.dataTables_paginate{
+    top: 4px !important;
+ }
+#myModal div.dataTables_info {
+    padding-bottom: 8px !important;
+    padding-top: 8px !important;
+}
+#myModal div.dataTables_processing{
+    display:none;
+}
+
+.widget{position:relative}
+.stepContainer{ width:200%; overflow:hidden;height:600px; position:relative}
+#step-slide1{ width:49%; height:590px; float:left; padding-top:10px}
+#step-slide2{ width:49%; height:590px; float:left; margin-left:40px; overflow-y:scroll; overflow-x: hidden; padding-top:10px }
+#step-slide2 #slidebar 
+{
+    background: url('../../../../Content/img/popup-slate-tab.png') repeat scroll 0 0 #ccc;
+    float: left;
+    height: 125px;
+    left: 49.3%;
+    top: 230px; 
+    width: 23px;
+    position:absolute;
+    text-align:center;
+    vertical-align: text-bottom;
+    border:1px solid #ddd;
+    cursor: pointer;
+    }
+@media (max-width: 1100px) and (min-width: 800px)
+{
+    .modalbig {
+    height: 700px;
+    left: 2.5%;
+    margin: 0 0 0 0;
+    top: 5%;
+    width: 95%;
+}
+  .stepContainer{ width:200%; overflow:hidden;height:600px; position:relative}
+#step-slide1{ width:48.4%; height:590px; float:left; padding-top:10px}
+#step-slide2{ width:48.4%; height:590px; float:left; margin-left:40px; overflow-y:scroll; overflow-x: hidden; padding-top:10px }
+#step-slide2 #slidebar 
+{
+    background: url('../../../../Content/img/popup-slate-tab.png') repeat scroll 0 0 #ccc;
+    float: left;
+    height: 125px;
+    left: 49%;
+    top: 230px; 
+    width: 23px;
+    position:absolute;
+    text-align:center;
+    vertical-align: text-bottom;
+    border:1px solid #ddd;
+    cursor: pointer;
+    }  
+    
+}    
+    
+.modal-body{ overflow:hidden; max-height:600px; padding-top:0px;}
+.modal-footer {
+   
+    bottom: 0;   
+    position: absolute;   
+    width: 97.5%;
+}
+#step-slide1 .dataTables_length, #step-slide1 .dataTables_filter, #step-slide1 #AllJobsTableView_processing, #step-slide1 #VisitsTable_paginate, #step-slide1 #VisitsTable_info {
+    display: none;
+}
+
+.control-widget{ width:98%;}
+
+.control-widget .widget-content 
+{
+    padding-top:-10px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    }
+    
+  #step-slide2 .widget-table tbody td
+  {
+      border: 0px none;
+  }
+  
+  
+.dataTables_length{ padding: 20px 10px 0px}
+
+.btn-group{
+    float: right;
+    padding: 18px 10px 0 14px;
+    position: relative;
+    height:30px;
+}
+td .btn-group
+{
+    padding: 0px;
+    float: left;
+    height:auto;
+    }
+    
+    .widget-table .dataTables_wrapper .table{ width:100%!important;}
+    
+    #step-slide1 .btn-primary,#step-slide2 .widget-header .btn-primary{ margin-top:7px;}
+    
+    #leftImagePanel 
+    {
+        float:left; 
+        padding: 0 0 0 4%;
+    }
+    #imageTypes ul li{ text-transform:capitalize;}
+       
+    #rightImagePanel{ float:left; width:69%; margin-bottom:15px;} 
+    
+
+#AllJobsTableView_wrapper,#VisitTable_wrapper .table tr:hover, #AllLogsTableView
+{
+    cursor:pointer;
+}
+
+.alignCenter 
+{
+    text-align:center !important;
+}
+
+.alignLeft
+{
+    text-align:left !important;
+}
+
+.alignRight
+{
+    text-align:right !important;
+}
+
+td .btn-group-grid 
+{
+    float: none !important;
+    width:50px;
+    margin:auto;
+}
+
+td .btn-group-grid .dropdown-menu
+{
+   text-align:left;
+}
+
+tr .btnColumn-small
+{
+    width:70px !important;
+}
+
+.widget.widget-accordion .toggle-icon
+{
+    left:1em !important;
+}
+
+.leftPadder-medium
+{
+    padding-left:20px
+}
+
+.group-item-expander
+{
+    /* Overiding data-table's group header class*/
+    font-weight:bold;
+}
+
+table tr.even.row_selected td {
+background-color: #B0BED9!important;
+}
+
+table tr.odd.row_selected td {
+background-color: #9FAFD1!important;
+}
+
+.printJob-imageLibrary-image
+{
+   width: 46%;
+   padding: 2%;
+   float:left;
+}
+
+.printJob-imageLibrary-category-title
+{
+    padding-top:10px;
+}
+
+.printJob-imageLibrary-category-images, .printJob-imageLibrary-category-title
+{
+    width:100%;
+    float:left;
+}
+.table-bordered thead th
+{
+    padding-right:20px;
+}
+
+.awesome-font-medium
+{
+    font-size:14px;
+}
+
+.table-horizontal .control-label 
+{
+    padding:0px!important;
+}
+ 
+   
+.print-water-mark
+{
+       background: url('../../../Content/img/print-water-mark.png') repeat;
+}
+
+.productVersion
+{
+    width:200px;
+    text-align:center;
+}
+
+.TableHeading
+{
+    font-size:16px;
+    left: 68%;
+    top: 210px; 
+    width: 280px;
+    position:absolute;
+}
+
+
+#footer .productVersion
+{
+    float:right;  
+    text-align:right!important;
+}
+
+.modalsmall
+{
+    width: 40%; /* SET THE WIDTH OF THE MODAL */
+    height: 200px;
+    margin: 0% 0 0 0%; /* CHANGE MARGINS TO ACCOMODATE THE NEW WIDTH (original = margin: -250px 0 0 -280px;) */  
+    top: 15%;
+    left:30%;
+}
+
+.modalsmall .modal-footer {
+    bottom: 0;
+    position: absolute;
+    width: 95%;
+}
+
+.gv_panel img
+{
+    top:0px!important;
+    max-width:none!important;
+}
+
+.gv_panel
+{
+    overflow:auto!important;
+}
+
+.gv_panelNavNext
+{
+    right:20px!important;
+}
+
+/* styles unrelated to zoom */
+
+		.zoom {
+			display:inline-block;
+			position: relative;
+		}
+		
+		/* magnifying glass icon */
+		.zoom:after {
+			content:'';
+			display:block; 
+			width:33px; 
+			height:33px; 
+			position:absolute; 
+			top:0;
+			right:0;
+			background:url(icon.png);
+		}
+
+		.zoom img {
+			display: block;
+		}
+
+		.zoom img::selection { background-color: transparent; }
+
+		#ex2 img:hover { cursor: url(grab.cur), default; }
+		#ex2 img:active { cursor: url(grabbed.cur), default; }

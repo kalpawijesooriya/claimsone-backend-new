@@ -1,0 +1,111 @@
+﻿Application User Roles
+-----------------------------------------------------------------------------------------------------------
+-Technical Officer (TO)
+-Engineer (ENG)
+-Claim Processing Officer (PO)
+-Audit (AUDIT)
+-Management (MGT)
+-System Administrator (SYS_ADMIN)
+-Temp. Printing (PRINT)
+
+
+Web_Actions					TO			ENG			PO			AUDIT		MGT		SYS_ADMIN		PRINT
+-----------------------------------------------------------------------------------------------------------
+[LogOn]
+	-LogOn					YES			YES			YES			YES			YES			YES			YES
+	-LogOff					YES			YES			YES			YES			YES			YES			YES
+	-ChangePassword			YES			YES			YES			YES			YES			YES			YES
+
+[Job]
+	-Show Search			YES			YES			YES			YES			YES			YES			YES
+	-Search					YES			YES			YES			YES			YES			YES			YES
+	-Show Ad.Search			YES			YES			YES			YES			YES			YES			YES
+	-Ad.Search				YES			YES			YES			YES			YES			YES			YES
+	-AddJob					YES			NO			NO			NO			NO			NO			NO
+
+[Administration]
+	-CreateUser				NO			NO			NO			NO			YES			YES			NO
+
+[Image]
+	-
+
+
+Tab_Service_Actions			TO			ENG			PO			AUDIT		MGT		SYS_ADMIN		PRINT
+-----------------------------------------------------------------------------------------------------------
+[LogOn]
+	-LogOn					YES			NO			NO			YES			NO			YES			NO
+	-LogOff					YES			NO			NO			YES			NO			YES			NO
+	-ChangePassword			YES			NO			NO			YES			NO			YES			NO
+
+[Job]	
+	-AddJob					YES			NO			NO			NO			NO			NO			NO
+
+[Image]
+	-
+
+
+
+
+
+
+
+
+
+============
+Roles Table - Updated On 03-April-2013
+============
+
+[RoleName]						[Permissions]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Audit							LogOn_HTML,LogOff_HTML,ChangePassword_HTML,Index_HTML,MyProfile_HTML,Search_HTML,AdvancedSearch_HTML,
+								AdvancedSearchAjaxHandler_HTML,UserManagement_HTML,ViewReports_HTML,AccessLogs_HTML,ReportInquery_HTML,
+								UpdateProfile_HTML,AuditLog_HTML,AuditLogAjaxHandler_HTML,GetVisitsOfJobsAjaxHandler_HTML,
+								FindBranchesByRegionId_HTML,CommentsListAjaxHandler_HTML,CommentsListAjaxHandler2_HTML,GetJobDetailsAjaxHandler_HTML,
+								GetRolesListJson_HTML,JobDetailsPrintPreview_JSON,GetVisitDetailsAjaxHandler_HTML,GetVisitDetailsAjaxHandler_JSON,
+								GetImageIds_HTML,GetImage_HTML,GetJobDetailsAjaxHandler_JSON,PossibleDR_HTML,DamagedItems_HTML
+
+Claim Processing Officer		LogOn_HTML,LogOff_HTML,ChangePassword_HTML,Index_HTML,MyProfile_HTML,Search_HTML,AdvancedSearch_HTML,AdvancedSearchAjaxHandler_HTML,
+								UserManagement_HTML,ViewReports_HTML,AccessLogs_HTML,ReportInquery_HTML,UpdateProfile_HTML,AuditLog_HTML,AuditLogAjaxHandler_HTML,
+								GetVisitsOfJobsAjaxHandler_HTML,FindBranchesByRegionId_HTML,CommentsListAjaxHandler_HTML,CommentsListAjaxHandler2_HTML,
+								JobDetailsPrintPreview_HTML,AdvancedSearchResultPrintPreview_HTML,JobVisitResultPrintPreview_HTML,GetJobDetailsAjaxHandler_HTML,
+								GetRolesListJson_HTML,JobDetailsPrintPreview_JSON,GetVisitDetailsAjaxHandler_HTML,GetVisitDetailsAjaxHandler_JSON,
+								VisitDetailsPrintPreview_HTML,GetImageIds_HTML,GetImage_HTML,GetJobDetailsAjaxHandler_JSON,PrintVisit_JSON,JobFullPrintPreview_HTML,
+								PossibleDR_HTML,DamagedItems_HTML
+
+Engineer						LogOn_HTML,LogOff_HTML,ChangePassword_HTML,Index_HTML,MyProfile_HTML,Search_HTML,AdvancedSearch_HTML,AdvancedSearchAjaxHandler_HTML,
+								UserManagement_HTML,ViewUsers_HTML,ViewReports_HTML,AccessLogs_HTML,ReportInquery_HTML,Maintenance_HTML,RegionList_HTML,BranchesList_HTML,
+								UpdateProfile_HTML,AuditLog_HTML,AuditLogAjaxHandler_HTML,GetVisitsOfJobsAjaxHandler_HTML,FindBranchesByRegionId_HTML,CommentsListAjaxHandler_HTML,
+								CommentsListAjaxHandler2_HTML,CreateComment_HTML,CreateComment_JSON,GetJobDetailsAjaxHandler_HTML,GetRolesListJson_HTML,JobDetailsPrintPreview_JSON,
+								GetVisitDetailsAjaxHandler_HTML,GetVisitDetailsAjaxHandler_JSON,ViewUsers_HTML,UserListAjaxHandler_HTML,GetImageIds_HTML,GetImage_HTML,
+								GetJobDetailsAjaxHandler_JSON,UserListAjaxHandler_HTML,PossibleDR_HTML,DamagedItems_HTML
+
+Management						LogOn_HTML,LogOff_HTML,ChangePassword_HTML,Index_HTML,MyProfile_HTML,Search_HTML,AdvancedSearch_HTML,AdvancedSearchAjaxHandler_HTML,
+								UserManagement_HTML,ViewUsers_HTML,ViewReports_HTML,AccessLogs_HTML,ReportInquery_HTML,Maintenance_HTML,RegionList_HTML,BranchesList_HTML,
+								UpdateProfile_HTML,AuditLog_HTML,AuditLogAjaxHandler_HTML,GetVisitsOfJobsAjaxHandler_HTML,FindBranchesByRegionId_HTML,CommentsListAjaxHandler_HTML,
+								CommentsListAjaxHandler2_HTML,JobDetailsPrintPreview_HTML,AdvancedSearchResultPrintPreview_HTML,JobVisitResultPrintPreview_HTML,
+								GetJobDetailsAjaxHandler_HTML,GetRolesListJson_HTML,JobDetailsPrintPreview_JSON,GetVisitDetailsAjaxHandler_HTML,GetVisitDetailsAjaxHandler_JSON,
+								ViewUsers_HTML,UserListAjaxHandler_HTML,VisitDetailsPrintPreview_HTML,GetImageIds_HTML,GetImage_HTML,GetJobDetailsAjaxHandler_JSON,
+								UserListAjaxHandler_HTML,PrintVisit_JSON,PossibleDR_HTML,DamagedItems_HTML
+
+System Administrator			LogOn_HTML,LogOff_HTML,ChangePassword_HTML,Index_HTML,MyProfile_HTML,Search_HTML,AdvancedSearch_HTML,AdvancedSearchAjaxHandler_HTML,
+								UserManagement_HTML,TemplateView_HTML,ViewUsers_HTML,ViewReports_HTML,AccessLogs_HTML,ReportInquery_HTML,Maintenance_HTML,RegionList_HTML,
+								BranchesList_HTML,IsUsernameAvailable_HTML,IsUsernameAvailable_JSON,UpdateUser_HTML,ResetPassword_HTML,DeactivateUser_HTML,DeleteUser_HTML,
+								ActivateUser_HTML,CreateUser_HTML,UpdateProfile_HTML,AuditLog_HTML,AuditLogAjaxHandler_HTML,ViewRegions_HTML,RegionListAjaxHandler_HTML,
+								CreateRegion_HTML,UpdateRegion_HTML, ActivateRegion_HTML,DeactivateRegion_HTML,DeleteRegion_HTML,ViewBranches_HTML,BranchListAjaxHandler_HTML,
+								CreateBranch_HTML,UpdateBranch_HTML,ActivateBranch_HTML,DeactivateBranch_HTML,DeleteBranch_HTML,GetVisitsOfJobsAjaxHandler_HTML,
+								FindBranchesByRegionId_HTML,CommentsListAjaxHandler_HTML,CommentsListAjaxHandler2_HTML,GetJobDetailsAjaxHandler_HTML,GetRolesListJson_HTML,
+								GetVisitDetailsAjaxHandler_HTML,GetVisitDetailsAjaxHandler_JSON,UserListAjaxHandlr_HTML,GetImageIds_HTML,GetImage_HTML,
+								GetJobDetailsAjaxHandler_JSON,UserListAjaxHandler_HTML,GetJobDetailsAjaxHandler_XML,LogDetails_HTML,LockedUsers_HTML,UnlockUsers_HTML,
+								DamagedItems_HTML,DamagedItems_HTML,AuditLogToExcel_HTML,PossibleDR_HTML
+
+Technical Officer				LogOn_HTML,LogOff_HTML,ChangePassword_HTML,Index_HTML,MyProfile_HTML,Search_HTML,AdvancedSearch_HTML,UpdateProfile_HTML,AddJob_XML,
+								GetImageById_XML,GetVisitDetailsAjaxHandler_XML,AddVisit_XML,SearchByVehicleNo_XML,UploadImage_XML,PossibleDR_HTML,DamagedItems_HTML,
+								AdvancedSearchAjaxHandler_HTML
+
+Temp Printing					LogOn_HTML,LogOff_HTML,ChangePassword_HTML,Index_HTML,MyProfile_HTML,Search_HTML,AdvancedSearch_HTML,AdvancedSearchAjaxHandler_HTML,
+								UpdateProfile_HTML,AdvancedSearchResultPrintPreview_HTML,GetVisitsOfJobsAjaxHandler_HTML,FindBranchesByRegionId_HTML,
+								CommentsListAjaxHandler_HTML,CommentsListAjaxHandler2_HTML,JobDetailsPrintPreview_HTML,JobVisitResultPrintPreview_HTML,
+								GetJobDetailsAjaxHandler_HTML,GetRolesListJson_HTML,JobDetailsPrintPreview_JSON,GetVisitDetailsAjaxHandler_HTML,GetVisitDetailsAjaxHandler_JSON,
+								VisitDetailsPrintPreview_HTML,GetImageIds_HTML,GetImage_HTML,GetJobDetailsAjaxHandler_JSON,PrintVisit_JSON,JobFullPrintPreview_HTML,
+								PossibleDR_HTML,DamagedItems_HTML

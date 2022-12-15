@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClaimsOneLiveModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="AssignedJob">
+    <Key>
+      <PropertyRef Name="AssignedJobId" />
+    </Key>
+    <Property Name="AssignedJobId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CSRCode" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VehicleNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AssignedDateTime" Type="DateTime" Precision="3" />
+    <Property Name="Info1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Info2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Info3" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Holiday">
+    <Key>
+      <PropertyRef Name="HolidayId" />
+    </Key>
+    <Property Name="HolidayId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Info1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Info2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Info3" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ClaimsOneLiveEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AssignedJobs" EntityType="Self.AssignedJob" />
+    <EntitySet Name="Holidays" EntityType="Self.Holiday" />
+  </EntityContainer>
+</Schema>

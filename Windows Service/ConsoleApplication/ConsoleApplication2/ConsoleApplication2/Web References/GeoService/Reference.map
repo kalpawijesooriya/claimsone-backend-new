@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://122.255.4.188/iron/MotorClaimService/MotorClaimService.svc?xsd=xsd0" filename="MotorClaimService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://122.255.4.188/iron/MotorClaimService/MotorClaimService.svc?xsd=xsd1" filename="MotorClaimService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://122.255.4.188/iron/MotorClaimService/MotorClaimService.svc?xsd=xsd2" filename="MotorClaimService1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://122.255.4.188/iron/MotorClaimService/MotorClaimService.svc?disco" filename="MotorClaimService.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://122.255.4.188/iron/MotorClaimService/MotorClaimService.svc?wsdl" filename="MotorClaimService.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

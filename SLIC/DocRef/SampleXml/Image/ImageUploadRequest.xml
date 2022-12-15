@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Request>
+  <Data>
+    <Image>
+      <FieldList>
+        <visitId>30</visitId>
+        <imageName>accident.jpg</imageName>
+        <!--<field>AccidentImages</field>-->
+        <imageType>3</imageType>
+        <!--BEGIN: Only for Resubmission Images-->
+        <!--<isResubmission>True</isResubmission>-->
+        <refNo>340</refNo>
+        <!--END: Only for Resubmission Images-->
+      </FieldList>
+    </Image>
+    <DateTime></DateTime>
+  </Data>
+</Request>  

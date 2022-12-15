@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Request>
+  <Data>
+    <Visit action ="VisitDetails">
+      <FeildList>
+        <VisitNo>
+          v1001
+        </VisitNo>
+        <InspectionDate> 12-09-2011</InspectionDate>
+        <ChassisNo>Sample-ChassyNo</ChassisNo>
+        <EngineNo>Sample-EngineNo</EngineNo>
+        <ToDate> 12-10-2011 </ToDate>
+        <Comments> Comments go here </Comments>
+      </FeildList>
+    </Visit>
+  </Data>
+</Request>

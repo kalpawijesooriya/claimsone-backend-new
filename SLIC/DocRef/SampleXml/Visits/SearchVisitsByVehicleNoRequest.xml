@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Request>
+  <Data>
+    <Visit action =" SerachVisitsByJobNo">
+      <FeildList>
+        <VehicleNo>HH5512</VehicleNo>
+      </FeildList>
+    </Visit>
+  </Data>
+</Request> 

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Request>
+  <Data>
+    <Job action="add">
+      <FieldList>
+        <JobNo>J1001</JobNo>
+        <TimeReported>12-09-2011 12:12PM</TimeReported>
+        <TimeVisited>12-09-2011 13:12PM</TimeVisited>
+        <VehicleNo>Sample-VehNo</VehicleNo>
+        <CallerName>Krishan</CallerName>
+        <CallerContactNo>0774293455</CallerContactNo>
+        <InsuredName>Harsha</InsuredName>
+        <InsuredContactNo>07753355677</InsuredContactNo>
+        <VehicleTypeColor>Honda Civic Blue</VehicleTypeColor>
+        <AccidentTime>12-09-2011 10:12PM</AccidentTime>
+        <AccidentLocation>Bambalapitiya</AccidentLocation>
+        <Policy_CoverNoteNo>Sample-CVNo</Policy_CoverNoteNo>
+        <Policy_CoverNotePeriod>
+          <from>12-09-2009</from>
+          <to>12-09-2014</to>
+        </Policy_CoverNotePeriod>
+        <Policy_CoverNoteSerialNo>Sample-CVSerialNo</Policy_CoverNoteSerialNo>
+        <CoverNoteIssuedBy>Ram</CoverNoteIssuedBy>
+        <CoverNoteReasons>Reasons come here.</CoverNoteReasons>
+        <ChassisNo>Sample-ChassyNo</ChassisNo>
+        <EngineNo>Sample-EngineNo</EngineNo>
+        <DriverName>Vishwa</DriverName>
+        <LicenceNo>Sample-LicenseNo</LicenceNo>
+        <LicenceExpiryDate> 12-09-2014</LicenceExpiryDate>
+        <LicenceType> 2</LicenceType>
+        <!--  Other=0, MTA32 =1, MTA39=2,CMT49=3, INTLIC=4-->
+        <LicenseNewOld>
+          <IsNew>0</IsNew>
+          <!--  Old=0,New =1-->
+          <!--<Type>11</Type>
+          --><!--Refer enum-->
+        </LicenseNewOld>
+        <DriverNIC> 198303547294</DriverNIC>
+        <NICType>1</NICType>
+        <DriverCompetence> 1</DriverCompetence>
+        <!--No-0,Yes-1-->
+        <VehicleClass>
+          <!-- C = 1,  C1=2,   D=3 Multiple Selection!-->
+          <class>1</class>
+          <class>3</class>
+        </VehicleClass>
+        <MeterReading>6000</MeterReading>
+        <DamagedItems>
+              <!--Selected Array Positions-->
+            <item>1/0/0</item>
+            <item>1/0/1</item>
+            <item>1/0/2</item>
+            <item>1/1/0</item>
+            <item>1/1/5</item>
+            <item>1/2/4</item>
+            <item>1/2/5</item>
+            <item>1/3/0</item>
+            <item>1/3/1</item>
+            <item>1/3/3</item>
+            <item>1/3/6</item>
+        </DamagedItems>
+        <PossibleDR>
+          <!-- PossibleDR XML comes here.Stored as XML.-->
+          <item>item1</item>
+          <item>item2</item>
+        </PossibleDR>
+        <TyreCondition>
+          <!--Fair-1,Good-2,Bad-3 -->
+          <FR>1</FR>
+          <FL>2</FL>
+          <RRL>2</RRL>
+          <RLR>2</RLR>
+          <RLL>3</RLL>
+          <RRR>2</RRR>
+        </TyreCondition>
+        <TyreContributory>0</TyreContributory>
+        <!--No-0,Yes-1-->
+        <GoodsType>Sample-GoodsType</GoodsType>
+        <GoodsWeight>30.5</GoodsWeight>
+        <!-- in Kgs-->
+        <GoodsDamages>Damages to goods come here.</GoodsDamages>
+        <OverLoaded>0</OverLoaded>
+        <!--No-0,Yes-1-->
+        <OverWeightContributory>0</OverWeightContributory>
+        <!--No-0,Yes-1-->
+        <OtherVehiclesInvolved>Bus (VehNo), etc.</OtherVehiclesInvolved>
+        <ThirdPartyDamages>Third party damages come here.</ThirdPartyDamages>
+        <Injuries>Injuries come here</Injuries>        
+        <!--refer PoliceStations table(DB)-->
+        <NearestPoliceStation>Ampara</NearestPoliceStation><!--Changed On Phase 3 as a String value-->        
+        <JourneyPurpose>2</JourneyPurpose>
+        <!-- Other=0, Work=1,Trip=2-->
+        <DriverRelationship>1</DriverRelationship>
+        <!-- Other =0,  Employee=1,  Father=2,  Son=3,  Daughter=4,  Nephew=5, Uncle=6-->
+        <PavValue>60000.00</PavValue>
+        <ClaimProcessBranch>5</ClaimProcessBranch>
+        <!--refer ClaimProcessingBranches table(DB)-->
+        <CSRConsistency>1</CSRConsistency>
+        <CSRUserName>aaa</CSRUserName>
+        <!--UserName 0R UserId-->
+        <Comment>Rajith</Comment>
+        <ApproxRepairCost>12000.00</ApproxRepairCost>
+        <SiteEstimation>1</SiteEstimation>
+        <!-- Not Available =0,  Available=1 -->
+        <ImageCount>24</ImageCount>
+        <!--New Other Fields-->       
+        <OtherPossibleDR>item1,item2 </OtherPossibleDR>
+        <OtherDamagedItems>item1,item2</OtherDamagedItems>
+        <OtherPreAccidentDamages>item1,item2</OtherPreAccidentDamages>
+        <!--END New Other Fields-->
+        <OriginalTimeReported>12-09-2011 12:12PM</OriginalTimeReported>
+        <PreAccidentDamages>
+          <!-- Damaged items XML comes here.Stored as XML.-->
+          <item>1/0/0</item>
+          <item>1/0/1</item>
+          <item>1/0/2</item>
+          <item>1/1/0</item>
+          <item>1/1/5</item>
+          <item>1/2/4</item>
+          <item>1/2/5</item>
+          <item>1/3/0</item>
+          <item>1/3/1</item>
+          <item>1/3/3</item>
+          <item>1/3/6</item>        
+          <!-- End Damaged items XML.-->
+        </PreAccidentDamages>
+        <!--END New Fields Phase 3-->
+          <ImageCountList>
+              <TotalImageCount>60</TotalImageCount>
+              <ImageType>
+                  <TypeId>1</TypeId>
+                  <ImageCount>10</ImageCount>
+              </ImageType>
+              <ImageType>
+                  <TypeId>3</TypeId>
+                  <ImageCount>20</ImageCount>
+              </ImageType>
+              <ImageType>
+                  <TypeId>5</TypeId>
+                  <ImageCount>30</ImageCount>
+              </ImageType>
+          </ImageCountList>
+      </FieldList>
+    </Job>
+    <DateTime></DateTime>
+  </Data>
+</Request>
+

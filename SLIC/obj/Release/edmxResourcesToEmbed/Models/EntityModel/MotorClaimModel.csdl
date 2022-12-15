@@ -1,0 +1,2084 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MotorClaimModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="MotorClaimEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="aspnet_Users" EntityType="MotorClaimModel.aspnet_Users" />
+    <EntitySet Name="ImageGalleryEntities" EntityType="MotorClaimModel.ImageGalleryEntity" />
+    <EntitySet Name="SAForm_level2Entity" EntityType="MotorClaimModel.SAForm_level2Entity" />
+    <EntitySet Name="SAForm_VehicleClassesEntity" EntityType="MotorClaimModel.SAForm_VehicleClassesEntity" />
+    <EntitySet Name="aspnet_Membership" EntityType="MotorClaimModel.aspnet_Membership" />
+    <EntitySet Name="aspnet_Roles" EntityType="MotorClaimModel.aspnet_Roles" />
+    <AssociationSet Name="FK__aspnet_Me__UserI__17F790F9" Association="MotorClaimModel.FK__aspnet_Me__UserI__17F790F9">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="aspnet_UsersInRoles" Association="MotorClaimModel.aspnet_UsersInRoles">
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <EntitySet Name="vw_ImageGallery" EntityType="MotorClaimModel.vw_ImageGallery" />
+    <EntitySet Name="vw_SAForm_PolicyDetails" EntityType="MotorClaimModel.vw_SAForm_PolicyDetails" />
+    <EntitySet Name="PoliceStationEntities" EntityType="MotorClaimModel.PoliceStationEntity" />
+    <EntitySet Name="CommentEntities" EntityType="MotorClaimModel.CommentEntity" />
+    <EntitySet Name="vw_Comments" EntityType="MotorClaimModel.vw_Comments" />
+    <EntitySet Name="RegionEntities" EntityType="MotorClaimModel.RegionEntity" />
+    <EntitySet Name="vw_SAForm_VehDriverDetails" EntityType="MotorClaimModel.vw_SAForm_VehDriverDetails" />
+    <EntitySet Name="SAForm_level1Entity" EntityType="MotorClaimModel.SAForm_level1Entity" />
+    <AssociationSet Name="FK_SAForm_VehicleClasses_SAForm_level1" Association="MotorClaimModel.FK_SAForm_VehicleClasses_SAForm_level1">
+      <End Role="SAForm_level1" EntitySet="SAForm_level1Entity" />
+      <End Role="SAForm_VehicleClasses" EntitySet="SAForm_VehicleClassesEntity" />
+    </AssociationSet>
+    <EntitySet Name="vw_SAForm_Damages" EntityType="MotorClaimModel.vw_SAForm_Damages" />
+    <EntitySet Name="vw_SAForm_OtherDetails" EntityType="MotorClaimModel.vw_SAForm_OtherDetails" />
+    <EntitySet Name="BranchEntities" EntityType="MotorClaimModel.BranchEntity" />
+    <AssociationSet Name="FK_Branches_Regions" Association="MotorClaimModel.FK_Branches_Regions">
+      <End Role="RegionEntity" EntitySet="RegionEntities" />
+      <End Role="Branch" EntitySet="BranchEntities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SAForm_level1_Branches" Association="MotorClaimModel.FK_SAForm_level1_Branches">
+      <End Role="Branch" EntitySet="BranchEntities" />
+      <End Role="SAForm_level1Entity" EntitySet="SAForm_level1Entity" />
+    </AssociationSet>
+    <EntitySet Name="vw_Branches" EntityType="MotorClaimModel.vw_Branches" />
+    <EntitySet Name="vw_aspnet_MembershipUsers" EntityType="MotorClaimModel.vw_aspnet_MembershipUsers" />
+    <EntitySet Name="UserEntities" EntityType="MotorClaimModel.UserEntity" />
+    <AssociationSet Name="FK_Users_aspnet_Roles_PreviousRole" Association="MotorClaimModel.FK_Users_aspnet_Roles_PreviousRole">
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+      <End Role="User" EntitySet="UserEntities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_aspnet_Users" Association="MotorClaimModel.FK_Users_aspnet_Users">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="User" EntitySet="UserEntities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Branches" Association="MotorClaimModel.FK_Users_Branches">
+      <End Role="BranchEntity" EntitySet="BranchEntities" />
+      <End Role="User" EntitySet="UserEntities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VisitComments_Users" Association="MotorClaimModel.FK_VisitComments_Users">
+      <End Role="User" EntitySet="UserEntities" />
+      <End Role="CommentEntity" EntitySet="CommentEntities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Regions_Users_CreatedBy" Association="MotorClaimModel.FK_Regions_Users_CreatedBy">
+      <End Role="User" EntitySet="UserEntities" />
+      <End Role="RegionEntity" EntitySet="RegionEntities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Regions_Users_UpdatedBy" Association="MotorClaimModel.FK_Regions_Users_UpdatedBy">
+      <End Role="User" EntitySet="UserEntities" />
+      <End Role="RegionEntity" EntitySet="RegionEntities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Regions" Association="MotorClaimModel.FK_Users_Regions">
+      <End Role="RegionEntity" EntitySet="RegionEntities" />
+      <End Role="User" EntitySet="UserEntities" />
+    </AssociationSet>
+    <EntitySet Name="vw_AllComments" EntityType="MotorClaimModel.vw_AllComments" />
+    <EntitySet Name="AuditLogEntities" EntityType="MotorClaimModel.AuditLogEntity" />
+    <EntitySet Name="VisitEntities" EntityType="MotorClaimModel.VisitEntity" />
+    <AssociationSet Name="FK_VisitComments_Visits" Association="MotorClaimModel.FK_VisitComments_Visits">
+      <End Role="Visit" EntitySet="VisitEntities" />
+      <End Role="CommentEntity" EntitySet="CommentEntities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ImageGallery_Job_Submissions" Association="MotorClaimModel.FK_ImageGallery_Job_Submissions">
+      <End Role="Visit" EntitySet="VisitEntities" />
+      <End Role="ImageGalleryEntity" EntitySet="ImageGalleryEntities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SAForm_level1_Visits" Association="MotorClaimModel.FK_SAForm_level1_Visits">
+      <End Role="Visit" EntitySet="VisitEntities" />
+      <End Role="SAForm_level1Entity" EntitySet="SAForm_level1Entity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SAForm_level2_Visits" Association="MotorClaimModel.FK_SAForm_level2_Visits">
+      <End Role="Visit" EntitySet="VisitEntities" />
+      <End Role="SAForm_level2Entity" EntitySet="SAForm_level2Entity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Job_Submissions_Users" Association="MotorClaimModel.FK_Job_Submissions_Users">
+      <End Role="UserEntity" EntitySet="UserEntities" />
+      <End Role="Visit" EntitySet="VisitEntities" />
+    </AssociationSet>
+    <EntitySet Name="vw_Visits" EntityType="MotorClaimModel.vw_Visits" />
+    <EntitySet Name="vw_SAForm_General" EntityType="MotorClaimModel.vw_SAForm_General" />
+    <EntitySet Name="vw_SAFormDetails" EntityType="MotorClaimModel.vw_SAFormDetails" />
+    <EntitySet Name="vw_UserDetails" EntityType="MotorClaimModel.vw_UserDetails" />
+    <EntitySet Name="vw_UserLoginDetails" EntityType="MotorClaimModel.vw_UserLoginDetails" />
+    <EntitySet Name="VisitDetailEntities" EntityType="MotorClaimModel.VisitDetailEntity" />
+    <AssociationSet Name="FK_VisitDetails_Visits" Association="MotorClaimModel.FK_VisitDetails_Visits">
+      <End Role="VisitEntity" EntitySet="VisitEntities" />
+      <End Role="VisitDetail" EntitySet="VisitDetailEntities" />
+    </AssociationSet>
+    <EntitySet Name="vw_VisitDetails" EntityType="MotorClaimModel.vw_VisitDetails" />
+    <EntitySet Name="aspnet_Applications" EntityType="MotorClaimModel.aspnet_Applications" />
+    <EntitySet Name="aspnet_Paths" EntityType="MotorClaimModel.aspnet_Paths" />
+    <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="MotorClaimModel.aspnet_PersonalizationAllUsers" />
+    <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="MotorClaimModel.aspnet_PersonalizationPerUser" />
+    <EntitySet Name="aspnet_Profile" EntityType="MotorClaimModel.aspnet_Profile" />
+    <EntitySet Name="aspnet_SchemaVersions" EntityType="MotorClaimModel.aspnet_SchemaVersions" />
+    <EntitySet Name="aspnet_WebEvent_Events" EntityType="MotorClaimModel.aspnet_WebEvent_Events" />
+    <EntitySet Name="Old_DR_Items" EntityType="MotorClaimModel.Old_DR_Items" />
+    <EntitySet Name="vw_aspnet_Applications" EntityType="MotorClaimModel.vw_aspnet_Applications" />
+    <EntitySet Name="vw_aspnet_Profiles" EntityType="MotorClaimModel.vw_aspnet_Profiles" />
+    <EntitySet Name="vw_aspnet_Roles" EntityType="MotorClaimModel.vw_aspnet_Roles" />
+    <EntitySet Name="vw_aspnet_Users" EntityType="MotorClaimModel.vw_aspnet_Users" />
+    <EntitySet Name="vw_aspnet_UsersInRoles" EntityType="MotorClaimModel.vw_aspnet_UsersInRoles" />
+    <EntitySet Name="vw_aspnet_WebPartState_Paths" EntityType="MotorClaimModel.vw_aspnet_WebPartState_Paths" />
+    <EntitySet Name="vw_aspnet_WebPartState_Shared" EntityType="MotorClaimModel.vw_aspnet_WebPartState_Shared" />
+    <EntitySet Name="vw_aspnet_WebPartState_User" EntityType="MotorClaimModel.vw_aspnet_WebPartState_User" />
+    <EntitySet Name="vw_IronLogger_AuditLogs_GetLogs" EntityType="MotorClaimModel.vw_IronLogger_AuditLogs_GetLogs" />
+    <AssociationSet Name="FK__aspnet_Me__Appli__3C34F16F" Association="MotorClaimModel.FK__aspnet_Me__Appli__3C34F16F">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pa__Appli__3864608B" Association="MotorClaimModel.FK__aspnet_Pa__Appli__3864608B">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Ro__Appli__17F790F9" Association="MotorClaimModel.FK__aspnet_Ro__Appli__17F790F9">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__Appli__37703C52" Association="MotorClaimModel.FK__aspnet_Us__Appli__37703C52">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__395884C4" Association="MotorClaimModel.FK__aspnet_Pe__PathI__395884C4">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__3E1D39E1" Association="MotorClaimModel.FK__aspnet_Pe__PathI__3E1D39E1">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__UserI__3A4CA8FD" Association="MotorClaimModel.FK__aspnet_Pe__UserI__3A4CA8FD">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pr__UserI__3B40CD36" Association="MotorClaimModel.FK__aspnet_Pr__UserI__3B40CD36">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+    </AssociationSet>
+    <FunctionImport Name="SAForms_GetOnsiteEstimationRatio" ReturnType="Collection(MotorClaimModel.SAForms_GetOnsiteEstimationRatio_Result)">
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SAForms_GetRegionalOnsiteEstimationRatio" ReturnType="Collection(MotorClaimModel.SAForms_GetRegionalOnsiteEstimationRatio_Result)">
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="RegionId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SAForms_GetMissingImages" ReturnType="Collection(MotorClaimModel.SAForms_GetMissingImages_Result)">
+      <Parameter Name="BeginDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <EntitySet Name="VisitParams" EntityType="MotorClaimModel.VisitParam" />
+    <AssociationSet Name="FK_VisitParams_Visits" Association="MotorClaimModel.FK_VisitParams_Visits">
+      <End Role="VisitEntity" EntitySet="VisitEntities" />
+      <End Role="VisitParam" EntitySet="VisitParams" />
+    </AssociationSet>
+    <EntitySet Name="vw_TO_Performance" EntityType="MotorClaimModel.vw_TO_Performance" />
+    <EntitySet Name="vw_OutstandingJobs" EntityType="MotorClaimModel.vw_OutstandingJobs" />
+    <EntitySet Name="vw_AssignedJobs" EntityType="MotorClaimModel.vw_AssignedJobs" />
+    <EntitySet Name="Holidays" EntityType="MotorClaimModel.Holiday" />
+    <EntitySet Name="AssignedJobs" EntityType="MotorClaimModel.AssignedJob" />
+    <EntitySet Name="vw_SAForm_GeneralNew" EntityType="MotorClaimModel.vw_SAForm_GeneralNew" />
+    <EntitySet Name="SettingEntities" EntityType="MotorClaimModel.SettingEntity" />
+    <FunctionImport Name="SAForms_GetMissingImagesNew" ReturnType="Collection(MotorClaimModel.SAForms_GetMissingImagesNew_Results)">
+      <Parameter Name="BeginDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="Flag" Mode="In" Type="Int32" />
+      <Parameter Name="GeneralId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SAForms_GetOnsiteEstimation" ReturnType="Collection(MotorClaimModel.SAForms_GetOnsiteEstimation_Result)">
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="RegionId" Mode="In" Type="Int32" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="SkipRows" Mode="In" Type="Int32" />
+      <Parameter Name="GetRows" Mode="In" Type="Int32" />
+      <Parameter Name="RowCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetCompletedRatio" ReturnType="Collection(Decimal)">
+      <Parameter Name="NoOfCompletedJobs" Mode="In" Type="Int32" />
+      <Parameter Name="NoOfTotalJobs" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetJobsCount" ReturnType="Collection(Int32)">
+      <Parameter Name="BeginDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="JobNo" Mode="In" Type="String" />
+      <Parameter Name="VehicleNo" Mode="In" Type="String" />
+      <Parameter Name="TOCode" Mode="In" Type="String" />
+      <Parameter Name="TOName" Mode="In" Type="String" />
+      <Parameter Name="RegionId" Mode="In" Type="Int32" />
+      <Parameter Name="BranchId" Mode="In" Type="Int32" />
+      <Parameter Name="EPFNo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetJobs" ReturnType="Collection(MotorClaimModel.GetJobs_Result)">
+      <Parameter Name="BeginDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="JobNo" Mode="In" Type="String" />
+      <Parameter Name="VehicleNo" Mode="In" Type="String" />
+      <Parameter Name="TOCode" Mode="In" Type="String" />
+      <Parameter Name="TOName" Mode="In" Type="String" />
+      <Parameter Name="RegionId" Mode="In" Type="Int32" />
+      <Parameter Name="BranchId" Mode="In" Type="Int32" />
+      <Parameter Name="EPFNo" Mode="In" Type="String" />
+      <Parameter Name="orderBy" Mode="In" Type="String" />
+      <Parameter Name="SkipRows" Mode="In" Type="Int32" />
+      <Parameter Name="GetRows" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetOutstandingJobs" ReturnType="Collection(MotorClaimModel.GetOutstandingJobs_Result)">
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="GetTOPerformance" ReturnType="Collection(MotorClaimModel.GetTOPerformance_Result1)">
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="TOCode" Mode="In" Type="Int32" />
+      <Parameter Name="RegionCode" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetOutstandingJobsTest">
+      <Parameter Name="GetRows" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SAForms_GetOnsiteEstimationCount" ReturnType="Collection(MotorClaimModel.SAForms_GetOnsiteEstimationCount_Result)">
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="RegionId" Mode="In" Type="Int32" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="RowCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetPerformanceHours" ReturnType="Collection(MotorClaimModel.GetPerformanceHours_Result1)">
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="TOCode" Mode="In" Type="Int32" />
+      <Parameter Name="RegionCode" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetUserCount" ReturnType="Collection(MotorClaimModel.GetUserCount_Result)">
+      <Parameter Name="CurrentUser" Mode="In" Type="Int32" />
+      <Parameter Name="RoleName" Mode="In" Type="String" />
+      <Parameter Name="RoleId" Mode="In" Type="Guid" />
+      <Parameter Name="Username" Mode="In" Type="String" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="UserRole" Mode="In" Type="String" />
+      <Parameter Name="Branch" Mode="In" Type="String" />
+      <Parameter Name="CSRCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetUsers" ReturnType="Collection(MotorClaimModel.GetUsers_Result)">
+      <Parameter Name="CurrentUser" Mode="In" Type="Int32" />
+      <Parameter Name="RoleName" Mode="In" Type="String" />
+      <Parameter Name="RoleId" Mode="In" Type="Guid" />
+      <Parameter Name="Username" Mode="In" Type="String" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="UserRole" Mode="In" Type="String" />
+      <Parameter Name="Branch" Mode="In" Type="String" />
+      <Parameter Name="CSRCode" Mode="In" Type="String" />
+      <Parameter Name="OrderBy" Mode="In" Type="String" />
+      <Parameter Name="SkipRows" Mode="In" Type="Int32" />
+      <Parameter Name="GetRows" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SAForms_GetJobsWithNoImages" ReturnType="Collection(MotorClaimModel.SAForms_GetJobsWithNoImages_Result)">
+      <Parameter Name="BeginDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="Flag" Mode="In" Type="Int32" />
+      <Parameter Name="GeneralId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetOutstandingJobs_Paginated" ReturnType="Collection(MotorClaimModel.GetOutstandingJobsPaginated_Result)">
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="TOCode" Mode="In" Type="String" />
+      <Parameter Name="RegionId" Mode="In" Type="Int32" />
+      <Parameter Name="orderBy" Mode="In" Type="String" />
+      <Parameter Name="SkipRows" Mode="In" Type="Int32" />
+      <Parameter Name="GetRows" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetOutstandingJobs_Count" ReturnType="Collection(Int32)">
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="TOCode" Mode="In" Type="String" />
+      <Parameter Name="RegionId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetPhotoAvailability_ARINew" ReturnType="Collection(MotorClaimModel.GetPhotoAvailability_ARINew_Result)">
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="VisitType" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetPhotoAvailability_Paginated_ARINew" ReturnType="Collection(MotorClaimModel.GetPhotoAvailability_Paginated_ARINew_Result)">
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="GeneralId" Mode="In" Type="Int32" />
+      <Parameter Name="ToCode" Mode="In" Type="String" />
+      <Parameter Name="VisitType" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetPhotoAvailability_Paginated_SANew" ReturnType="Collection(MotorClaimModel.GetPhotoAvailability_Paginated_SANew_Result)">
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="GeneralId" Mode="In" Type="Int32" />
+      <Parameter Name="ToCode" Mode="In" Type="String" />
+      <Parameter Name="VisitType" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetPhotoAvailability_SANew" ReturnType="Collection(MotorClaimModel.GetPhotoAvailability_SANew_Result)">
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="VisitType" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetParticularJob" ReturnType="Collection(MotorClaimModel.GetParticularJob_Result)">
+      <Parameter Name="JobNo" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="aspnet_Membership" Relationship="MotorClaimModel.FK__aspnet_Me__UserI__17F790F9" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+    <NavigationProperty Name="aspnet_Roles" Relationship="MotorClaimModel.aspnet_UsersInRoles" FromRole="aspnet_Users" ToRole="aspnet_Roles" />
+    <NavigationProperty Name="Users" Relationship="MotorClaimModel.FK_Users_aspnet_Users" FromRole="aspnet_Users" ToRole="User" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="MotorClaimModel.FK__aspnet_Us__Appli__37703C52" FromRole="aspnet_Users" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="MotorClaimModel.FK__aspnet_Pe__UserI__3A4CA8FD" FromRole="aspnet_Users" ToRole="aspnet_PersonalizationPerUser" />
+    <NavigationProperty Name="aspnet_Profile" Relationship="MotorClaimModel.FK__aspnet_Pr__UserI__3B40CD36" FromRole="aspnet_Users" ToRole="aspnet_Profile" />
+  </EntityType>
+  <EntityType Name="ImageGalleryEntity">
+    <Key>
+      <PropertyRef Name="ImageId" />
+    </Key>
+    <Property Name="ImageId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VisitId" Type="Int32" Nullable="false" />
+    <Property Name="FieldId" Type="Byte" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ImageName" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ImagePath" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="IsPrinted" Type="Boolean" Nullable="false" />
+    <Property Name="UploadedBy" Type="Int32" Nullable="false" />
+    <Property Name="UploadedDate" Type="DateTime" Nullable="false" />
+    <Property Name="Info1" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Info2" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Info3" Type="Int32" />
+    <NavigationProperty Name="Visit" Relationship="MotorClaimModel.FK_ImageGallery_Job_Submissions" FromRole="ImageGalleryEntity" ToRole="Visit" />
+  </EntityType>
+  <EntityType Name="SAForm_level2Entity">
+    <Key>
+      <PropertyRef Name="VisitId" />
+    </Key>
+    <Property Name="VisitId" Type="Int32" Nullable="false" />
+    <Property Name="CON_Tyre_FR_Status" Type="Int16" Nullable="false" />
+    <Property Name="CON_Tyre_FL_Status" Type="Int16" Nullable="false" />
+    <Property Name="CON_Tyre_RRL_Status" Type="Int16" Nullable="false" />
+    <Property Name="CON_Tyre_RLR_Status" Type="Int16" Nullable="false" />
+    <Property Name="CON_Tyre_RLL_Status" Type="Int16" Nullable="false" />
+    <Property Name="CON_Tyre_RRR_Status" Type="Int16" Nullable="false" />
+    <Property Name="CON_Tyre_IsContributory" Type="Boolean" />
+    <Property Name="DAM_DamagedItems" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DAM_DamagedItems_Other" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="DAM_PreAccidentDamages" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DAM_PreAccidentDamages_Other" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="DAM_PossibleDR" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DAM_PossibleDR_Other" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="DAM_Goods_Type" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="DAM_Goods_Weight" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="DAM_Goods_Damage" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="DAM_IsOverLoaded" Type="Boolean" />
+    <Property Name="DAM_Is_OL_Contributory" Type="Boolean" />
+    <Property Name="DAM_OtherVeh_Involved" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="DAM_ThirdParty_Damage" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="DAM_Injuries" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="OTH_Journey_PurposeId" Type="Int16" />
+    <Property Name="OTH_Nearest_PoliceStation" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Info1" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Info2" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Info3" Type="Int32" />
+    <NavigationProperty Name="Visit" Relationship="MotorClaimModel.FK_SAForm_level2_Visits" FromRole="SAForm_level2Entity" ToRole="Visit" />
+  </EntityType>
+  <EntityType Name="SAForm_VehicleClassesEntity">
+    <Key>
+      <PropertyRef Name="VisitId" />
+      <PropertyRef Name="VehicleClassId" />
+    </Key>
+    <Property Name="VisitId" Type="Int32" Nullable="false" />
+    <Property Name="VehicleClassId" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="SAForm_level1" Relationship="MotorClaimModel.FK_SAForm_VehicleClasses_SAForm_level1" FromRole="SAForm_VehicleClasses" ToRole="SAForm_level1" />
+  </EntityType>
+  <EntityType Name="aspnet_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="PasswordFormat" Nullable="false" />
+    <Property Type="String" Name="PasswordSalt" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobilePIN" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredEmail" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PasswordQuestion" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PasswordAnswer" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsApproved" Nullable="false" />
+    <Property Type="Boolean" Name="IsLockedOut" Nullable="false" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastLoginDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastPasswordChangedDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastLockoutDate" Nullable="false" />
+    <Property Type="Int32" Name="FailedPasswordAttemptCount" Nullable="false" />
+    <Property Type="DateTime" Name="FailedPasswordAttemptWindowStart" Nullable="false" />
+    <Property Type="Int32" Name="FailedPasswordAnswerAttemptCount" Nullable="false" />
+    <Property Type="DateTime" Name="FailedPasswordAnswerAttemptWindowStart" Nullable="false" />
+    <Property Type="String" Name="Comment" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="aspnet_Users" Relationship="MotorClaimModel.FK__aspnet_Me__UserI__17F790F9" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="MotorClaimModel.FK__aspnet_Me__Appli__3C34F16F" FromRole="aspnet_Membership" ToRole="aspnet_Applications" />
+  </EntityType>
+  <EntityType Name="aspnet_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="RoleId" Nullable="false" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredRoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="aspnet_Users" Relationship="MotorClaimModel.aspnet_UsersInRoles" FromRole="aspnet_Roles" ToRole="aspnet_Users" />
+    <NavigationProperty Name="Users" Relationship="MotorClaimModel.FK_Users_aspnet_Roles_PreviousRole" FromRole="aspnet_Roles" ToRole="User" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="MotorClaimModel.FK__aspnet_Ro__Appli__17F790F9" FromRole="aspnet_Roles" ToRole="aspnet_Applications" />
+  </EntityType>
+  <Association Name="FK__aspnet_Me__UserI__17F790F9">
+    <End Type="MotorClaimModel.aspnet_Users" Role="aspnet_Users" Multiplicity="1" />
+    <End Type="MotorClaimModel.aspnet_Membership" Role="aspnet_Membership" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="aspnet_UsersInRoles">
+    <End Type="MotorClaimModel.aspnet_Roles" Role="aspnet_Roles" Multiplicity="*" />
+    <End Type="MotorClaimModel.aspnet_Users" Role="aspnet_Users" Multiplicity="*" />
+  </Association>
+  <EntityType Name="vw_ImageGallery">
+    <Key>
+      <PropertyRef Name="ImageId" />
+      <PropertyRef Name="VisitId" />
+      <PropertyRef Name="FieldId" />
+      <PropertyRef Name="ImageName" />
+      <PropertyRef Name="IsPrinted" />
+    </Key>
+    <Property Type="Int32" Name="ImageId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="Byte" Name="FieldId" Nullable="false" />
+    <Property Type="String" Name="Title" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ImageName" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ImagePath" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsPrinted" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_SAForm_PolicyDetails">
+    <Key>
+      <PropertyRef Name="VisitId" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="String" Name="POL_Policy_CN_No" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="POL_Policy_CN_StartDate" />
+    <Property Type="DateTime" Name="POL_Policy_CN_EndDate" />
+    <Property Type="String" Name="POL_Policy_CN_SerialNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="POL_CN_IssuedBy" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="POL_CN_Reasons" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PoliceStationEntity">
+    <Key>
+      <PropertyRef Name="StationId" />
+    </Key>
+    <Property Type="Int32" Name="StationId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="StationName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="StationAddress" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CommentEntity">
+    <Key>
+      <PropertyRef Name="CommentId" />
+    </Key>
+    <Property Type="Int32" Name="CommentId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="String" Name="Comment1" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CommentedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CommentedDate" Nullable="false" />
+    <Property Type="String" Name="Info1" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info2" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Info3" />
+    <NavigationProperty Name="User" Relationship="MotorClaimModel.FK_VisitComments_Users" FromRole="CommentEntity" ToRole="User" />
+    <NavigationProperty Name="Visit" Relationship="MotorClaimModel.FK_VisitComments_Visits" FromRole="CommentEntity" ToRole="Visit" />
+  </EntityType>
+  <EntityType Name="vw_Comments">
+    <Key>
+      <PropertyRef Name="VisitId" />
+      <PropertyRef Name="CommentedDate" />
+      <PropertyRef Name="Comment" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="DateTime" Name="CommentedDate" Nullable="false" />
+    <Property Type="String" Name="CommentedBy" MaxLength="201" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Comment" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="RegionEntity">
+    <Key>
+      <PropertyRef Name="RegionId" />
+    </Key>
+    <Property Type="Int32" Name="RegionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RegionName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RegionCode" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsEnabled" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+    <Property Type="Int32" Name="UpdatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" />
+    <Property Type="DateTime" Name="DeletedDate" />
+    <Property Type="String" Name="Info1" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info2" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info3" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Branches" Relationship="MotorClaimModel.FK_Branches_Regions" FromRole="RegionEntity" ToRole="Branch" />
+    <NavigationProperty Name="User" Relationship="MotorClaimModel.FK_Regions_Users_CreatedBy" FromRole="RegionEntity" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="MotorClaimModel.FK_Regions_Users_UpdatedBy" FromRole="RegionEntity" ToRole="User" />
+    <NavigationProperty Name="Users" Relationship="MotorClaimModel.FK_Users_Regions" FromRole="RegionEntity" ToRole="User" />
+  </EntityType>
+  <EntityType Name="vw_SAForm_VehDriverDetails">
+    <Key>
+      <PropertyRef Name="VisitId" />
+      <PropertyRef Name="VAD_ChassyNo" />
+      <PropertyRef Name="VAD_EngineNo" />
+      <PropertyRef Name="VAD_DriverName" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="String" Name="VAD_ChassyNo" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VAD_EngineNo" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="VAD_MeterReading" />
+    <Property Type="String" Name="VAD_DriverName" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VAD_DriverNIC" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="VAD_DriverCompetence" />
+    <Property Type="Int16" Name="VAD_DriverRelationship" />
+    <Property Type="String" Name="VAD_License_No" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="VAD_License_ExpiryDate" />
+    <Property Type="Int16" Name="VAD_License_TypeId" />
+    <Property Type="Boolean" Name="VAD_License_IsNew" />
+    <Property Type="Int32" Name="VAD_License_IsNewOld_TypeId" />
+    <Property Type="Int16" Name="VAD_DriverIdType" />
+  </EntityType>
+  <EntityType Name="SAForm_level1Entity">
+    <Key>
+      <PropertyRef Name="VisitId" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="String" Name="GEN_VehicleNo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_Caller_Name" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_Caller_ContactNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="GEN_TimeReported" />
+    <Property Type="DateTime" Name="GEN_OriginalTimeReported" />
+    <Property Type="String" Name="GEN_Insured_Name" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_Insured_ContactNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_VehicleDescription" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="GEN_Acc_Time" Nullable="false" />
+    <Property Type="String" Name="GEN_Acc_Location" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="POL_Policy_CN_No" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="POL_Policy_CN_StartDate" />
+    <Property Type="DateTime" Name="POL_Policy_CN_EndDate" />
+    <Property Type="String" Name="POL_Policy_CN_SerialNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="POL_CN_IssuedBy" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="POL_CN_Reasons" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VAD_ChassyNo" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VAD_EngineNo" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="VAD_MeterReading" />
+    <Property Type="String" Name="VAD_DriverName" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VAD_DriverNIC" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="VAD_DriverCompetence" />
+    <Property Type="Int16" Name="VAD_DriverRelationship" />
+    <Property Type="String" Name="VAD_License_No" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="VAD_License_ExpiryDate" />
+    <Property Type="Int16" Name="VAD_License_TypeId" />
+    <Property Type="Boolean" Name="VAD_License_IsNew" />
+    <Property Type="Int32" Name="VAD_License_IsNewOld_TypeId" />
+    <Property Type="Int32" Name="OTH_ProcessingBranchId" Nullable="true" />
+    <Property Type="Decimal" Name="OTH_PavValue" Precision="18" Scale="2" />
+    <Property Type="Int16" Name="OTH_CSR_Consistency" />
+    <Property Type="Int16" Name="OTH_SiteEstimation" />
+    <Property Type="Decimal" Name="OTH_Approx_RepairCost" Precision="18" Scale="2" />
+    <Property Type="String" Name="Info1" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info2" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Info3" />
+    <NavigationProperty Name="SAForm_VehicleClasses" Relationship="MotorClaimModel.FK_SAForm_VehicleClasses_SAForm_level1" FromRole="SAForm_level1" ToRole="SAForm_VehicleClasses" />
+    <NavigationProperty Name="Branch" Relationship="MotorClaimModel.FK_SAForm_level1_Branches" FromRole="SAForm_level1Entity" ToRole="Branch" />
+    <NavigationProperty Name="Visit" Relationship="MotorClaimModel.FK_SAForm_level1_Visits" FromRole="SAForm_level1Entity" ToRole="Visit" />
+    <Property Type="Int16" Name="VAD_DriverIdType" />
+  </EntityType>
+  <Association Name="FK_SAForm_VehicleClasses_SAForm_level1">
+    <End Type="MotorClaimModel.SAForm_level1Entity" Role="SAForm_level1" Multiplicity="1" />
+    <End Type="MotorClaimModel.SAForm_VehicleClassesEntity" Role="SAForm_VehicleClasses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SAForm_level1">
+        <PropertyRef Name="VisitId" />
+      </Principal>
+      <Dependent Role="SAForm_VehicleClasses">
+        <PropertyRef Name="VisitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="vw_SAForm_Damages">
+    <Key>
+      <PropertyRef Name="VisitId" />
+      <PropertyRef Name="CON_Tyre_FR_Status" />
+      <PropertyRef Name="CON_Tyre_FL_Status" />
+      <PropertyRef Name="CON_Tyre_RRL_Status" />
+      <PropertyRef Name="CON_Tyre_RLR_Status" />
+      <PropertyRef Name="CON_Tyre_RLL_Status" />
+      <PropertyRef Name="CON_Tyre_RRR_Status" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="Int16" Name="CON_Tyre_FR_Status" Nullable="false" />
+    <Property Type="Int16" Name="CON_Tyre_FL_Status" Nullable="false" />
+    <Property Type="Int16" Name="CON_Tyre_RRL_Status" Nullable="false" />
+    <Property Type="Int16" Name="CON_Tyre_RLR_Status" Nullable="false" />
+    <Property Type="Int16" Name="CON_Tyre_RLL_Status" Nullable="false" />
+    <Property Type="Int16" Name="CON_Tyre_RRR_Status" Nullable="false" />
+    <Property Type="Boolean" Name="CON_Tyre_IsContributory" />
+    <Property Type="String" Name="DAM_DamagedItems" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_DamagedItems_Other" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_PreAccidentDamages" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_PreAccidentDamages_Other" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_PossibleDR" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_PossibleDR_Other" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_Goods_Type" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="DAM_Goods_Weight" Precision="18" Scale="3" />
+    <Property Type="String" Name="DAM_Goods_Damage" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="DAM_IsOverLoaded" />
+    <Property Type="Boolean" Name="DAM_Is_OL_Contributory" />
+    <Property Type="String" Name="DAM_OtherVeh_Involved" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_ThirdParty_Damage" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_Injuries" MaxLength="300" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_SAForm_OtherDetails">
+    <Key>
+      <PropertyRef Name="VisitId" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="Int32" Name="OTH_ProcessingBranchId" />
+    <Property Type="Decimal" Name="OTH_PavValue" Precision="18" Scale="2" />
+    <Property Type="Int16" Name="OTH_CSR_Consistency" />
+    <Property Type="Int16" Name="OTH_SiteEstimation" />
+    <Property Type="Decimal" Name="OTH_Approx_RepairCost" Precision="18" Scale="2" />
+    <Property Type="Int16" Name="OTH_Journey_PurposeId" />
+    <Property Type="String" Name="OTH_Nearest_PoliceStation" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="BranchEntity">
+    <Key>
+      <PropertyRef Name="BranchId" />
+    </Key>
+    <Property Type="Int32" Name="BranchId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RegionId" />
+    <Property Type="String" Name="BranchName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchCode" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchAddress" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsClaimProcessed" Nullable="false" />
+    <Property Type="Boolean" Name="IsEnabled" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+    <Property Type="Int32" Name="UpdatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" />
+    <Property Type="DateTime" Name="DeletedDate" />
+    <Property Type="String" Name="Info1" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info2" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Info3" />
+    <NavigationProperty Name="Region" Relationship="MotorClaimModel.FK_Branches_Regions" FromRole="Branch" ToRole="RegionEntity" />
+    <NavigationProperty Name="SAForm_level1" Relationship="MotorClaimModel.FK_SAForm_level1_Branches" FromRole="Branch" ToRole="SAForm_level1Entity" />
+    <NavigationProperty Name="Users" Relationship="MotorClaimModel.FK_Users_Branches" FromRole="BranchEntity" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_Branches_Regions">
+    <End Type="MotorClaimModel.RegionEntity" Role="RegionEntity" Multiplicity="0..1" />
+    <End Type="MotorClaimModel.BranchEntity" Role="Branch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegionEntity">
+        <PropertyRef Name="RegionId" />
+      </Principal>
+      <Dependent Role="Branch">
+        <PropertyRef Name="RegionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SAForm_level1_Branches">
+    <End Type="MotorClaimModel.BranchEntity" Role="Branch" Multiplicity="0..1" />
+    <End Type="MotorClaimModel.SAForm_level1Entity" Role="SAForm_level1Entity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branch">
+        <PropertyRef Name="BranchId" />
+      </Principal>
+      <Dependent Role="SAForm_level1Entity">
+        <PropertyRef Name="OTH_ProcessingBranchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="vw_Branches">
+    <Key>
+      <PropertyRef Name="BranchName" />
+      <PropertyRef Name="BranchCode" />
+      <PropertyRef Name="RegionName" />
+      <PropertyRef Name="IsClaimProcessed" />
+      <PropertyRef Name="IsEnabled" />
+      <PropertyRef Name="BranchId" />
+      <PropertyRef Name="IsDeleted" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreatedDate" />
+    </Key>
+    <Property Type="String" Name="BranchName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchCode" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RegionName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchAddress" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsClaimProcessed" Nullable="false" />
+    <Property Type="Boolean" Name="IsEnabled" Nullable="false" />
+    <Property Type="Int32" Name="BranchId" Nullable="false" />
+    <Property Type="Int32" Name="RegionId" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_MembershipUsers">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="PasswordFormat" />
+      <PropertyRef Name="IsApproved" />
+      <PropertyRef Name="IsLockedOut" />
+      <PropertyRef Name="CreateDate" />
+      <PropertyRef Name="LastLoginDate" />
+      <PropertyRef Name="LastPasswordChangedDate" />
+      <PropertyRef Name="LastLockoutDate" />
+      <PropertyRef Name="FailedPasswordAttemptCount" />
+      <PropertyRef Name="FailedPasswordAttemptWindowStart" />
+      <PropertyRef Name="FailedPasswordAnswerAttemptCount" />
+      <PropertyRef Name="FailedPasswordAnswerAttemptWindowStart" />
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="IsAnonymous" />
+      <PropertyRef Name="LastActivityDate" />
+    </Key>
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="Int32" Name="PasswordFormat" Nullable="false" />
+    <Property Type="String" Name="MobilePIN" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredEmail" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PasswordQuestion" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PasswordAnswer" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsApproved" Nullable="false" />
+    <Property Type="Boolean" Name="IsLockedOut" Nullable="false" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastLoginDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastPasswordChangedDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastLockoutDate" Nullable="false" />
+    <Property Type="Int32" Name="FailedPasswordAttemptCount" Nullable="false" />
+    <Property Type="DateTime" Name="FailedPasswordAttemptWindowStart" Nullable="false" />
+    <Property Type="Int32" Name="FailedPasswordAnswerAttemptCount" Nullable="false" />
+    <Property Type="DateTime" Name="FailedPasswordAnswerAttemptWindowStart" Nullable="false" />
+    <Property Type="String" Name="Comment" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileAlias" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsAnonymous" Nullable="false" />
+    <Property Type="DateTime" Name="LastActivityDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserEntity">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Int32" Name="UserId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Guid" Name="UserGUID" Nullable="false" />
+    <Property Type="String" Name="FirstName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="RegionId" Nullable="false" />
+    <Property Type="Int32" Name="BranchId" />
+    <Property Type="String" Name="PrimaryEmail" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SecondaryEmail" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactNo2" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EPFNo" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="DataAccessLevel" Nullable="false" />
+    <Property Type="Boolean" Name="IsEnabled" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="Guid" Name="PreviousRoleId" />
+    <Property Type="DateTime" Name="PreviousRoleChangedDate" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+    <Property Type="Int32" Name="UpdatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" />
+    <Property Type="DateTime" Name="DeletedDate" />
+    <Property Type="String" Name="Info1" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info2" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Info3" />
+    <NavigationProperty Name="aspnet_Roles" Relationship="MotorClaimModel.FK_Users_aspnet_Roles_PreviousRole" FromRole="User" ToRole="aspnet_Roles" />
+    <NavigationProperty Name="aspnet_Users" Relationship="MotorClaimModel.FK_Users_aspnet_Users" FromRole="User" ToRole="aspnet_Users" />
+    <NavigationProperty Name="Branch" Relationship="MotorClaimModel.FK_Users_Branches" FromRole="User" ToRole="BranchEntity" />
+    <NavigationProperty Name="Comments" Relationship="MotorClaimModel.FK_VisitComments_Users" FromRole="User" ToRole="CommentEntity" />
+    <NavigationProperty Name="Regions" Relationship="MotorClaimModel.FK_Regions_Users_CreatedBy" FromRole="User" ToRole="RegionEntity" />
+    <NavigationProperty Name="Regions1" Relationship="MotorClaimModel.FK_Regions_Users_UpdatedBy" FromRole="User" ToRole="RegionEntity" />
+    <NavigationProperty Name="Region" Relationship="MotorClaimModel.FK_Users_Regions" FromRole="User" ToRole="RegionEntity" />
+    <NavigationProperty Name="Visits" Relationship="MotorClaimModel.FK_Job_Submissions_Users" FromRole="UserEntity" ToRole="Visit" />
+  </EntityType>
+  <Association Name="FK_Users_aspnet_Roles_PreviousRole">
+    <End Type="MotorClaimModel.aspnet_Roles" Role="aspnet_Roles" Multiplicity="0..1" />
+    <End Type="MotorClaimModel.UserEntity" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Roles">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="PreviousRoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_aspnet_Users">
+    <End Type="MotorClaimModel.aspnet_Users" Role="aspnet_Users" Multiplicity="1" />
+    <End Type="MotorClaimModel.UserEntity" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="UserGUID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Branches">
+    <End Type="MotorClaimModel.BranchEntity" Role="BranchEntity" Multiplicity="0..1" />
+    <End Type="MotorClaimModel.UserEntity" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BranchEntity">
+        <PropertyRef Name="BranchId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="BranchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VisitComments_Users">
+    <End Type="MotorClaimModel.UserEntity" Role="User" Multiplicity="1" />
+    <End Type="MotorClaimModel.CommentEntity" Role="CommentEntity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="CommentEntity">
+        <PropertyRef Name="CommentedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Regions_Users_CreatedBy">
+    <End Type="MotorClaimModel.UserEntity" Role="User" Multiplicity="1" />
+    <End Type="MotorClaimModel.RegionEntity" Role="RegionEntity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="RegionEntity">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Regions_Users_UpdatedBy">
+    <End Type="MotorClaimModel.UserEntity" Role="User" Multiplicity="0..1" />
+    <End Type="MotorClaimModel.RegionEntity" Role="RegionEntity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="RegionEntity">
+        <PropertyRef Name="UpdatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Regions">
+    <End Type="MotorClaimModel.RegionEntity" Role="RegionEntity" Multiplicity="1" />
+    <End Type="MotorClaimModel.UserEntity" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegionEntity">
+        <PropertyRef Name="RegionId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RegionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="vw_AllComments">
+    <Key>
+      <PropertyRef Name="VisitType" />
+      <PropertyRef Name="CommentedDate" />
+      <PropertyRef Name="Comment" />
+      <PropertyRef Name="VisitId" />
+      <PropertyRef Name="JobNo" />
+      <PropertyRef Name="TimeVisited" />
+    </Key>
+    <Property Type="Int16" Name="VisitType" Nullable="false" />
+    <Property Type="DateTime" Name="CommentedDate" Nullable="false" />
+    <Property Type="String" Name="Comment" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CommentedBy" MaxLength="201" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="TimeVisited" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AuditLogEntity">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Type="Int64" Name="EventId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="EventStatus" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="RefId" />
+    <Property Type="DateTime" Name="Date" />
+    <Property Type="String" Name="UserName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Module" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Action" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="AccessType" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AccessIP" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Params" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info1" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info2" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Info3" />
+  </EntityType>
+  <EntityType Name="VisitEntity">
+    <Key>
+      <PropertyRef Name="VisitId" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="VisitType" Nullable="false" />
+    <Property Type="Int32" Name="RefNo" />
+    <Property Type="DateTime" Name="TimeVisited" Nullable="false" />
+    <Property Type="Int16" Name="ImageCount" Nullable="false" />
+    <Property Type="Boolean" Name="IsPrinted" Nullable="false" />
+    <Property Type="Boolean" Name="IsOriginal" Nullable="false" />
+    <Property Type="Int32" Name="CSR_CurrentBranchId" Nullable="false" />
+    <Property Type="Int32" Name="CSR_CurrentRegionId" Nullable="false" />
+    <Property Type="Int32" Name="Engineer_CurrentBranchId" />
+    <Property Type="Int32" Name="Engineer_CurrentRegionId" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+    <Property Type="Int32" Name="UpdatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" />
+    <Property Type="String" Name="Info1" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info2" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info3" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Comments" Relationship="MotorClaimModel.FK_VisitComments_Visits" FromRole="Visit" ToRole="CommentEntity" />
+    <NavigationProperty Name="ImageGalleries" Relationship="MotorClaimModel.FK_ImageGallery_Job_Submissions" FromRole="Visit" ToRole="ImageGalleryEntity" />
+    <NavigationProperty Name="SAForm_level1" Relationship="MotorClaimModel.FK_SAForm_level1_Visits" FromRole="Visit" ToRole="SAForm_level1Entity" />
+    <NavigationProperty Name="SAForm_level2" Relationship="MotorClaimModel.FK_SAForm_level2_Visits" FromRole="Visit" ToRole="SAForm_level2Entity" />
+    <NavigationProperty Name="User" Relationship="MotorClaimModel.FK_Job_Submissions_Users" FromRole="Visit" ToRole="UserEntity" />
+    <NavigationProperty Name="VisitDetail" Relationship="MotorClaimModel.FK_VisitDetails_Visits" FromRole="VisitEntity" ToRole="VisitDetail" />
+    <Property Type="String" Name="PrintedBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PrintedBranch" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PrintedDate" />
+    <NavigationProperty Name="VisitParams" Relationship="MotorClaimModel.FK_VisitParams_Visits" FromRole="VisitEntity" ToRole="VisitParam" />
+  </EntityType>
+  <Association Name="FK_VisitComments_Visits">
+    <End Type="MotorClaimModel.VisitEntity" Role="Visit" Multiplicity="1" />
+    <End Type="MotorClaimModel.CommentEntity" Role="CommentEntity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Visit">
+        <PropertyRef Name="VisitId" />
+      </Principal>
+      <Dependent Role="CommentEntity">
+        <PropertyRef Name="VisitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ImageGallery_Job_Submissions">
+    <End Type="MotorClaimModel.VisitEntity" Role="Visit" Multiplicity="1" />
+    <End Type="MotorClaimModel.ImageGalleryEntity" Role="ImageGalleryEntity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Visit">
+        <PropertyRef Name="VisitId" />
+      </Principal>
+      <Dependent Role="ImageGalleryEntity">
+        <PropertyRef Name="VisitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SAForm_level1_Visits">
+    <End Type="MotorClaimModel.VisitEntity" Role="Visit" Multiplicity="1" />
+    <End Type="MotorClaimModel.SAForm_level1Entity" Role="SAForm_level1Entity" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Visit">
+        <PropertyRef Name="VisitId" />
+      </Principal>
+      <Dependent Role="SAForm_level1Entity">
+        <PropertyRef Name="VisitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SAForm_level2_Visits">
+    <End Type="MotorClaimModel.VisitEntity" Role="Visit" Multiplicity="1" />
+    <End Type="MotorClaimModel.SAForm_level2Entity" Role="SAForm_level2Entity" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Visit">
+        <PropertyRef Name="VisitId" />
+      </Principal>
+      <Dependent Role="SAForm_level2Entity">
+        <PropertyRef Name="VisitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Job_Submissions_Users">
+    <End Type="MotorClaimModel.UserEntity" Role="UserEntity" Multiplicity="1" />
+    <End Type="MotorClaimModel.VisitEntity" Role="Visit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserEntity">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Visit">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="vw_Visits">
+    <Key>
+      <PropertyRef Name="VisitId" />
+      <PropertyRef Name="JobNo" />
+      <PropertyRef Name="VisitType" />
+      <PropertyRef Name="TimeVisited" />
+      <PropertyRef Name="ImageCount" />
+      <PropertyRef Name="IsPrinted" />
+      <PropertyRef Name="IsOriginal" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreatedDate" />
+      <PropertyRef Name="UserIsEnabled" />
+      <PropertyRef Name="UserIsDeleted" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="VisitType" Nullable="false" />
+    <Property Type="Int32" Name="RefNo" />
+    <Property Type="DateTime" Name="TimeVisited" Nullable="false" />
+    <Property Type="Int16" Name="ImageCount" Nullable="false" />
+    <Property Type="Boolean" Name="IsPrinted" Nullable="false" />
+    <Property Type="Boolean" Name="IsOriginal" Nullable="false" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+    <Property Type="String" Name="CreatedByFullName" MaxLength="201" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="UserIsEnabled" Nullable="false" />
+    <Property Type="Boolean" Name="UserIsDeleted" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_SAForm_General">
+    <Key>
+      <PropertyRef Name="VisitId" />
+      <PropertyRef Name="JobNo" />
+      <PropertyRef Name="VisitType" />
+      <PropertyRef Name="TimeVisited" />
+      <PropertyRef Name="ImageCount" />
+      <PropertyRef Name="IsPrinted" />
+      <PropertyRef Name="IsOriginal" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="GEN_VehicleNo" />
+      <PropertyRef Name="GEN_Acc_Time" />
+      <PropertyRef Name="GEN_Acc_Location" />
+      <PropertyRef Name="CreatedDate" />
+      <PropertyRef Name="ProcessingBranchName" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="VisitType" Nullable="false" />
+    <Property Type="Int32" Name="RefNo" />
+    <Property Type="DateTime" Name="TimeVisited" Nullable="false" />
+    <Property Type="Int16" Name="ImageCount" Nullable="false" />
+    <Property Type="Boolean" Name="IsPrinted" Nullable="false" />
+    <Property Type="Boolean" Name="IsOriginal" Nullable="false" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="Decimal" Name="OTH_Approx_RepairCost" Precision="18" Scale="2" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="GEN_VehicleNo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_Caller_Name" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_Caller_ContactNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="GEN_TimeReported" />
+    <Property Type="DateTime" Name="GEN_OriginalTimeReported" />
+    <Property Type="String" Name="GEN_Insured_Name" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_Insured_ContactNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_VehicleDescription" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="GEN_Acc_Time" Nullable="false" />
+    <Property Type="String" Name="GEN_Acc_Location" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+    <Property Type="String" Name="FirstName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="OTH_ProcessingBranchId" />
+    <Property Type="String" Name="ProcessingBranchName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EPFNo" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ClaimFormImgCount" />
+    <Property Type="Int16" Name="OTH_SiteEstimation" />
+    <Property Type="Int32" Name="ProcessingRegionId" />
+    <Property Type="String" Name="RegionName" MaxLength="150" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_SAFormDetails">
+    <Key>
+      <PropertyRef Name="VisitId" />
+      <PropertyRef Name="JobNo" />
+      <PropertyRef Name="VisitType" />
+      <PropertyRef Name="TimeVisited" />
+      <PropertyRef Name="ImageCount" />
+      <PropertyRef Name="IsPrinted" />
+      <PropertyRef Name="IsOriginal" />
+      <PropertyRef Name="GEN_VehicleNo" />
+      <PropertyRef Name="GEN_Acc_Time" />
+      <PropertyRef Name="GEN_Acc_Location" />
+      <PropertyRef Name="VAD_ChassyNo" />
+      <PropertyRef Name="VAD_EngineNo" />
+      <PropertyRef Name="VAD_DriverName" />
+      <PropertyRef Name="CON_Tyre_FR_Status" />
+      <PropertyRef Name="CON_Tyre_FL_Status" />
+      <PropertyRef Name="CON_Tyre_RRL_Status" />
+      <PropertyRef Name="CON_Tyre_RLR_Status" />
+      <PropertyRef Name="CON_Tyre_RLL_Status" />
+      <PropertyRef Name="CON_Tyre_RRR_Status" />
+      <PropertyRef Name="BranchName" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="VisitType" Nullable="false" />
+    <Property Type="Int32" Name="RefNo" />
+    <Property Type="DateTime" Name="TimeVisited" Nullable="false" />
+    <Property Type="Int16" Name="ImageCount" Nullable="false" />
+    <Property Type="Boolean" Name="IsPrinted" Nullable="false" />
+    <Property Type="Boolean" Name="IsOriginal" Nullable="false" />
+    <Property Type="String" Name="GEN_VehicleNo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_Caller_Name" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_Caller_ContactNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="GEN_TimeReported" />
+    <Property Type="DateTime" Name="GEN_OriginalTimeReported" />
+    <Property Type="String" Name="GEN_Insured_Name" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_Insured_ContactNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_VehicleDescription" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="GEN_Acc_Time" Nullable="false" />
+    <Property Type="String" Name="GEN_Acc_Location" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="POL_Policy_CN_No" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="POL_Policy_CN_StartDate" />
+    <Property Type="DateTime" Name="POL_Policy_CN_EndDate" />
+    <Property Type="String" Name="POL_Policy_CN_SerialNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="POL_CN_IssuedBy" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="POL_CN_Reasons" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VAD_ChassyNo" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VAD_EngineNo" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="VAD_MeterReading" />
+    <Property Type="String" Name="VAD_DriverName" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VAD_DriverNIC" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="VAD_DriverCompetence" />
+    <Property Type="String" Name="VAD_License_No" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="VAD_DriverRelationship" />
+    <Property Type="DateTime" Name="VAD_License_ExpiryDate" />
+    <Property Type="Int16" Name="VAD_License_TypeId" />
+    <Property Type="Boolean" Name="VAD_License_IsNew" />
+    <Property Type="Int32" Name="VAD_License_IsNewOld_TypeId" />
+    <Property Type="Int32" Name="OTH_ProcessingBranchId" />
+    <Property Type="Decimal" Name="OTH_PavValue" Precision="18" Scale="2" />
+    <Property Type="Int16" Name="OTH_CSR_Consistency" />
+    <Property Type="Int16" Name="OTH_SiteEstimation" />
+    <Property Type="Decimal" Name="OTH_Approx_RepairCost" Precision="18" Scale="2" />
+    <Property Type="Int16" Name="CON_Tyre_FR_Status" Nullable="false" />
+    <Property Type="Int16" Name="CON_Tyre_FL_Status" Nullable="false" />
+    <Property Type="Int16" Name="CON_Tyre_RRL_Status" Nullable="false" />
+    <Property Type="Int16" Name="CON_Tyre_RLR_Status" Nullable="false" />
+    <Property Type="Int16" Name="CON_Tyre_RLL_Status" Nullable="false" />
+    <Property Type="Int16" Name="CON_Tyre_RRR_Status" Nullable="false" />
+    <Property Type="Boolean" Name="CON_Tyre_IsContributory" />
+    <Property Type="String" Name="DAM_DamagedItems" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_DamagedItems_Other" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_PreAccidentDamages" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_PreAccidentDamages_Other" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_PossibleDR" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_PossibleDR_Other" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_Goods_Type" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="DAM_Goods_Weight" Precision="18" Scale="3" />
+    <Property Type="String" Name="DAM_Goods_Damage" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="DAM_IsOverLoaded" />
+    <Property Type="String" Name="DAM_OtherVeh_Involved" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="DAM_Is_OL_Contributory" />
+    <Property Type="String" Name="DAM_ThirdParty_Damage" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DAM_Injuries" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="OTH_Journey_PurposeId" />
+    <Property Type="String" Name="OTH_Nearest_PoliceStation" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CSRFirstName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CSRLastName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CSRCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PrintedBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PrintedDate" />
+    <Property Type="String" Name="PrintedBranch" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="VAD_DriverIdType" />
+  </EntityType>
+  <EntityType Name="vw_UserDetails">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="UserGUID" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="RegionId" />
+      <PropertyRef Name="DataAccessLevel" />
+      <PropertyRef Name="IsEnabled" />
+      <PropertyRef Name="IsDeleted" />
+      <PropertyRef Name="RoleName" />
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="RegionName" />
+    </Key>
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="Guid" Name="UserGUID" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="RegionId" Nullable="false" />
+    <Property Type="Int32" Name="BranchId" />
+    <Property Type="String" Name="PrimaryEmail" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactNo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EPFNo" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="DataAccessLevel" Nullable="false" />
+    <Property Type="Boolean" Name="IsEnabled" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="String" Name="ContactNo2" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SecondaryEmail" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="RoleId" Nullable="false" />
+    <Property Type="String" Name="RegionName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BranchName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="PreviousRoleId" />
+    <Property Type="DateTime" Name="PreviousRoleChangedDate" />
+  </EntityType>
+  <EntityType Name="vw_UserLoginDetails">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="UserGUID" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="RoleName" />
+      <PropertyRef Name="DataAccessLevel" />
+      <PropertyRef Name="IsEnabled" />
+      <PropertyRef Name="IsDeleted" />
+      <PropertyRef Name="RegionId" />
+    </Key>
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="Guid" Name="UserGUID" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="RoleId" Nullable="false" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="DataAccessLevel" Nullable="false" />
+    <Property Type="Boolean" Name="IsEnabled" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="Int32" Name="RegionId" Nullable="false" />
+    <Property Type="String" Name="PrimaryEmail" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="PreviousRoleId" />
+    <Property Type="DateTime" Name="PreviousRoleChangedDate" />
+    <Property Type="Int32" Name="BranchId" />
+  </EntityType>
+  <EntityType Name="VisitDetailEntity">
+    <Key>
+      <PropertyRef Name="VisitId" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="String" Name="ChassyNo" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EngineNo" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info1" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info2" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Info3" />
+    <NavigationProperty Name="Visit" Relationship="MotorClaimModel.FK_VisitDetails_Visits" FromRole="VisitDetail" ToRole="VisitEntity" />
+  </EntityType>
+  <Association Name="FK_VisitDetails_Visits">
+    <End Type="MotorClaimModel.VisitEntity" Role="VisitEntity" Multiplicity="1" />
+    <End Type="MotorClaimModel.VisitDetailEntity" Role="VisitDetail" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="VisitEntity">
+        <PropertyRef Name="VisitId" />
+      </Principal>
+      <Dependent Role="VisitDetail">
+        <PropertyRef Name="VisitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="vw_VisitDetails">
+    <Key>
+      <PropertyRef Name="VisitId" />
+      <PropertyRef Name="JobNo" />
+      <PropertyRef Name="VisitType" />
+      <PropertyRef Name="TimeVisited" />
+      <PropertyRef Name="ImageCount" />
+      <PropertyRef Name="IsPrinted" />
+      <PropertyRef Name="IsOriginal" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreatedDate" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="VisitType" Nullable="false" />
+    <Property Type="Int32" Name="RefNo" />
+    <Property Type="DateTime" Name="TimeVisited" Nullable="false" />
+    <Property Type="Int16" Name="ImageCount" Nullable="false" />
+    <Property Type="Boolean" Name="IsPrinted" Nullable="false" />
+    <Property Type="Boolean" Name="IsOriginal" Nullable="false" />
+    <Property Type="String" Name="CreatedByFullName" MaxLength="201" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+    <Property Type="String" Name="ChassyNo" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EngineNo" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Type="String" Name="ApplicationName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredApplicationName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="String" Name="Description" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="aspnet_Membership" Relationship="MotorClaimModel.FK__aspnet_Me__Appli__3C34F16F" FromRole="aspnet_Applications" ToRole="aspnet_Membership" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="MotorClaimModel.FK__aspnet_Pa__Appli__3864608B" FromRole="aspnet_Applications" ToRole="aspnet_Paths" />
+    <NavigationProperty Name="aspnet_Roles" Relationship="MotorClaimModel.FK__aspnet_Ro__Appli__17F790F9" FromRole="aspnet_Applications" ToRole="aspnet_Roles" />
+    <NavigationProperty Name="aspnet_Users" Relationship="MotorClaimModel.FK__aspnet_Us__Appli__37703C52" FromRole="aspnet_Applications" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Paths">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="PathId" Nullable="false" />
+    <Property Type="String" Name="Path" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredPath" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="MotorClaimModel.FK__aspnet_Pa__Appli__3864608B" FromRole="aspnet_Paths" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="MotorClaimModel.FK__aspnet_Pe__PathI__395884C4" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationPerUser" />
+    <NavigationProperty Name="aspnet_PersonalizationAllUsers" Relationship="MotorClaimModel.FK__aspnet_Pe__PathI__3E1D39E1" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationAllUsers" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationAllUsers">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Type="Guid" Name="PathId" Nullable="false" />
+    <Property Type="Binary" Name="PageSettings" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="MotorClaimModel.FK__aspnet_Pe__PathI__3E1D39E1" FromRole="aspnet_PersonalizationAllUsers" ToRole="aspnet_Paths" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationPerUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Guid" Name="Id" Nullable="false" />
+    <Property Type="Guid" Name="PathId" />
+    <Property Type="Guid" Name="UserId" />
+    <Property Type="Binary" Name="PageSettings" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="MotorClaimModel.FK__aspnet_Pe__PathI__395884C4" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Paths" />
+    <NavigationProperty Name="aspnet_Users" Relationship="MotorClaimModel.FK__aspnet_Pe__UserI__3A4CA8FD" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Profile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="PropertyNames" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PropertyValuesString" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="PropertyValuesBinary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+    <NavigationProperty Name="aspnet_Users" Relationship="MotorClaimModel.FK__aspnet_Pr__UserI__3B40CD36" FromRole="aspnet_Profile" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_SchemaVersions">
+    <Key>
+      <PropertyRef Name="Feature" />
+      <PropertyRef Name="CompatibleSchemaVersion" />
+    </Key>
+    <Property Type="String" Name="Feature" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompatibleSchemaVersion" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsCurrentVersion" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_WebEvent_Events">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Type="String" Name="EventId" Nullable="false" MaxLength="32" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="EventTimeUtc" Nullable="false" />
+    <Property Type="DateTime" Name="EventTime" Nullable="false" />
+    <Property Type="String" Name="EventType" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="EventSequence" Nullable="false" Precision="19" Scale="0" />
+    <Property Type="Decimal" Name="EventOccurrence" Nullable="false" Precision="19" Scale="0" />
+    <Property Type="Int32" Name="EventCode" Nullable="false" />
+    <Property Type="Int32" Name="EventDetailCode" Nullable="false" />
+    <Property Type="String" Name="Message" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ApplicationPath" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ApplicationVirtualPath" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MachineName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RequestUrl" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ExceptionType" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Details" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Old_DR_Items">
+    <Key>
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="ItemName" />
+    </Key>
+    <Property Type="Int32" Name="ItemId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationName" />
+      <PropertyRef Name="LoweredApplicationName" />
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Type="String" Name="ApplicationName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredApplicationName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="String" Name="Description" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Profiles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="LastUpdatedDate" />
+    </Key>
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+    <Property Type="Int32" Name="DataSize" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Roles">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="RoleName" />
+      <PropertyRef Name="LoweredRoleName" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="RoleId" Nullable="false" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredRoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Users">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="LoweredUserName" />
+      <PropertyRef Name="IsAnonymous" />
+      <PropertyRef Name="LastActivityDate" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredUserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileAlias" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsAnonymous" Nullable="false" />
+    <Property Type="DateTime" Name="LastActivityDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_UsersInRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="Guid" Name="RoleId" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_WebPartState_Paths">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="PathId" />
+      <PropertyRef Name="Path" />
+      <PropertyRef Name="LoweredPath" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="PathId" Nullable="false" />
+    <Property Type="String" Name="Path" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredPath" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_WebPartState_Shared">
+    <Key>
+      <PropertyRef Name="PathId" />
+      <PropertyRef Name="LastUpdatedDate" />
+    </Key>
+    <Property Type="Guid" Name="PathId" Nullable="false" />
+    <Property Type="Int32" Name="DataSize" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_WebPartState_User">
+    <Key>
+      <PropertyRef Name="LastUpdatedDate" />
+    </Key>
+    <Property Type="Guid" Name="PathId" />
+    <Property Type="Guid" Name="UserId" />
+    <Property Type="Int32" Name="DataSize" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_IronLogger_AuditLogs_GetLogs">
+    <Key>
+      <PropertyRef Name="EventId" />
+      <PropertyRef Name="EventStatus" />
+      <PropertyRef Name="Module" />
+      <PropertyRef Name="Action" />
+      <PropertyRef Name="AccessType" />
+      <PropertyRef Name="AccessIP" />
+      <PropertyRef Name="Params" />
+    </Key>
+    <Property Type="Int64" Name="EventId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="EventStatus" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="RefId" />
+    <Property Type="DateTime" Name="Date" />
+    <Property Type="String" Name="UserName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Module" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Action" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="AccessType" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AccessIP" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Params" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info1" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info2" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Info3" />
+  </EntityType>
+  <Association Name="FK__aspnet_Me__Appli__3C34F16F">
+    <End Type="MotorClaimModel.aspnet_Applications" Role="aspnet_Applications" Multiplicity="1" />
+    <End Type="MotorClaimModel.aspnet_Membership" Role="aspnet_Membership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pa__Appli__3864608B">
+    <End Type="MotorClaimModel.aspnet_Applications" Role="aspnet_Applications" Multiplicity="1" />
+    <End Type="MotorClaimModel.aspnet_Paths" Role="aspnet_Paths" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Paths">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Ro__Appli__17F790F9">
+    <End Type="MotorClaimModel.aspnet_Applications" Role="aspnet_Applications" Multiplicity="1" />
+    <End Type="MotorClaimModel.aspnet_Roles" Role="aspnet_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Roles">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__Appli__37703C52">
+    <End Type="MotorClaimModel.aspnet_Applications" Role="aspnet_Applications" Multiplicity="1" />
+    <End Type="MotorClaimModel.aspnet_Users" Role="aspnet_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Users">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__395884C4">
+    <End Type="MotorClaimModel.aspnet_Paths" Role="aspnet_Paths" Multiplicity="0..1" />
+    <End Type="MotorClaimModel.aspnet_PersonalizationPerUser" Role="aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__3E1D39E1">
+    <End Type="MotorClaimModel.aspnet_Paths" Role="aspnet_Paths" Multiplicity="1" />
+    <End Type="MotorClaimModel.aspnet_PersonalizationAllUsers" Role="aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationAllUsers">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__UserI__3A4CA8FD">
+    <End Type="MotorClaimModel.aspnet_Users" Role="aspnet_Users" Multiplicity="0..1" />
+    <End Type="MotorClaimModel.aspnet_PersonalizationPerUser" Role="aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pr__UserI__3B40CD36">
+    <End Type="MotorClaimModel.aspnet_Users" Role="aspnet_Users" Multiplicity="1" />
+    <End Type="MotorClaimModel.aspnet_Profile" Role="aspnet_Profile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Profile">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="SAForms_GetOnsiteEstimationRatioRegion_Result">
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="UserCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UserEPFNo" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="TotalJobs" Nullable="true" />
+    <Property Type="Int32" Name="EstimatedJobs" Nullable="true" />
+    <Property Type="Decimal" Name="Ratio" Nullable="true" Precision="9" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="SAForms_GetOnsiteEstimationRatio_Result">
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="UserCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UserEPFNo" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="TotalJobs" Nullable="true" />
+    <Property Type="Int32" Name="EstimatedJobs" Nullable="true" />
+    <Property Type="Decimal" Name="Ratio" Nullable="true" Precision="9" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="SAForms_GetRegionalOnsiteEstimationRatio_Result">
+    <Property Type="String" Name="RegionCode" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="RegionName" Nullable="true" MaxLength="150" />
+    <Property Type="Int32" Name="TotalJobs" Nullable="true" />
+    <Property Type="Int32" Name="EstimatedJobs" Nullable="true" />
+    <Property Type="Decimal" Name="Ratio" Nullable="true" Precision="9" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="SAForms_GetMissingImages_Result">
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="OfficerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="VehicleNo" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="C1" Nullable="true" />
+    <Property Type="Int32" Name="C2" Nullable="true" />
+    <Property Type="Int32" Name="C3" Nullable="true" />
+    <Property Type="Int32" Name="C4" Nullable="true" />
+    <Property Type="Int32" Name="C5" Nullable="true" />
+    <Property Type="Int32" Name="C6" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="VisitParam">
+    <Key>
+      <PropertyRef Name="VisitId" />
+      <PropertyRef Name="ParamTypeId" />
+      <PropertyRef Name="ParamKey" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="Int16" Name="ParamTypeId" Nullable="false" />
+    <Property Type="String" Name="ParamKey" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Value" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Visit" Relationship="MotorClaimModel.FK_VisitParams_Visits" FromRole="VisitParam" ToRole="VisitEntity" />
+  </EntityType>
+  <Association Name="FK_VisitParams_Visits">
+    <End Type="MotorClaimModel.VisitEntity" Role="VisitEntity" Multiplicity="1" />
+    <End Type="MotorClaimModel.VisitParam" Role="VisitParam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VisitEntity">
+        <PropertyRef Name="VisitId" />
+      </Principal>
+      <Dependent Role="VisitParam">
+        <PropertyRef Name="VisitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="vw_TO_Performance">
+    <Key>
+      <PropertyRef Name="TOCode" />
+      <PropertyRef Name="VehicleNo" />
+      <PropertyRef Name="JobNo" />
+      <PropertyRef Name="CompletedDate" />
+      <PropertyRef Name="RegionName" />
+      <PropertyRef Name="RegionId" />
+    </Key>
+    <Property Type="Int32" Name="TOCode" Nullable="false" />
+    <Property Type="String" Name="FirstName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EPFNo" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VehicleNo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="AssignedDate" />
+    <Property Type="DateTime" Name="CompletedDate" Nullable="false" />
+    <Property Type="String" Name="RegionName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="RegionId" Nullable="false" />
+    <Property Type="DateTime" Name="SecondaryAssignedDate" />
+  </EntityType>
+  <EntityType Name="vw_OutstandingJobs">
+    <Key>
+      <PropertyRef Name="JobNumber" />
+      <PropertyRef Name="RegionName" />
+    </Key>
+    <Property Type="String" Name="CSRFirstName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CSRLastName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CSRCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VehicleNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="JobNumber" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="AssignedDateTime" />
+    <Property Type="String" Name="RegionName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_AssignedJobs">
+    <Key>
+      <PropertyRef Name="JobNumber" />
+    </Key>
+    <Property Type="String" Name="CSRFirstName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CSRLastName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CSRCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VehicleNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="JobNumber" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="AssignedDateTime" />
+  </EntityType>
+  <EntityType Name="Holiday">
+    <Key>
+      <PropertyRef Name="HolidayId" />
+    </Key>
+    <Property Type="Int32" Name="HolidayId" Nullable="false" />
+    <Property Type="DateTime" Name="Date" Nullable="false" />
+    <Property Type="String" Name="Info1" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info2" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info3" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AssignedJob">
+    <Key>
+      <PropertyRef Name="AssignedJobId" />
+    </Key>
+    <Property Type="Int32" Name="AssignedJobId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="JobNumber" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CSRCode" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VehicleNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="AssignedDateTime" />
+    <Property Type="String" Name="Info1" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info2" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Info3" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_SAForm_GeneralNew">
+    <Key>
+      <PropertyRef Name="VisitId" />
+      <PropertyRef Name="JobNo" />
+      <PropertyRef Name="VisitType" />
+      <PropertyRef Name="TimeVisited" />
+      <PropertyRef Name="ImageCount" />
+      <PropertyRef Name="IsPrinted" />
+      <PropertyRef Name="IsOriginal" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="GEN_VehicleNo" />
+      <PropertyRef Name="GEN_Acc_Time" />
+      <PropertyRef Name="GEN_Acc_Location" />
+      <PropertyRef Name="CreatedDate" />
+      <PropertyRef Name="ProcessingBranchName" />
+      <PropertyRef Name="TORegion" />
+    </Key>
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="VisitType" Nullable="false" />
+    <Property Type="Int32" Name="RefNo" />
+    <Property Type="DateTime" Name="TimeVisited" Nullable="false" />
+    <Property Type="Int16" Name="ImageCount" Nullable="false" />
+    <Property Type="Boolean" Name="IsPrinted" Nullable="false" />
+    <Property Type="Boolean" Name="IsOriginal" Nullable="false" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="Decimal" Name="OTH_Approx_RepairCost" Precision="18" Scale="2" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="GEN_VehicleNo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_Caller_Name" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_Caller_ContactNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="GEN_TimeReported" />
+    <Property Type="DateTime" Name="GEN_OriginalTimeReported" />
+    <Property Type="String" Name="GEN_Insured_Name" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_Insured_ContactNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GEN_VehicleDescription" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="GEN_Acc_Time" Nullable="false" />
+    <Property Type="String" Name="GEN_Acc_Location" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+    <Property Type="String" Name="FirstName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="OTH_ProcessingBranchId" />
+    <Property Type="String" Name="ProcessingBranchName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EPFNo" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PrintedBranch" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PrintedDate" />
+    <Property Type="Int32" Name="ClaimFormImgCount" />
+    <Property Type="Int16" Name="OTH_SiteEstimation" />
+    <Property Type="Int32" Name="ProcessingRegionId" />
+    <Property Type="String" Name="RegionName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="TORegion" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SettingEntity">
+    <Key>
+      <PropertyRef Name="SettingId" />
+    </Key>
+    <Property Type="Int32" Name="SettingId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="SettingName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SettingValue" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <ComplexType Name="SAForms_GetMissingImagesNew_Results">
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="OfficerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="VehicleNo" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="C1" Nullable="true" />
+    <Property Type="Int32" Name="C2" Nullable="true" />
+    <Property Type="Int32" Name="C3" Nullable="true" />
+    <Property Type="Int32" Name="C4" Nullable="true" />
+    <Property Type="Int32" Name="C5" Nullable="true" />
+    <Property Type="Int32" Name="C6" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetJobs_Result">
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" />
+    <Property Type="Int16" Name="VisitType" Nullable="false" />
+    <Property Type="Int32" Name="RefNo" Nullable="true" />
+    <Property Type="DateTime" Name="TimeVisited" Nullable="false" Precision="23" />
+    <Property Type="Int16" Name="ImageCount" Nullable="false" />
+    <Property Type="Boolean" Name="IsPrinted" Nullable="false" />
+    <Property Type="Boolean" Name="IsOriginal" Nullable="false" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="Decimal" Name="OTH_Approx_RepairCost" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="GEN_VehicleNo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="GEN_Caller_Name" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="GEN_Caller_ContactNo" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="GEN_TimeReported" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="GEN_OriginalTimeReported" Nullable="true" Precision="23" />
+    <Property Type="String" Name="GEN_Insured_Name" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="GEN_Insured_ContactNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="GEN_VehicleDescription" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="GEN_Acc_Time" Nullable="false" Precision="23" />
+    <Property Type="String" Name="GEN_Acc_Location" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="OTH_ProcessingBranchId" Nullable="true" />
+    <Property Type="String" Name="ProcessingBranchName" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="EPFNo" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="PrintedBranch" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="PrintedDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="RegionId" Nullable="false" />
+    <Property Type="Int32" Name="ClaimFormImgCount" Nullable="true" />
+    <Property Type="Int16" Name="OTH_SiteEstimation" Nullable="true" />
+    <Property Type="Int32" Name="ProcessingRegionId" Nullable="true" />
+    <Property Type="String" Name="RegionName" Nullable="true" MaxLength="150" />
+    <Property Type="Int64" Name="RowNum" Nullable="true" />
+    <Property Type="String" Name="BranchName" Nullable="false" MaxLength="150" />
+  </ComplexType>
+  <ComplexType Name="SAForms_GetOnsiteEstimation_Result">
+    <Property Type="Int32" Name="RegionId" Nullable="true" />
+    <Property Type="String" Name="RegionName" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="201" />
+    <Property Type="Int32" Name="TotalJobs" Nullable="true" />
+    <Property Type="Int32" Name="EstimatedJobs" Nullable="true" />
+    <Property Type="Decimal" Name="Ratio" Nullable="true" Precision="16" Scale="2" />
+    <Property Type="String" Name="TOCode" Nullable="false" MaxLength="7" />
+    <Property Type="String" Name="EPFNo" Nullable="false" MaxLength="5" />
+    <Property Type="Int64" Name="RowIndex" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetCompletedRatio_Result">
+    <Property Type="Decimal" Name="Ratio" Nullable="true" Precision="16" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="GetOutstandingJobs_Result">
+    <Property Type="String" Name="CSRCode" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="JobNumber" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="VehicleNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="AssignedDateTime" Nullable="true" Precision="23" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="201" />
+    <Property Type="Int32" Name="UserId" Nullable="true" />
+    <Property Type="Int64" Name="RowNum" Nullable="true" />
+    <Property Type="Int32" Name="RegionId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetTOPerformance_Result">
+    <Property Type="String" Name="RegionName" Nullable="false" MaxLength="150" />
+    <Property Type="Int32" Name="RegionId" Nullable="false" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="UserCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UserEPFNo" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="TotalNoOfJobs" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SAForms_GetOnsiteEstimationCount_Result">
+    <Property Type="Int32" Name="RegionId" Nullable="true" />
+    <Property Type="String" Name="RegionName" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="UserCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UserEPFNo" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="TotalJobs" Nullable="true" />
+    <Property Type="Int32" Name="EstimatedJobs" Nullable="true" />
+    <Property Type="Decimal" Name="Ratio" Nullable="true" Precision="16" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="GetPerformanceHours_Result">
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="UserCode" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="AssignedDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="CompletedDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="JobNo" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="VehicleNo" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="HRSSpent" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetTOPerformance_Result1">
+    <Property Type="Int32" Name="RegionId" Nullable="true" />
+    <Property Type="String" Name="RegionName" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="201" />
+    <Property Type="Int32" Name="UserCode" Nullable="true" />
+    <Property Type="String" Name="UserEPFNo" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="TotalNoOfJobs" Nullable="true" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="GetPerformanceHours_Result1">
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="201" />
+    <Property Type="Int32" Name="UserCode" Nullable="true" />
+    <Property Type="DateTime" Name="AssignedDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="CompletedDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="JobNo" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="VehicleNo" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="HRSSpent" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetUserCount_Result">
+    <Property Type="Int32" Name="TotalUserCount" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetUsers_Result">
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="Guid" Name="UserGUID" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="RegionId" Nullable="false" />
+    <Property Type="Int32" Name="BranchId" Nullable="true" />
+    <Property Type="String" Name="PrimaryEmail" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="ContactNo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="EPFNo" Nullable="true" MaxLength="20" />
+    <Property Type="Int16" Name="DataAccessLevel" Nullable="false" />
+    <Property Type="Boolean" Name="IsEnabled" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="String" Name="ContactNo2" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SecondaryEmail" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="256" />
+    <Property Type="Guid" Name="RoleId" Nullable="false" />
+    <Property Type="String" Name="RegionName" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="BranchName" Nullable="true" MaxLength="150" />
+    <Property Type="Guid" Name="PreviousRoleId" Nullable="true" />
+    <Property Type="DateTime" Name="PreviousRoleChangedDate" Nullable="true" Precision="23" />
+    <Property Type="Int64" Name="RowNum" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SAForms_GetJobsWithNoImages_Result">
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="OfficerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="VehicleNo" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="C1" Nullable="true" />
+    <Property Type="Int32" Name="C2" Nullable="true" />
+    <Property Type="Int32" Name="C3" Nullable="true" />
+    <Property Type="Int32" Name="C4" Nullable="true" />
+    <Property Type="Int32" Name="C5" Nullable="true" />
+    <Property Type="Int32" Name="C6" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetOutstandingJobsPaginated_Result">
+    <Property Type="DateTime" Name="AssignedDateTime" Nullable="false" />
+    <Property Type="String" Name="CSRCode" Nullable="false" />
+    <Property Type="String" Name="JobNumber" Nullable="false" />
+    <Property Type="Int32" Name="RegionId" Nullable="true" />
+    <Property Type="Int64" Name="RowNum" Nullable="false" />
+    <Property Type="Int32" Name="UserId" Nullable="true" />
+    <Property Type="String" Name="VehicleNumber" Nullable="false" />
+    <Property Type="String" Name="FullName" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetPhotoAvailability_ARINew_Result">
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="VehicleNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="OfficerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EPFNo" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="VisitDateTime" Nullable="false" Precision="23" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="201" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="Int32" Name="RegionId" Nullable="false" />
+    <Property Type="Int32" Name="C5" Nullable="true" />
+    <Property Type="Int32" Name="C20" Nullable="true" />
+    <Property Type="Int32" Name="C21" Nullable="true" />
+    <Property Type="Int32" Name="TotalAvailable" Nullable="true" />
+    <Property Type="Int32" Name="TotalImages" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetPhotoAvailability_Paginated_ARINew_Result">
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="VehicleNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="OfficerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EPFNo" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="VisitedDateTime" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="C5" Nullable="true" />
+    <Property Type="Int32" Name="C20" Nullable="true" />
+    <Property Type="Int32" Name="C21" Nullable="true" />
+    <Property Type="Int32" Name="TotalAvailable" Nullable="true" />
+    <Property Type="Int32" Name="TotalImages" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetPhotoAvailability_Paginated_SANew_Result">
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="VehicleNo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="OfficerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EPFNo" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="AssignedDateTime" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="C3" Nullable="true" />
+    <Property Type="Int32" Name="C4" Nullable="true" />
+    <Property Type="Int32" Name="C5" Nullable="true" />
+    <Property Type="Int32" Name="TotalAvailable" Nullable="true" />
+    <Property Type="Int32" Name="TotalImages" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetPhotoAvailability_SANew_Result">
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="VehicleNo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="OfficerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EPFNo" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="AssignedDateTime" Nullable="true" Precision="23" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="201" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="Int32" Name="RegionId" Nullable="false" />
+    <Property Type="Int32" Name="C3" Nullable="true" />
+    <Property Type="Int32" Name="C4" Nullable="true" />
+    <Property Type="Int32" Name="C5" Nullable="true" />
+    <Property Type="Int32" Name="TotalAvailable" Nullable="true" />
+    <Property Type="Int32" Name="TotalImages" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetParticularJob_Result">
+    <Property Type="Int32" Name="VisitId" Nullable="false" />
+    <Property Type="String" Name="JobNo" Nullable="false" MaxLength="30" />
+    <Property Type="Int16" Name="VisitType" Nullable="false" />
+    <Property Type="Int32" Name="RefNo" Nullable="true" />
+    <Property Type="DateTime" Name="TimeVisited" Nullable="false" Precision="23" />
+    <Property Type="Int16" Name="ImageCount" Nullable="false" />
+    <Property Type="Boolean" Name="IsPrinted" Nullable="false" />
+    <Property Type="Boolean" Name="IsOriginal" Nullable="false" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="Decimal" Name="OTH_Approx_RepairCost" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="GEN_VehicleNo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="GEN_Caller_Name" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="GEN_Caller_ContactNo" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="GEN_TimeReported" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="GEN_OriginalTimeReported" Nullable="true" Precision="23" />
+    <Property Type="String" Name="GEN_Insured_Name" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="GEN_Insured_ContactNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="GEN_VehicleDescription" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="GEN_Acc_Time" Nullable="false" Precision="23" />
+    <Property Type="String" Name="GEN_Acc_Location" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="OTH_ProcessingBranchId" Nullable="true" />
+    <Property Type="String" Name="ProcessingBranchName" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="EPFNo" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="PrintedBranch" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="PrintedDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="RegionId" Nullable="false" />
+    <Property Type="String" Name="BranchName" Nullable="false" MaxLength="150" />
+    <Property Type="Int32" Name="ClaimFormImgCount" Nullable="true" />
+    <Property Type="Int16" Name="OTH_SiteEstimation" Nullable="true" />
+    <Property Type="Int32" Name="ProcessingRegionId" Nullable="true" />
+    <Property Type="String" Name="RegionName" Nullable="true" MaxLength="150" />
+  </ComplexType>
+</Schema>

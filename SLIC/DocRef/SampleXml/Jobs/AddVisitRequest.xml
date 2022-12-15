@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Request>
+    <Data>
+        <Job action="visit">
+            <FieldList>
+                <JobNo>J1001</JobNo>
+                <VisitType>4</VisitType>
+                <RefNo>340</RefNo>
+                <EngineNo>fdsfasdf</EngineNo>
+                <ChassisNo>asdfafasf</ChassisNo>
+                <CSRUserName>aaa</CSRUserName>
+                <Comment>Comment comes here.</Comment>
+                <ImageCount>24</ImageCount>
+                <TimeVisited>12-09-2011 10:12PM</TimeVisited>
+                <ImageCountList>
+                    <TotalImageCount>60</TotalImageCount>
+                    <ImageType>
+                        <TypeId>1</TypeId>
+                        <ImageCount>10</ImageCount>
+                    </ImageType>
+                    <ImageType>
+                        <TypeId>3</TypeId>
+                        <ImageCount>20</ImageCount>
+                    </ImageType>
+                    <ImageType>
+                        <TypeId>5</TypeId>
+                        <ImageCount>30</ImageCount>
+                    </ImageType>
+                </ImageCountList>
+            </FieldList>
+        </Job>
+        <DateTime></DateTime>
+    </Data>
+</Request>

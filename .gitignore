@@ -1,0 +1,14 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+//These files are ignored
+SLIC/obj/Debug/**
+IronUtils/bin/Debug/**
+IronUtils/obj/Debug/**
+Logger/**
+SLIC/bin/Logger.dll
+SLIC/bin/Logger.pdb
+SLIC/bin/SLIC2.dll
+SLIC/bin/SLIC2.pdb
+SLIC/bin/com.IronOne.IronUtils.dll
+SLIC/bin/com.IronOne.IronUtils.pdb
+SLIC2.suo
+SLIC/Logs/**

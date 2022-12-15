@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClaimsOneLiveModelS.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ClaimsOneLiveModelSStoreContainer">
+    <EntitySet Name="AssignedJobs" EntityType="ClaimsOneLiveModelS.Store.AssignedJobs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Holidays" EntityType="ClaimsOneLiveModelS.Store.Holidays" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="AssignedJobs">
+    <Key>
+      <PropertyRef Name="AssignedJobId" />
+    </Key>
+    <Property Name="AssignedJobId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="JobNumber" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="CSRCode" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="VehicleNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="AssignedDateTime" Type="datetime" />
+    <Property Name="Info1" Type="nvarchar" MaxLength="250" />
+    <Property Name="Info2" Type="nvarchar" MaxLength="250" />
+    <Property Name="Info3" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Holidays">
+    <Key>
+      <PropertyRef Name="HolidayId" />
+    </Key>
+    <Property Name="HolidayId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Info1" Type="nvarchar" MaxLength="250" />
+    <Property Name="Info2" Type="nvarchar" MaxLength="250" />
+    <Property Name="Info3" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+</Schema>

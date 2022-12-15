@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7E634651-9384-4640-A764-61104E5559D3}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.IronOne.SLIC2</RootNamespace>
+    <AssemblyName>SLIC2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>true</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'SharedRelease|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\SLIC2.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'TempRelease|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\SLIC2.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MvcContrib">
+      <HintPath>..\..\..\..\..\..\Users\LushanthanS\Desktop\MvcContrib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\ExternalController.cs" />
+    <Compile Include="Controllers\GenException.cs" />
+    <Compile Include="Controllers\JobController.cs" />
+    <Compile Include="Controllers\LogOnController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
+    <Compile Include="Diagnosis.aspx.cs">
+      <DependentUpon>Diagnosis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Diagnosis.aspx.designer.cs">
+      <DependentUpon>Diagnosis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HandlerClasses\ApplicationSettings.cs" />
+    <Compile Include="HandlerClasses\ImageHandler.ashx.cs">
+      <DependentUpon>ImageHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="HandlerClasses\Utility.cs" />
+    <Compile Include="Lang\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Administration\AppDataModel.cs" />
+    <Compile Include="Models\Administration\BranchDataModel.cs" />
+    <Compile Include="Models\Administration\RegionDataModel.cs" />
+    <Compile Include="Models\Administration\SettingDataModel.cs" />
+    <Compile Include="Models\Administration\UserDataModel.cs" />
+    <Compile Include="Models\Auth\AccountMembershipService.cs" />
+    <Compile Include="Models\Auth\FormsAuthenticationService.cs" />
+    <Compile Include="Models\Auth\IFormsAuthenticationService.cs" />
+    <Compile Include="Models\Auth\IMembershipService.cs" />
+    <Compile Include="Models\Auth\LogOnModel.cs" />
+    <Compile Include="Models\Auth\RoleAuthorizationService.cs" />
+    <Compile Include="Models\EntityModel\DataObjectFactory.cs" />
+    <Compile Include="Models\EntityModel\MotorClaimModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotorClaimModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Enums\EnumRepository.cs" />
+    <Compile Include="Models\Job\AdvancedSearch.cs" />
+    <Compile Include="Models\Job\CommentModel.cs" />
+    <Compile Include="Models\Job\JobContainer.cs" />
+    <Compile Include="Models\Job\JobDamageModel.cs" />
+    <Compile Include="Models\Job\JobDataModel.cs" />
+    <Compile Include="Models\Job\JobDriverModel.cs" />
+    <Compile Include="Models\Job\JobGeneralModel.cs" />
+    <Compile Include="Models\Job\JobOtherModel.cs" />
+    <Compile Include="Models\Job\JobPolicyModel.cs" />
+    <Compile Include="Models\Job\JobVehicleModel.cs" />
+    <Compile Include="Models\Job\JQueryDataTableParamModel.cs" />
+    <Compile Include="Models\Job\Search.cs" />
+    <Compile Include="Models\Reports\AccessLogModel.cs" />
+    <Compile Include="Models\Reports\AuditLogModel.cs" />
+    <Compile Include="Models\Reports\InvestigationMonitorModel.cs" />
+    <Compile Include="Models\Reports\PhotoAvailabilityVisitModel.cs" />
+    <Compile Include="Models\Reports\MissingImagesModel.cs" />
+    <Compile Include="Models\Reports\OnSiteEstimationModel.cs" />
+    <Compile Include="Models\Reports\InqueryModel.cs" />
+    <Compile Include="Models\Reports\OutstandingJobsModel.cs" />
+    <Compile Include="Models\Reports\PerformanceModel.cs" />
+    <Compile Include="Models\Reports\PhotoAvailabilityModel.cs" />
+    <Compile Include="Models\Reports\PhotoAvailabilityReportModel.cs" />
+    <Compile Include="Models\Reports\PhotoAvailabilityJobModel.cs" />
+    <Compile Include="Models\Reports\RatioModel.cs" />
+    <Compile Include="Models\Reports\TOPerformanceModel.cs" />
+    <Compile Include="Models\Reports\VisitedTimeDifferenceModel.cs" />
+    <Compile Include="Models\Validations\ComparisonValidation.cs" />
+    <Compile Include="Models\Validations\DateValidation.cs" />
+    <Compile Include="Models\Validations\DropdownValidation.cs" />
+    <Compile Include="Models\Validations\RequiredOnConditon.cs" />
+    <Compile Include="Models\VehicleArrays\Bus.cs" />
+    <Compile Include="Models\VehicleArrays\Car.cs" />
+    <Compile Include="Models\VehicleArrays\Lorry.cs" />
+    <Compile Include="Models\VehicleArrays\Motorcycle.cs" />
+    <Compile Include="Models\VehicleArrays\ThreeWheeler.cs" />
+    <Compile Include="Models\VehicleArrays\Van.cs" />
+    <Compile Include="Models\Vehicle\Component.cs" />
+    <Compile Include="Models\Vehicle\ComponentManager.cs" />
+    <Compile Include="Models\Vehicle\Vehicle.cs" />
+    <Compile Include="Models\Visit\GroupedVisitsModel.cs" />
+    <Compile Include="Models\Visit\ImageCategoryModel.cs" />
+    <Compile Include="Models\Visit\ImageModel.cs" />
+    <Compile Include="Models\Visit\VisitDetailModel.cs" />
+    <Compile Include="Models\Visit\VisitModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\bootstrap-overrides.css" />
+    <Content Include="Content\css\bootstrap-responsive.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\components\error.css" />
+    <Content Include="Content\css\components\gallery.css" />
+    <Content Include="Content\css\components\pricing.css" />
+    <Content Include="Content\css\components\signin.css" />
+    <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\galleryView\img-loader.gif" />
+    <Content Include="Content\css\galleryView\jquery.galleryview-3.0-dev.css" />
+    <Content Include="Content\css\galleryView\themes\dark\next.png" />
+    <Content Include="Content\css\galleryView\themes\dark\panel-next-big.png" />
+    <Content Include="Content\css\galleryView\themes\dark\panel-next.png" />
+    <Content Include="Content\css\galleryView\themes\dark\panel-prev-big.png" />
+    <Content Include="Content\css\galleryView\themes\dark\panel-prev.png" />
+    <Content Include="Content\css\galleryView\themes\dark\pause-big.png" />
+    <Content Include="Content\css\galleryView\themes\dark\pause.png" />
+    <Content Include="Content\css\galleryView\themes\dark\play-big.png" />
+    <Content Include="Content\css\galleryView\themes\dark\play.png" />
+    <Content Include="Content\css\galleryView\themes\dark\prev.png" />
+    <Content Include="Content\css\galleryView\themes\light\info.png" />
+    <Content Include="Content\css\galleryView\themes\light\next.png" />
+    <Content Include="Content\css\galleryView\themes\light\panel-next-big.png" />
+    <Content Include="Content\css\galleryView\themes\light\panel-next.png" />
+    <Content Include="Content\css\galleryView\themes\light\panel-prev-big.png" />
+    <Content Include="Content\css\galleryView\themes\light\panel-prev.png" />
+    <Content Include="Content\css\galleryView\themes\light\pause-big.png" />
+    <Content Include="Content\css\galleryView\themes\light\pause.png" />
+    <Content Include="Content\css\galleryView\themes\light\play-big.png" />
+    <Content Include="Content\css\galleryView\themes\light\play.png" />
+    <Content Include="Content\css\galleryView\themes\light\prev.png" />
+    <Content Include="Content\css\galleryView\themes\light\Rev.png" />
+    <Content Include="Content\css\galleryView\themes\light\rotate.png" />
+    <Content Include="Content\css\galleryView\themes\light\rotate1.png" />
+    <Content Include="Content\css\galleryView\themes\light\zoomIn.png" />
+    <Content Include="Content\css\galleryView\themes\light\zoomIn1.png" />
+    <Content Include="Content\css\galleryView\themes\light\zoomOut.png" />
+    <Content Include="Content\css\galleryView\themes\light\zoomOut1.png" />
+    <Content Include="Content\css\pages\calendar.css" />
+    <Content Include="Content\css\pages\dashboard.css" />
+    <Content Include="Content\css\pages\faq.css" />
+    <Content Include="Content\css\pages\invoice.css" />
+    <Content Include="Content\css\pages\pricing.css" />
+    <Content Include="Content\css\pages\reports.css" />
+    <Content Include="Content\css\pages\ui-elements.css" />
+    <Content Include="Content\css\Site.css" />
+    <Content Include="Content\css\slate-responsive.css" />
+    <Content Include="Content\css\slate.css" />
+    <Content Include="Content\css\treeView\jquery.treeview.css" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\css\ui-lightness\jquery-ui-1.8.21.custom.css" />
+    <Content Include="Content\dataTables\buttons.dataTables.min.css" />
+    <Content Include="Content\dataTables\buttons.flash.min.js" />
+    <Content Include="Content\dataTables\buttons.html5.min.js" />
+    <Content Include="Content\dataTables\buttons.print.min.js" />
+    <Content Include="Content\dataTables\dataTables.buttons.min.js" />
+    <Content Include="Content\dataTables\jquery-3.3.1.js" />
+    <Content Include="Content\dataTables\jquery.dataTables.min.css" />
+    <Content Include="Content\dataTables\jquery.dataTables.min.js" />
+    <Content Include="Content\dataTables\jszip.min.js" />
+    <Content Include="Content\dataTables\pdfmake.min.js" />
+    <Content Include="Content\dataTables\vfs_fonts.js" />
+    <Content Include="Content\images\loading.gif" />
+    <Content Include="Content\images\plussign.png" />
+    <Content Include="Content\images\roles\avatar_.jpg" />
+    <Content Include="Content\images\roles\avatar_audit.jpg" />
+    <Content Include="Content\images\roles\avatar_claim processing officer.jpg" />
+    <Content Include="Content\images\roles\avatar_engineer.jpg" />
+    <Content Include="Content\images\roles\avatar_management.jpg" />
+    <Content Include="Content\images\roles\avatar_system administrator.jpg" />
+    <Content Include="Content\images\roles\avatar_technical officer.jpg" />
+    <Content Include="Content\images\roles\avatar_temp printing.jpg" />
+    <Content Include="Content\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\img\avatar.jpg" />
+    <Content Include="Content\img\logo2.png" />
+    <Content Include="Content\img\Copy of logo.png" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\favicon.ico" />
+    <Content Include="Content\img\glyphicons-halflings-white.png" />
+    <Content Include="Content\img\glyphicons-halflings.png" />
+    <Content Include="Content\img\header-bg.png" />
+    <Content Include="Content\img\loading.gif" />
+    <Content Include="Content\img\password.png" />
+    <Content Include="Content\img\plussign.png" />
+    <Content Include="Content\img\popup-slate-tab.jpg" />
+    <Content Include="Content\img\popup-slate-tab.png" />
+    <Content Include="Content\img\print-water-mark.png" />
+    <Content Include="Content\img\roles\avatar_.jpg" />
+    <Content Include="Content\img\roles\avatar_audit.jpg" />
+    <Content Include="Content\img\roles\avatar_claim processing officer.jpg" />
+    <Content Include="Content\img\roles\avatar_engineer.jpg" />
+    <Content Include="Content\img\roles\avatar_management.jpg" />
+    <Content Include="Content\img\roles\avatar_system administrator.jpg" />
+    <Content Include="Content\img\roles\avatar_technical officer.jpg" />
+    <Content Include="Content\img\roles\avatar_temp printing.jpg" />
+    <Content Include="Content\img\treeView\ajax-loader.gif" />
+    <Content Include="Content\img\treeView\file.gif" />
+    <Content Include="Content\img\treeView\folder-closed.gif" />
+    <Content Include="Content\img\treeView\folder.gif" />
+    <Content Include="Content\img\treeView\minus.gif" />
+    <Content Include="Content\img\treeView\plus.gif" />
+    <Content Include="Content\img\treeView\treeview-black-line.gif" />
+    <Content Include="Content\img\treeView\treeview-black.gif" />
+    <Content Include="Content\img\treeView\treeview-default-line.gif" />
+    <Content Include="Content\img\treeView\treeview-default.gif" />
+    <Content Include="Content\img\treeView\treeview-famfamfam-line.gif" />
+    <Content Include="Content\img\treeView\treeview-famfamfam.gif" />
+    <Content Include="Content\img\treeView\treeview-gray-line.gif" />
+    <Content Include="Content\img\treeView\treeview-gray.gif" />
+    <Content Include="Content\img\treeView\treeview-red-line.gif" />
+    <Content Include="Content\img\treeView\treeview-red.gif" />
+    <Content Include="Content\img\user.png" />
+    <Content Include="Content\img\validate\valid.png" />
+    <Content Include="Content\js\galleryView\demos\all-features.html" />
+    <Content Include="Content\js\galleryView\demos\default.html" />
+    <Content Include="Content\js\galleryView\jquery.easing.1.3.js" />
+    <Content Include="Content\js\galleryView\jquery.galleryview-3.0-dev.js" />
+    <Content Include="Content\js\galleryView\jquery.timers-1.2.js" />
+    <Content Include="Content\js\galleryView\README.txt" />
+    <Content Include="Content\js\media\js\jquery.dataTables.min.1.10.js" />
+    <Content Include="Content\js\media\js\jquery.dataTables.min.js" />
+    <Content Include="Content\js\media\js\sum.js" />
+    <Content Include="Content\js\Slate\demo.ui-elements.js" />
+    <Content Include="Content\js\Slate\Map\DrawMap.js" />
+    <Content Include="Content\js\Slate\Map\plugins\jquery.qtip-1.0.0-rc3.min.js" />
+    <Content Include="Content\js\Slate\Map\plugins\raphael-min.js" />
+    <Content Include="Content\js\Slate\Map\plugins\raphael.js" />
+    <Content Include="Content\js\Slate\plugins\msgAlert\images\msgAlert_button_bg.png" />
+    <Content Include="Content\js\Slate\plugins\msgAlert\images\msgAlert_close.png" />
+    <Content Include="Content\js\Slate\plugins\msgAlert\images\msgAlert_error.png" />
+    <Content Include="Content\js\Slate\plugins\msgAlert\images\msgAlert_header.png" />
+    <Content Include="Content\js\Slate\plugins\msgAlert\images\msgAlert_info.png" />
+    <Content Include="Content\js\Slate\plugins\msgAlert\images\msgAlert_success.png" />
+    <Content Include="Content\js\Slate\plugins\msgGrowl\images\msgGrowl_close.png" />
+    <Content Include="Content\js\Slate\plugins\msgGrowl\images\msgGrowl_error.png" />
+    <Content Include="Content\js\Slate\plugins\msgGrowl\images\msgGrowl_info.png" />
+    <Content Include="Content\js\Slate\plugins\msgGrowl\images\msgGrowl_success.png" />
+    <Content Include="Content\js\Slate\plugins\msgGrowl\images\msgGrowl_warning.png" />
+    <Content Include="Content\js\treeView\jquery.treeview.js" />
+    <Content Include="Diagnosis.aspx" />
+    <Content Include="DocRef\ActionList.txt" />
+    <Content Include="DocRef\DB\data.sql" />
+    <Content Include="DocRef\DB\dataNew.sql" />
+    <Content Include="DocRef\DB\db_changes.sql" />
+    <Content Include="DocRef\DB\schema.sql" />
+    <Content Include="DocRef\DB\schemaNew.sql" />
+    <Content Include="DocRef\ErrorCodes.txt" />
+    <Content Include="DocRef\SampleXml\Image\ImageUploadRequest.xml" />
+    <Content Include="DocRef\SampleXml\Jobs\AddJobRequest.xml" />
+    <Content Include="DocRef\SampleXml\Jobs\AddVisitRequest.xml" />
+    <Content Include="DocRef\SampleXml\Jobs\ResubmitJobRequest.xml" />
+    <Content Include="Global.asax" />
+    <Content Include="Lang\Templates\en\SAEmail.txt" />
+    <Content Include="Lang\Templates\en\VisitEmail.txt" />
+    <Content Include="Libraries\log4net.dll" />
+    <Content Include="Libraries\MvcContrib.dll" />
+    <Content Include="Libraries\Sedodream.dll" />
+    <Content Include="log4net.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Logs\errorLog.txt" />
+    <Content Include="Logs\eventLog.txt" />
+    <Content Include="Logs\log.txt" />
+    <Content Include="Models\Vehicle\DamagedItems.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="robots.txt" />
+    <Content Include="Scripts\Admin\createBranch.validate.js" />
+    <Content Include="Scripts\Admin\createRegion.validate.js" />
+    <Content Include="Scripts\Admin\createUser.js" />
+    <Content Include="Scripts\Admin\createUser.validate.js" />
+    <Content Include="Scripts\api.js" />
+    <Content Include="Content\js\media\js\jquery.dataTables.js" />
+    <Content Include="Scripts\Auth\changePassword.validate.js" />
+    <Content Include="Scripts\Job\createComment.validate.js" />
+    <Content Include="Scripts\Job\gallery.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-ui-1.8.18.custom.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.21.custom.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\jquery.dataTables.js" />
+    <Content Include="Scripts\jquery.dataTables.nightly.js" />
+    <Content Include="Scripts\jquery.dataTables.rowGrouping.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.tipsy.js" />
+    <Content Include="Content\js\media\css\TableTools.css" />
+    <Content Include="Content\js\media\css\TableTools_JUI.css" />
+    <Content Include="Content\js\media\images\background.png" />
+    <Content Include="Content\js\media\images\collection.png" />
+    <Content Include="Content\js\media\images\collection_hover.png" />
+    <Content Include="Content\js\media\images\copy.png" />
+    <Content Include="Content\js\media\images\copy_hover.png" />
+    <Content Include="Content\js\media\images\csv.png" />
+    <Content Include="Content\js\media\images\csv_hover.png" />
+    <Content Include="Content\js\media\images\pdf.png" />
+    <Content Include="Content\js\media\images\pdf_hover.png" />
+    <Content Include="Content\js\media\images\print.png" />
+    <Content Include="Content\js\media\images\print_hover.png" />
+    <Content Include="Content\js\media\images\xls.png" />
+    <Content Include="Content\js\media\images\xls_hover.png" />
+    <Content Include="Content\js\media\js\TableTools.js" />
+    <Content Include="Content\js\media\js\TableTools.min.js" />
+    <Content Include="Content\js\media\js\ZeroClipboard.js" />
+    <Content Include="Content\js\media\swf\copy_csv_xls.swf" />
+    <Content Include="Content\js\media\swf\copy_csv_xls_pdf.swf" />
+    <Content Include="Content\js\Slate\bootstrap.js" />
+    <Content Include="Content\js\Slate\demos\charts\area.js" />
+    <Content Include="Content\js\Slate\demos\charts\bar.js" />
+    <Content Include="Content\js\Slate\demos\charts\donut.js" />
+    <Content Include="Content\js\Slate\demos\charts\line.js" />
+    <Content Include="Content\js\Slate\demos\charts\pie.js" />
+    <Content Include="Content\js\Slate\demos\demo.calendar.js" />
+    <Content Include="Content\js\Slate\demos\demo.faq.js" />
+    <Content Include="Content\js\Slate\demos\demo.gallery.js" />
+    <Content Include="Content\js\Slate\demos\demo.tables.js" />
+    <Content Include="Content\js\Slate\demos\demo.ui-elements.js" />
+    <Content Include="Content\js\Slate\demos\demo.validate.js" />
+    <Content Include="Content\js\Slate\demos\demo.wizard.js" />
+    <Content Include="Content\js\Slate\demos\signin.html" />
+    <Content Include="Content\js\Slate\jquery.ui.touch-punch.min.js" />
+    <Content Include="Content\js\Slate\plugins\datatables\default\sort_asc.png" />
+    <Content Include="Content\js\Slate\plugins\datatables\default\sort_both.png" />
+    <Content Include="Content\js\Slate\plugins\datatables\default\sort_desc.png" />
+    <Content Include="Content\js\Slate\plugins\datatables\DT_bootstrap.css" />
+    <Content Include="Content\js\Slate\plugins\datatables\DT_bootstrap.js" />
+    <Content Include="Content\js\Slate\plugins\datatables\highlight\sort_asc.png" />
+    <Content Include="Content\js\Slate\plugins\datatables\highlight\sort_both.png" />
+    <Content Include="Content\js\Slate\plugins\datatables\highlight\sort_desc.png" />
+    <Content Include="Content\js\Slate\plugins\datatables\jquery.dataTables.js" />
+    <Content Include="Content\js\Slate\plugins\datatables\sort_asc_disabled.html" />
+    <Content Include="Content\js\Slate\plugins\datatables\sort_desc_disabled.html" />
+    <Content Include="Content\js\Slate\plugins\excanvas\excanvas.min.js" />
+    <Content Include="Content\js\Slate\plugins\flot\jquery.flot.js" />
+    <Content Include="Content\js\Slate\plugins\flot\jquery.flot.orderBars.js" />
+    <Content Include="Content\js\Slate\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="Content\js\Slate\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="Content\js\Slate\plugins\fullcalendar\fullcalendar.css" />
+    <Content Include="Content\js\Slate\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Content\js\Slate\plugins\lightbox\jquery.lightbox.js" />
+    <Content Include="Content\js\Slate\plugins\lightbox\themes\evolution-dark\jquery.lightbox.css" />
+    <Content Include="Content\js\Slate\plugins\msgAlert\css\msgAlert.css" />
+    <Content Include="Content\js\Slate\plugins\msgAlert\js\msgAlert.js" />
+    <Content Include="Content\js\Slate\plugins\msgGrowl\css\msgGrowl.css" />
+    <Content Include="Content\js\Slate\plugins\msgGrowl\js\msgGrowl.js" />
+    <Content Include="Content\js\Slate\plugins\responsive-tables\responsive-tables.css" />
+    <Content Include="Content\js\Slate\plugins\responsive-tables\responsive-tables.js" />
+    <Content Include="Content\js\Slate\plugins\smartwizard\jquery.smartWizard-2.0.modified.js" />
+    <Content Include="Content\js\Slate\plugins\smartwizard\smart_wizard.modified.css" />
+    <Content Include="Content\js\Slate\plugins\timepicker\jquery.ui.timepicker.css" />
+    <Content Include="Content\js\Slate\plugins\timepicker\jquery.ui.timepicker.min.js" />
+    <Content Include="Content\js\Slate\Slate.js" />
+    <Content Include="Scripts\jquery.validate-1.10.0.js" />
+    <Content Include="Scripts\jquery.validate-1.10.0.min.js" />
+    <Content Include="Scripts\jquery.validate-extra-1.10.0.js" />
+    <Content Include="Scripts\jquery.validate-extra-1.10.0.min.js" />
+    <Content Include="Scripts\Report\InvestigationMonitoringSearch.validate.js" />
+    <Content Include="Scripts\Report\Search.validate.js" />
+    <Content Include="Scripts\Report\photoAvailabilitySearch.validate.js" />
+    <Content Include="Views\HTML\Account\AcessLogReport.aspx" />
+    <Content Include="Views\HTML\Account\ChangePassword.aspx" />
+    <Content Include="Views\HTML\Account\LogOn.aspx" />
+    <Content Include="Views\HTML\Account\NotAuthorized.aspx" />
+    <Content Include="Views\HTML\Account\RoleAssingment.aspx" />
+    <Content Include="Views\HTML\AppMgt\AppManagement.aspx" />
+    <Content Include="Views\HTML\BranchMgt\BranchDetails.aspx" />
+    <Content Include="Views\HTML\BranchMgt\ViewBranches.aspx" />
+    <Content Include="Views\HTML\Errors\Error.aspx" />
+    <Content Include="Views\HTML\Errors\HttpError.aspx" />
+    <Content Include="Views\HTML\Home\Home.aspx" />
+    <Content Include="Views\HTML\Home\MapUserControl.ascx" />
+    <Content Include="Views\HTML\Job\SearchResultsExternal.aspx" />
+    <Content Include="Views\HTML\Job\PrintExportPage.aspx" />
+    <Content Include="Views\HTML\Job\PrintJob.aspx" />
+    <Content Include="Views\HTML\Job\PrintJobDetails.aspx" />
+    <Content Include="Views\HTML\Job\PrintJobVisitDetails.aspx" />
+    <Content Include="Views\HTML\Job\PrintJobWithImages_Full.aspx" />
+    <Content Include="Views\HTML\Job\PrintJob_Full.aspx" />
+    <Content Include="Views\HTML\Job\PrintSearchResults.aspx" />
+    <Content Include="Views\HTML\Job\PrintVisit.aspx" />
+    <Content Include="Views\HTML\Job\PrintVisitDetails.aspx" />
+    <Content Include="Views\HTML\Job\SearchResults.aspx" />
+    <Content Include="Views\HTML\Job\TempDeleteJob.aspx" />
+    <Content Include="Views\HTML\RegionMgt\RegionDetails.aspx" />
+    <Content Include="Views\HTML\RegionMgt\ViewRegions.aspx" />
+    <Content Include="Views\HTML\Reports\AccessLogs.aspx" />
+    <Content Include="Views\HTML\Reports\ARIPhotoAvailabilityReport.aspx" />
+    <Content Include="Views\HTML\Reports\AuditLogs.aspx" />
+    <Content Include="Views\HTML\Reports\Copy %282%29 of RegionalLevelOutstandingReports.aspx" />
+    <Content Include="Views\HTML\Reports\Copy of RegionalLevelOutstandingReports.aspx" />
+    <Content Include="Views\HTML\Reports\InvestigationMonitoringReport.aspx" />
+    <Content Include="Views\HTML\Reports\OutstandingSATest.aspx" />
+    <Content Include="Views\HTML\Reports\PrintInvestigationMonitoringReport.aspx" />
+    <Content Include="Views\HTML\Reports\PrintPhotoAvailabilityReportTO.aspx" />
+    <Content Include="Views\HTML\Reports\TOLevelPhotoAvailabilityReports.aspx" />
+    <Content Include="Views\HTML\Reports\PrintInvestigationMonitoringReport.aspx" />
+    <Content Include="Views\HTML\Reports\PrintVisitedTimeDifferenceReport.aspx" />
+    <Content Include="Views\HTML\Reports\VisitedTimeDifferenceReport.aspx" />
+    <Content Include="Views\HTML\Reports\MissingImages.aspx" />
+    <Content Include="Views\HTML\Reports\OnSiteEstimationRegion.aspx" />
+    <Content Include="Views\HTML\Reports\OnSiteEstimationReport.aspx" />
+    <Content Include="Views\HTML\Reports\OnSiteEstimationTO.aspx" />
+    <Content Include="Views\HTML\Reports\OutstandingSAReports.aspx" />
+    <Content Include="Views\HTML\Reports\PrintAuditLogs.aspx" />
+    <Content Include="Views\HTML\Reports\PrintOnSiteEstimation.aspx" />
+    <Content Include="Views\HTML\Reports\PrintOnSiteEstimationRegion.aspx" />
+    <Content Include="Views\HTML\Reports\PrintOutstandingReportsRegion.aspx" />
+    <Content Include="Views\HTML\Reports\PrintOutstandingReportTO.aspx" />
+    <Content Include="Views\HTML\Reports\PrintPerformanceReportRegion.aspx" />
+    <Content Include="Views\HTML\Reports\PrintPhotoAvailabilityReportsRegion.aspx" />
+    <Content Include="Views\HTML\Reports\PrintTOPerformance.aspx" />
+    <Content Include="Views\HTML\Reports\RegionalLevelOutstandingReports.aspx" />
+    <Content Include="Views\HTML\Reports\RegionalLevelPerformance.aspx" />
+    <Content Include="Views\HTML\Reports\RegionalLevelPhotoAvailabilityReports.aspx" />
+    <Content Include="Views\HTML\Reports\ReportInquery.aspx" />
+    <Content Include="Views\HTML\Reports\TOPerformance.aspx" />
+    <Content Include="Views\HTML\Reports\VisitLogs.aspx" />
+    <Content Include="Views\HTML\Shared\Job\AdvancedSearchUserControl.ascx" />
+    <Content Include="Views\HTML\Shared\Job\DamagedItems.ascx" />
+    <Content Include="Views\HTML\Shared\Job\ImageGallery.ascx" />
+    <Content Include="Views\HTML\Shared\Job\JobComments.ascx" />
+    <Content Include="Views\HTML\Shared\Job\JobDetails.ascx" />
+    <Content Include="Views\HTML\Shared\Job\JobsTableUserControlAsync.ascx" />
+    <Content Include="Views\HTML\Shared\Job\JobsTableUserControlSync.ascx" />
+    <Content Include="Views\HTML\Shared\Job\PrintComments.ascx" />
+    <Content Include="Views\HTML\Shared\Job\PrintImageGallery.ascx" />
+    <Content Include="Views\HTML\Shared\Job\PrintJobDetails.ascx" />
+    <Content Include="Views\HTML\Shared\Job\PrintVisitDetails.ascx" />
+    <Content Include="Views\HTML\Shared\Job\SearchUserControl.ascx" />
+    <Content Include="Views\HTML\Shared\Job\ViewDamagedItems.ascx" />
+    <Content Include="Views\HTML\Shared\Job\VisitDetails.ascx" />
+    <Content Include="Views\HTML\Shared\JSVariableResolver.ascx" />
+    <Content Include="Views\HTML\Shared\Menu.ascx" />
+    <Content Include="Views\HTML\UserMgt\UserDetails.aspx" />
+    <Content Include="Views\HTML\UserMgt\ViewUsers.aspx" />
+    <Content Include="Views\HTML\Reports\InvestigationMonitoringReport.aspx" />
+    <Content Include="Views\XML\Account\Error.aspx" />
+    <Content Include="Views\XML\Account\LogOn.aspx" />
+    <Content Include="Views\XML\Account\NotAuthorized.aspx" />
+    <Content Include="Views\XML\Home\Home.aspx" />
+    <Content Include="Views\XML\Image\ImageUpload.aspx" />
+    <Content Include="Views\XML\Job\AddJob.aspx" />
+    <Content Include="Views\XML\Job\JobComplete.aspx" />
+    <Content Include="Views\XML\Job\SearchJobs.aspx" />
+    <Content Include="Views\XML\Job\ViewComments.aspx" />
+    <Content Include="Views\XML\Job\ViewJob.aspx" />
+    <Content Include="Views\XML\Job\ViewJobStrings.aspx" />
+    <Content Include="Views\XML\Job\ViewVisit.aspx" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="License\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font\fontawesome-webfont.eot" />
+    <Content Include="Content\font\fontawesome-webfont.svg" />
+    <Content Include="Content\font\fontawesome-webfont.ttf" />
+    <Content Include="Content\font\fontawesome-webfont.woff" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Content\font\cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff" />
+    <None Include="Content\font\EInbV5DfGHOiMmvb1Xr-hnhCUOGz7vYGh680lGh-uXM.woff" />
+    <None Include="Content\font\MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff" />
+    <None Include="Content\js\media\as3\lib\AlivePDF.swc" />
+    <None Include="Content\js\media\as3\ZeroClipboard.as" />
+    <None Include="Content\js\media\as3\ZeroClipboardPdf.as" />
+    <None Include="Content\js\media\images\psd\collection.psd" />
+    <None Include="Content\js\media\images\psd\copy document.psd" />
+    <None Include="Content\js\media\images\psd\file_types.psd" />
+    <None Include="Content\js\media\images\psd\printer.psd" />
+    <None Include="Content\js\media\js\TableTools.min.js.gz" />
+    <EntityDeploy Include="Models\EntityModel\MotorClaimModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MotorClaimModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Content\web.config" />
+    <None Include="DocRef\Diagrams\ClassDiagram.cd" />
+    <Content Include="HandlerClasses\ImageHandler.ashx" />
+    <Content Include="Logs\web.config" />
+    <Content Include="Scripts\web.config" />
+    <Content Include="Views\HTML\Shared\Site.Master" />
+    <None Include="Properties\PublishProfiles\claimsone-test - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\claimsone-test - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\claimsone-test - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\claimsone-test - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\FTP.pubxml" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Lang\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IronUtils\IronUtils.csproj">
+      <Project>{C70D419A-9024-4E09-A122-330D54AAE0A2}</Project>
+      <Name>IronUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{A6D86348-CB0F-406C-81B5-7053B91D3DBD}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <!--todo- romovedir method does not worked when i used a pathvariable returned from the custom task that i created, 
+ so i implemented with it using excluding the unnecessary files when copying to relevant location with copy custom task.-->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'SharedRelease|AnyCPU' ">
+    <TempPath>\\172.21.0.2\Projects\SLIC\Phase-IV\Releases\Temp</TempPath>
+    <ServerPath>\\172.21.0.2\Projects\SLIC\Phase-IV\Releases</ServerPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'TempRelease|AnyCPU' ">
+    <TempPath>C:\SLICReleases\Temp</TempPath>
+    <ServerPath>C:\SLICReleases\Releases</ServerPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Folder>WebSolution</Folder>
+    <Source>source</Source>
+    <Publish>bin</Publish>
+    <FoldersToRemoveFromPublish>DocRef;SampleXml</FoldersToRemoveFromPublish>
+    <FilesToRemoveFromPublish>Logs\log.txt;Libraries\Sedodream.dll</FilesToRemoveFromPublish>
+    <FoldersToRemoveFromSource>bin;obj</FoldersToRemoveFromSource>
+    <FilesToRemoveFromSource>
+    </FilesToRemoveFromSource>
+  </PropertyGroup>
+  <UsingTask AssemblyFile="$(ProjectDir)\Libraries\Sedodream.dll" TaskName="CopySourceFiles" />
+  <UsingTask AssemblyFile="$(ProjectDir)\Libraries\Sedodream.dll" TaskName="GetDate" />
+  <UsingTask AssemblyFile="$(ProjectDir)\Libraries\Sedodream.dll" TaskName="GetPathsToRemove" />
+  <Target Name="BeforeBuild" Condition=" '$(Configuration)|$(Platform)' != 'Debug|AnyCPU' ">
+    <Message Text="Before build" Importance="high" />
+    <!--<MSBuild Projects="$(ProjectName).csproj" Targets="Clean" StopOnFirstFailure="false" ContinueOnError="true">
+    </MSBuild>-->
+    <!--<RemoveDir Directories="$(ProjectDir)\bin" />
+    <RemoveDir Directories="$(ProjectDir)\obj" />-->
+    <Message Text="Temp Path - $(TempPath)" Importance="high" />
+    <Message Text="Server Path - $(ServerPath)" Importance="high" />
+    <Message Text="Folders to Remove From Publish - $(FoldersToRemoveFromPublish)" Importance="high" />
+    <Message Text="Files to Remove From Publish - $(FilesToRemoveFromPublish)" Importance="high" />
+    <Message Text="Folders to Remove From Source - $(FoldersToRemoveFromSource)" Importance="high" />
+    <Message Text="Files to Remove From Source - $(FilesToRemoveFromSource)" Importance="high" />
+    <GetPathsToRemove BasePath="$(SolutionDir)$(ProjectName)\" List="$(FoldersToRemoveFromSource)">
+      <Output PropertyName="DFoldersSource" TaskParameter="Paths" />
+    </GetPathsToRemove>
+    <GetPathsToRemove BasePath="$(SolutionDir)$(ProjectName)\" List="$(FilesToRemoveFromSource)">
+      <Output PropertyName="DeleteFilesFromSource" TaskParameter="Paths" />
+    </GetPathsToRemove>
+    <RemoveDir Directories="$(TempPath)\$(Folder)" ContinueOnError="true" />
+    <Message Text="Temp Directory Removed" Importance="high" />
+    <CopySourceFiles SourcePath="$(SolutionDir)" OutputPath="$(TempPath)\$(Folder)\$(Source)\" ExcludedFiles="$(DeleteFilesFromSource)" ExcludedFolders="$(DFoldersSource)" />
+    <Message Text="Source files coppied to Temp source directory" Importance="high" />
+    <!--<RemoveDir Directories="$(DeleteFilesFromSource)" />-->
+    <!--<Delete Files="$(DeleteFilesFromSource)" ContinueOnError="true" />
+    <Message Text="folder paths -$(DeleteFilesFromSource)" Importance="high" />-->
+    <!--<CallTarget Targets="CopyContentFiles" />-->
+    <!--<Copy SourceFiles="@(ProjectDir)" DestinationFolder="D:\testMSBuild\testslic\testcopy\%(ProjectDir.RelativeDir)" ContinueOnError="true" />-->
+  </Target>
+  <Target Name="AfterBuild" Condition=" '$(Configuration)|$(Platform)' != 'Debug|AnyCPU' ">
+    <Message Text="After build" Importance="high" />
+    <GetDate Format="yyyy-MM-dd">
+      <Output PropertyName="DateValue" TaskParameter="Date" />
+    </GetDate>
+    <GetPathsToRemove BasePath="$(TempPath)\$(Folder)\$(Publish)\" List="$(FoldersToRemoveFromPublish)">
+      <Output PropertyName="DFoldersPublish" TaskParameter="Paths" />
+    </GetPathsToRemove>
+    <!--<Message Text="folder paths -$(DFoldersSource)" Importance="high" />-->
+    <GetPathsToRemove BasePath="$(TempPath)\$(Folder)\$(Publish)\" List="$(FilesToRemoveFromPublish)">
+      <Output PropertyName="DeleteFilesFromPublish" TaskParameter="Paths" />
+    </GetPathsToRemove>
+    <Message Text="Date Time Retrieved successfully - $(DateValue)" Importance="high" />
+    <!--<MSBuild Projects="$(ProjectName).csproj" Targets="ResolveReferences;_CopyWebApplication" Properties="WebProjectOutputDir=D:\testMSBuild\testslic\$(DateValue)\publish\\;OutDir=D:\testMSBuild\testslic\$(DateValue)\publish\bin\\" />-->
+    <MSBuild Projects="$(ProjectName).csproj" Targets="ResolveReferences;_CopyWebApplication" Properties="WebProjectOutputDir=$(TempPath)\$(Folder)\$(Publish)\\;OutDir=$(TempPath)\$(Folder)\$(Publish)\bin\\" />
+    <Message Text="Project published to the Temp folder without excluded folders and files" Importance="high" />
+    <!--<RemoveDir Directories="$(DeleteFoldersFromPublish)" ContinueOnError="true" />-->
+    <!--<Delete Files="@(testprop)" ContinueOnError="true" />-->
+    <!--<Message Text="Removed unnessary files" Importance="high" />-->
+    <!--<RemoveDir Directories="$(ServerPath)\$(DateValue)" ContinueOnError="true" />-->
+    <!--<Message Text="Removed existing files from server if exist" Importance="high" />-->
+    <CopySourceFiles SourcePath="$(TempPath)" OutputPath="$(ServerPath)\$(DateValue)\" ExcludedFiles="$(DeleteFilesFromPublish)" ExcludedFolders="$(DFoldersPublish)" />
+    <Move SourceFiles="$(ServerPath)\$(DateValue)\$(Folder)\$(Source)\SLIC\ReadMe.txt" DestinationFolder="$(ServerPath)\$(DateValue)\$(Folder)\" ContinueOnError="false" />
+    <Message Text="Coppied whole directory to the Server" Importance="high" />
+    <RemoveDir Directories="$(TempPath)" ContinueOnError="true" />
+    <Message Text="Temp directory removed" Importance="high" />
+  </Target>
+  <!--<Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>-->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>1003</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1002</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>http://localhost:3001</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

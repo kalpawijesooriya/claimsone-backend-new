@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClaimsOneLiveModelS" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="ClaimsOneLiveEntitiesS" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AssignedJobs" EntityType="ClaimsOneLiveModelS.AssignedJob" />
+    <EntitySet Name="Holidays" EntityType="ClaimsOneLiveModelS.Holiday" />
+  </EntityContainer>
+  <EntityType Name="AssignedJob">
+    <Key>
+      <PropertyRef Name="AssignedJobId" />
+    </Key>
+    <Property Name="AssignedJobId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobNumber" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="CSRCode" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="VehicleNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AssignedDateTime" Type="DateTime" />
+    <Property Name="Info1" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Info2" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Info3" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Holiday">
+    <Key>
+      <PropertyRef Name="HolidayId" />
+    </Key>
+    <Property Name="HolidayId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" />
+    <Property Name="Info1" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Info2" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Info3" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

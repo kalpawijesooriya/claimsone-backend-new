@@ -1,0 +1,1309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MotorClaimModelStoreContainer" CdmEntityContainer="MotorClaimEntities">
+    <EntitySetMapping Name="aspnet_Users">
+      <EntityTypeMapping TypeName="MotorClaimModel.aspnet_Users">
+        <MappingFragment StoreEntitySet="aspnet_Users">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImageGalleryEntities">
+      <EntityTypeMapping TypeName="MotorClaimModel.ImageGalleryEntity">
+        <MappingFragment StoreEntitySet="ImageGallery">
+          <ScalarProperty Name="ImageId" ColumnName="ImageId" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+          <ScalarProperty Name="FieldId" ColumnName="FieldId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="UploadedBy" ColumnName="UploadedBy" />
+          <ScalarProperty Name="UploadedDate" ColumnName="UploadedDate" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SAForm_level2Entity">
+      <EntityTypeMapping TypeName="MotorClaimModel.SAForm_level2Entity">
+        <MappingFragment StoreEntitySet="SAForm_level2">
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+          <ScalarProperty Name="CON_Tyre_FR_Status" ColumnName="CON_Tyre_FR_Status" />
+          <ScalarProperty Name="CON_Tyre_FL_Status" ColumnName="CON_Tyre_FL_Status" />
+          <ScalarProperty Name="CON_Tyre_RRL_Status" ColumnName="CON_Tyre_RRL_Status" />
+          <ScalarProperty Name="CON_Tyre_RLR_Status" ColumnName="CON_Tyre_RLR_Status" />
+          <ScalarProperty Name="CON_Tyre_RLL_Status" ColumnName="CON_Tyre_RLL_Status" />
+          <ScalarProperty Name="CON_Tyre_RRR_Status" ColumnName="CON_Tyre_RRR_Status" />
+          <ScalarProperty Name="CON_Tyre_IsContributory" ColumnName="CON_Tyre_IsContributory" />
+          <ScalarProperty Name="DAM_DamagedItems" ColumnName="DAM_DamagedItems" />
+          <ScalarProperty Name="DAM_DamagedItems_Other" ColumnName="DAM_DamagedItems_Other" />
+          <ScalarProperty Name="DAM_PreAccidentDamages" ColumnName="DAM_PreAccidentDamages" />
+          <ScalarProperty Name="DAM_PreAccidentDamages_Other" ColumnName="DAM_PreAccidentDamages_Other" />
+          <ScalarProperty Name="DAM_PossibleDR" ColumnName="DAM_PossibleDR" />
+          <ScalarProperty Name="DAM_PossibleDR_Other" ColumnName="DAM_PossibleDR_Other" />
+          <ScalarProperty Name="DAM_Goods_Type" ColumnName="DAM_Goods_Type" />
+          <ScalarProperty Name="DAM_Goods_Weight" ColumnName="DAM_Goods_Weight" />
+          <ScalarProperty Name="DAM_Goods_Damage" ColumnName="DAM_Goods_Damage" />
+          <ScalarProperty Name="DAM_IsOverLoaded" ColumnName="DAM_IsOverLoaded" />
+          <ScalarProperty Name="DAM_Is_OL_Contributory" ColumnName="DAM_Is_OL_Contributory" />
+          <ScalarProperty Name="DAM_OtherVeh_Involved" ColumnName="DAM_OtherVeh_Involved" />
+          <ScalarProperty Name="DAM_ThirdParty_Damage" ColumnName="DAM_ThirdParty_Damage" />
+          <ScalarProperty Name="DAM_Injuries" ColumnName="DAM_Injuries" />
+          <ScalarProperty Name="OTH_Journey_PurposeId" ColumnName="OTH_Journey_PurposeId" />
+          <ScalarProperty Name="OTH_Nearest_PoliceStation" ColumnName="OTH_Nearest_PoliceStation" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SAForm_VehicleClassesEntity">
+      <EntityTypeMapping TypeName="MotorClaimModel.SAForm_VehicleClassesEntity">
+        <MappingFragment StoreEntitySet="SAForm_VehicleClasses">
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+          <ScalarProperty Name="VehicleClassId" ColumnName="VehicleClassId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Membership">
+      <EntityTypeMapping TypeName="MotorClaimModel.aspnet_Membership">
+        <MappingFragment StoreEntitySet="aspnet_Membership">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Roles">
+      <EntityTypeMapping TypeName="MotorClaimModel.aspnet_Roles">
+        <MappingFragment StoreEntitySet="aspnet_Roles">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="MotorClaimModel.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Roles">
+        <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="vw_ImageGallery">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_ImageGallery">
+        <MappingFragment StoreEntitySet="vw_ImageGallery">
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="FieldId" ColumnName="FieldId" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+          <ScalarProperty Name="ImageId" ColumnName="ImageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_SAForm_PolicyDetails">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_SAForm_PolicyDetails">
+        <MappingFragment StoreEntitySet="vw_SAForm_PolicyDetails">
+          <ScalarProperty Name="POL_CN_Reasons" ColumnName="POL_CN_Reasons" />
+          <ScalarProperty Name="POL_CN_IssuedBy" ColumnName="POL_CN_IssuedBy" />
+          <ScalarProperty Name="POL_Policy_CN_SerialNo" ColumnName="POL_Policy_CN_SerialNo" />
+          <ScalarProperty Name="POL_Policy_CN_EndDate" ColumnName="POL_Policy_CN_EndDate" />
+          <ScalarProperty Name="POL_Policy_CN_StartDate" ColumnName="POL_Policy_CN_StartDate" />
+          <ScalarProperty Name="POL_Policy_CN_No" ColumnName="POL_Policy_CN_No" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PoliceStationEntities">
+      <EntityTypeMapping TypeName="MotorClaimModel.PoliceStationEntity">
+        <MappingFragment StoreEntitySet="PoliceStations">
+          <ScalarProperty Name="StationAddress" ColumnName="StationAddress" />
+          <ScalarProperty Name="StationName" ColumnName="StationName" />
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommentEntities">
+      <EntityTypeMapping TypeName="MotorClaimModel.CommentEntity">
+        <MappingFragment StoreEntitySet="Comments">
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="CommentedDate" ColumnName="CommentedDate" />
+          <ScalarProperty Name="CommentedBy" ColumnName="CommentedBy" />
+          <ScalarProperty Name="Comment1" ColumnName="Comment" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+          <ScalarProperty Name="CommentId" ColumnName="CommentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_Comments">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_Comments">
+        <MappingFragment StoreEntitySet="vw_Comments">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CommentedBy" ColumnName="CommentedBy" />
+          <ScalarProperty Name="CommentedDate" ColumnName="CommentedDate" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegionEntities">
+      <EntityTypeMapping TypeName="MotorClaimModel.RegionEntity">
+        <MappingFragment StoreEntitySet="Regions">
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="RegionCode" ColumnName="RegionCode" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_SAForm_VehDriverDetails">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_SAForm_VehDriverDetails">
+        <MappingFragment StoreEntitySet="vw_SAForm_VehDriverDetails">
+          <ScalarProperty Name="VAD_DriverIdType" ColumnName="VAD_DriverIdType" />
+          <ScalarProperty Name="VAD_License_IsNewOld_TypeId" ColumnName="VAD_License_IsNewOld_TypeId" />
+          <ScalarProperty Name="VAD_License_IsNew" ColumnName="VAD_License_IsNew" />
+          <ScalarProperty Name="VAD_License_TypeId" ColumnName="VAD_License_TypeId" />
+          <ScalarProperty Name="VAD_License_ExpiryDate" ColumnName="VAD_License_ExpiryDate" />
+          <ScalarProperty Name="VAD_License_No" ColumnName="VAD_License_No" />
+          <ScalarProperty Name="VAD_DriverRelationship" ColumnName="VAD_DriverRelationship" />
+          <ScalarProperty Name="VAD_DriverCompetence" ColumnName="VAD_DriverCompetence" />
+          <ScalarProperty Name="VAD_DriverNIC" ColumnName="VAD_DriverNIC" />
+          <ScalarProperty Name="VAD_DriverName" ColumnName="VAD_DriverName" />
+          <ScalarProperty Name="VAD_MeterReading" ColumnName="VAD_MeterReading" />
+          <ScalarProperty Name="VAD_EngineNo" ColumnName="VAD_EngineNo" />
+          <ScalarProperty Name="VAD_ChassyNo" ColumnName="VAD_ChassyNo" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SAForm_level1Entity">
+      <EntityTypeMapping TypeName="MotorClaimModel.SAForm_level1Entity">
+        <MappingFragment StoreEntitySet="SAForm_level1">
+          <ScalarProperty Name="VAD_DriverIdType" ColumnName="VAD_DriverIdType" />
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="OTH_Approx_RepairCost" ColumnName="OTH_Approx_RepairCost" />
+          <ScalarProperty Name="OTH_SiteEstimation" ColumnName="OTH_SiteEstimation" />
+          <ScalarProperty Name="OTH_CSR_Consistency" ColumnName="OTH_CSR_Consistency" />
+          <ScalarProperty Name="OTH_PavValue" ColumnName="OTH_PavValue" />
+          <ScalarProperty Name="OTH_ProcessingBranchId" ColumnName="OTH_ProcessingBranchId" />
+          <ScalarProperty Name="VAD_License_IsNewOld_TypeId" ColumnName="VAD_License_IsNewOld_TypeId" />
+          <ScalarProperty Name="VAD_License_IsNew" ColumnName="VAD_License_IsNew" />
+          <ScalarProperty Name="VAD_License_TypeId" ColumnName="VAD_License_TypeId" />
+          <ScalarProperty Name="VAD_License_ExpiryDate" ColumnName="VAD_License_ExpiryDate" />
+          <ScalarProperty Name="VAD_License_No" ColumnName="VAD_License_No" />
+          <ScalarProperty Name="VAD_DriverRelationship" ColumnName="VAD_DriverRelationship" />
+          <ScalarProperty Name="VAD_DriverCompetence" ColumnName="VAD_DriverCompetence" />
+          <ScalarProperty Name="VAD_DriverNIC" ColumnName="VAD_DriverNIC" />
+          <ScalarProperty Name="VAD_DriverName" ColumnName="VAD_DriverName" />
+          <ScalarProperty Name="VAD_MeterReading" ColumnName="VAD_MeterReading" />
+          <ScalarProperty Name="VAD_EngineNo" ColumnName="VAD_EngineNo" />
+          <ScalarProperty Name="VAD_ChassyNo" ColumnName="VAD_ChassyNo" />
+          <ScalarProperty Name="POL_CN_Reasons" ColumnName="POL_CN_Reasons" />
+          <ScalarProperty Name="POL_CN_IssuedBy" ColumnName="POL_CN_IssuedBy" />
+          <ScalarProperty Name="POL_Policy_CN_SerialNo" ColumnName="POL_Policy_CN_SerialNo" />
+          <ScalarProperty Name="POL_Policy_CN_EndDate" ColumnName="POL_Policy_CN_EndDate" />
+          <ScalarProperty Name="POL_Policy_CN_StartDate" ColumnName="POL_Policy_CN_StartDate" />
+          <ScalarProperty Name="POL_Policy_CN_No" ColumnName="POL_Policy_CN_No" />
+          <ScalarProperty Name="GEN_Acc_Location" ColumnName="GEN_Acc_Location" />
+          <ScalarProperty Name="GEN_Acc_Time" ColumnName="GEN_Acc_Time" />
+          <ScalarProperty Name="GEN_VehicleDescription" ColumnName="GEN_VehicleDescription" />
+          <ScalarProperty Name="GEN_Insured_ContactNo" ColumnName="GEN_Insured_ContactNo" />
+          <ScalarProperty Name="GEN_Insured_Name" ColumnName="GEN_Insured_Name" />
+          <ScalarProperty Name="GEN_OriginalTimeReported" ColumnName="GEN_OriginalTimeReported" />
+          <ScalarProperty Name="GEN_TimeReported" ColumnName="GEN_TimeReported" />
+          <ScalarProperty Name="GEN_Caller_ContactNo" ColumnName="GEN_Caller_ContactNo" />
+          <ScalarProperty Name="GEN_Caller_Name" ColumnName="GEN_Caller_Name" />
+          <ScalarProperty Name="GEN_VehicleNo" ColumnName="GEN_VehicleNo" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_SAForm_Damages">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_SAForm_Damages">
+        <MappingFragment StoreEntitySet="vw_SAForm_Damages">
+          <ScalarProperty Name="DAM_Injuries" ColumnName="DAM_Injuries" />
+          <ScalarProperty Name="DAM_ThirdParty_Damage" ColumnName="DAM_ThirdParty_Damage" />
+          <ScalarProperty Name="DAM_OtherVeh_Involved" ColumnName="DAM_OtherVeh_Involved" />
+          <ScalarProperty Name="DAM_Is_OL_Contributory" ColumnName="DAM_Is_OL_Contributory" />
+          <ScalarProperty Name="DAM_IsOverLoaded" ColumnName="DAM_IsOverLoaded" />
+          <ScalarProperty Name="DAM_Goods_Damage" ColumnName="DAM_Goods_Damage" />
+          <ScalarProperty Name="DAM_Goods_Weight" ColumnName="DAM_Goods_Weight" />
+          <ScalarProperty Name="DAM_Goods_Type" ColumnName="DAM_Goods_Type" />
+          <ScalarProperty Name="DAM_PossibleDR_Other" ColumnName="DAM_PossibleDR_Other" />
+          <ScalarProperty Name="DAM_PossibleDR" ColumnName="DAM_PossibleDR" />
+          <ScalarProperty Name="DAM_PreAccidentDamages_Other" ColumnName="DAM_PreAccidentDamages_Other" />
+          <ScalarProperty Name="DAM_PreAccidentDamages" ColumnName="DAM_PreAccidentDamages" />
+          <ScalarProperty Name="DAM_DamagedItems_Other" ColumnName="DAM_DamagedItems_Other" />
+          <ScalarProperty Name="DAM_DamagedItems" ColumnName="DAM_DamagedItems" />
+          <ScalarProperty Name="CON_Tyre_IsContributory" ColumnName="CON_Tyre_IsContributory" />
+          <ScalarProperty Name="CON_Tyre_RRR_Status" ColumnName="CON_Tyre_RRR_Status" />
+          <ScalarProperty Name="CON_Tyre_RLL_Status" ColumnName="CON_Tyre_RLL_Status" />
+          <ScalarProperty Name="CON_Tyre_RLR_Status" ColumnName="CON_Tyre_RLR_Status" />
+          <ScalarProperty Name="CON_Tyre_RRL_Status" ColumnName="CON_Tyre_RRL_Status" />
+          <ScalarProperty Name="CON_Tyre_FL_Status" ColumnName="CON_Tyre_FL_Status" />
+          <ScalarProperty Name="CON_Tyre_FR_Status" ColumnName="CON_Tyre_FR_Status" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_SAForm_OtherDetails">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_SAForm_OtherDetails">
+        <MappingFragment StoreEntitySet="vw_SAForm_OtherDetails">
+          <ScalarProperty Name="OTH_Nearest_PoliceStation" ColumnName="OTH_Nearest_PoliceStation" />
+          <ScalarProperty Name="OTH_Journey_PurposeId" ColumnName="OTH_Journey_PurposeId" />
+          <ScalarProperty Name="OTH_Approx_RepairCost" ColumnName="OTH_Approx_RepairCost" />
+          <ScalarProperty Name="OTH_SiteEstimation" ColumnName="OTH_SiteEstimation" />
+          <ScalarProperty Name="OTH_CSR_Consistency" ColumnName="OTH_CSR_Consistency" />
+          <ScalarProperty Name="OTH_PavValue" ColumnName="OTH_PavValue" />
+          <ScalarProperty Name="OTH_ProcessingBranchId" ColumnName="OTH_ProcessingBranchId" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BranchEntities">
+      <EntityTypeMapping TypeName="MotorClaimModel.BranchEntity">
+        <MappingFragment StoreEntitySet="Branches">
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="IsClaimProcessed" ColumnName="IsClaimProcessed" />
+          <ScalarProperty Name="BranchAddress" ColumnName="BranchAddress" />
+          <ScalarProperty Name="BranchCode" ColumnName="BranchCode" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_Branches">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_Branches">
+        <MappingFragment StoreEntitySet="vw_Branches">
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="IsClaimProcessed" ColumnName="IsClaimProcessed" />
+          <ScalarProperty Name="BranchAddress" ColumnName="BranchAddress" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="BranchCode" ColumnName="BranchCode" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_MembershipUsers">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_aspnet_MembershipUsers">
+        <MappingFragment StoreEntitySet="vw_aspnet_MembershipUsers">
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserEntities">
+      <EntityTypeMapping TypeName="MotorClaimModel.UserEntity">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="PreviousRoleChangedDate" ColumnName="PreviousRoleChangedDate" />
+          <ScalarProperty Name="PreviousRoleId" ColumnName="PreviousRoleId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="DataAccessLevel" ColumnName="DataAccessLevel" />
+          <ScalarProperty Name="EPFNo" ColumnName="EPFNo" />
+          <ScalarProperty Name="ContactNo2" ColumnName="ContactNo2" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="SecondaryEmail" ColumnName="SecondaryEmail" />
+          <ScalarProperty Name="PrimaryEmail" ColumnName="PrimaryEmail" />
+          <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="UserGUID" ColumnName="UserGUID" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_AllComments">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_AllComments">
+        <MappingFragment StoreEntitySet="vw_AllComments">
+          <ScalarProperty Name="TimeVisited" ColumnName="TimeVisited" />
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+          <ScalarProperty Name="CommentedBy" ColumnName="CommentedBy" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CommentedDate" ColumnName="CommentedDate" />
+          <ScalarProperty Name="VisitType" ColumnName="VisitType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditLogEntities">
+      <EntityTypeMapping TypeName="MotorClaimModel.AuditLogEntity">
+        <MappingFragment StoreEntitySet="AuditLogs">
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="Params" ColumnName="Params" />
+          <ScalarProperty Name="AccessIP" ColumnName="AccessIP" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Module" ColumnName="Module" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="RefId" ColumnName="RefId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EventStatus" ColumnName="EventStatus" />
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VisitEntities">
+      <EntityTypeMapping TypeName="MotorClaimModel.VisitEntity">
+        <MappingFragment StoreEntitySet="Visits">
+          <ScalarProperty Name="PrintedDate" ColumnName="PrintedDate" />
+          <ScalarProperty Name="PrintedBranch" ColumnName="PrintedBranch" />
+          <ScalarProperty Name="PrintedBy" ColumnName="PrintedBy" />
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Engineer_CurrentRegionId" ColumnName="Engineer_CurrentRegionId" />
+          <ScalarProperty Name="Engineer_CurrentBranchId" ColumnName="Engineer_CurrentBranchId" />
+          <ScalarProperty Name="CSR_CurrentRegionId" ColumnName="CSR_CurrentRegionId" />
+          <ScalarProperty Name="CSR_CurrentBranchId" ColumnName="CSR_CurrentBranchId" />
+          <ScalarProperty Name="IsOriginal" ColumnName="IsOriginal" />
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="ImageCount" ColumnName="ImageCount" />
+          <ScalarProperty Name="TimeVisited" ColumnName="TimeVisited" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="VisitType" ColumnName="VisitType" />
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_Visits">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_Visits">
+        <MappingFragment StoreEntitySet="vw_Visits">
+          <ScalarProperty Name="UserIsDeleted" ColumnName="UserIsDeleted" />
+          <ScalarProperty Name="UserIsEnabled" ColumnName="UserIsEnabled" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CreatedByFullName" ColumnName="CreatedByFullName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsOriginal" ColumnName="IsOriginal" />
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="ImageCount" ColumnName="ImageCount" />
+          <ScalarProperty Name="TimeVisited" ColumnName="TimeVisited" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="VisitType" ColumnName="VisitType" />
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_SAForm_General">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_SAForm_General">
+        <MappingFragment StoreEntitySet="vw_SAForm_General">
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="ProcessingRegionId" ColumnName="ProcessingRegionId" />
+          <ScalarProperty Name="OTH_SiteEstimation" ColumnName="OTH_SiteEstimation" />
+          <ScalarProperty Name="ClaimFormImgCount" ColumnName="ClaimFormImgCount" />
+          <ScalarProperty Name="EPFNo" ColumnName="EPFNo" />
+          <ScalarProperty Name="ProcessingBranchName" ColumnName="ProcessingBranchName" />
+          <ScalarProperty Name="OTH_ProcessingBranchId" ColumnName="OTH_ProcessingBranchId" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="GEN_Acc_Location" ColumnName="GEN_Acc_Location" />
+          <ScalarProperty Name="GEN_Acc_Time" ColumnName="GEN_Acc_Time" />
+          <ScalarProperty Name="GEN_VehicleDescription" ColumnName="GEN_VehicleDescription" />
+          <ScalarProperty Name="GEN_Insured_ContactNo" ColumnName="GEN_Insured_ContactNo" />
+          <ScalarProperty Name="GEN_Insured_Name" ColumnName="GEN_Insured_Name" />
+          <ScalarProperty Name="GEN_OriginalTimeReported" ColumnName="GEN_OriginalTimeReported" />
+          <ScalarProperty Name="GEN_TimeReported" ColumnName="GEN_TimeReported" />
+          <ScalarProperty Name="GEN_Caller_ContactNo" ColumnName="GEN_Caller_ContactNo" />
+          <ScalarProperty Name="GEN_Caller_Name" ColumnName="GEN_Caller_Name" />
+          <ScalarProperty Name="GEN_VehicleNo" ColumnName="GEN_VehicleNo" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="OTH_Approx_RepairCost" ColumnName="OTH_Approx_RepairCost" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsOriginal" ColumnName="IsOriginal" />
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="ImageCount" ColumnName="ImageCount" />
+          <ScalarProperty Name="TimeVisited" ColumnName="TimeVisited" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="VisitType" ColumnName="VisitType" />
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_SAFormDetails">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_SAFormDetails">
+        <MappingFragment StoreEntitySet="vw_SAFormDetails">
+          <ScalarProperty Name="VAD_DriverIdType" ColumnName="VAD_DriverIdType" />
+          <ScalarProperty Name="PrintedBranch" ColumnName="PrintedBranch" />
+          <ScalarProperty Name="PrintedDate" ColumnName="PrintedDate" />
+          <ScalarProperty Name="PrintedBy" ColumnName="PrintedBy" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="CSRCode" ColumnName="CSRCode" />
+          <ScalarProperty Name="CSRLastName" ColumnName="CSRLastName" />
+          <ScalarProperty Name="CSRFirstName" ColumnName="CSRFirstName" />
+          <ScalarProperty Name="OTH_Nearest_PoliceStation" ColumnName="OTH_Nearest_PoliceStation" />
+          <ScalarProperty Name="OTH_Journey_PurposeId" ColumnName="OTH_Journey_PurposeId" />
+          <ScalarProperty Name="DAM_Injuries" ColumnName="DAM_Injuries" />
+          <ScalarProperty Name="DAM_ThirdParty_Damage" ColumnName="DAM_ThirdParty_Damage" />
+          <ScalarProperty Name="DAM_Is_OL_Contributory" ColumnName="DAM_Is_OL_Contributory" />
+          <ScalarProperty Name="DAM_OtherVeh_Involved" ColumnName="DAM_OtherVeh_Involved" />
+          <ScalarProperty Name="DAM_IsOverLoaded" ColumnName="DAM_IsOverLoaded" />
+          <ScalarProperty Name="DAM_Goods_Damage" ColumnName="DAM_Goods_Damage" />
+          <ScalarProperty Name="DAM_Goods_Weight" ColumnName="DAM_Goods_Weight" />
+          <ScalarProperty Name="DAM_Goods_Type" ColumnName="DAM_Goods_Type" />
+          <ScalarProperty Name="DAM_PossibleDR_Other" ColumnName="DAM_PossibleDR_Other" />
+          <ScalarProperty Name="DAM_PossibleDR" ColumnName="DAM_PossibleDR" />
+          <ScalarProperty Name="DAM_PreAccidentDamages_Other" ColumnName="DAM_PreAccidentDamages_Other" />
+          <ScalarProperty Name="DAM_PreAccidentDamages" ColumnName="DAM_PreAccidentDamages" />
+          <ScalarProperty Name="DAM_DamagedItems_Other" ColumnName="DAM_DamagedItems_Other" />
+          <ScalarProperty Name="DAM_DamagedItems" ColumnName="DAM_DamagedItems" />
+          <ScalarProperty Name="CON_Tyre_IsContributory" ColumnName="CON_Tyre_IsContributory" />
+          <ScalarProperty Name="CON_Tyre_RRR_Status" ColumnName="CON_Tyre_RRR_Status" />
+          <ScalarProperty Name="CON_Tyre_RLL_Status" ColumnName="CON_Tyre_RLL_Status" />
+          <ScalarProperty Name="CON_Tyre_RLR_Status" ColumnName="CON_Tyre_RLR_Status" />
+          <ScalarProperty Name="CON_Tyre_RRL_Status" ColumnName="CON_Tyre_RRL_Status" />
+          <ScalarProperty Name="CON_Tyre_FL_Status" ColumnName="CON_Tyre_FL_Status" />
+          <ScalarProperty Name="CON_Tyre_FR_Status" ColumnName="CON_Tyre_FR_Status" />
+          <ScalarProperty Name="OTH_Approx_RepairCost" ColumnName="OTH_Approx_RepairCost" />
+          <ScalarProperty Name="OTH_SiteEstimation" ColumnName="OTH_SiteEstimation" />
+          <ScalarProperty Name="OTH_CSR_Consistency" ColumnName="OTH_CSR_Consistency" />
+          <ScalarProperty Name="OTH_PavValue" ColumnName="OTH_PavValue" />
+          <ScalarProperty Name="OTH_ProcessingBranchId" ColumnName="OTH_ProcessingBranchId" />
+          <ScalarProperty Name="VAD_License_IsNewOld_TypeId" ColumnName="VAD_License_IsNewOld_TypeId" />
+          <ScalarProperty Name="VAD_License_IsNew" ColumnName="VAD_License_IsNew" />
+          <ScalarProperty Name="VAD_License_TypeId" ColumnName="VAD_License_TypeId" />
+          <ScalarProperty Name="VAD_License_ExpiryDate" ColumnName="VAD_License_ExpiryDate" />
+          <ScalarProperty Name="VAD_DriverRelationship" ColumnName="VAD_DriverRelationship" />
+          <ScalarProperty Name="VAD_License_No" ColumnName="VAD_License_No" />
+          <ScalarProperty Name="VAD_DriverCompetence" ColumnName="VAD_DriverCompetence" />
+          <ScalarProperty Name="VAD_DriverNIC" ColumnName="VAD_DriverNIC" />
+          <ScalarProperty Name="VAD_DriverName" ColumnName="VAD_DriverName" />
+          <ScalarProperty Name="VAD_MeterReading" ColumnName="VAD_MeterReading" />
+          <ScalarProperty Name="VAD_EngineNo" ColumnName="VAD_EngineNo" />
+          <ScalarProperty Name="VAD_ChassyNo" ColumnName="VAD_ChassyNo" />
+          <ScalarProperty Name="POL_CN_Reasons" ColumnName="POL_CN_Reasons" />
+          <ScalarProperty Name="POL_CN_IssuedBy" ColumnName="POL_CN_IssuedBy" />
+          <ScalarProperty Name="POL_Policy_CN_SerialNo" ColumnName="POL_Policy_CN_SerialNo" />
+          <ScalarProperty Name="POL_Policy_CN_EndDate" ColumnName="POL_Policy_CN_EndDate" />
+          <ScalarProperty Name="POL_Policy_CN_StartDate" ColumnName="POL_Policy_CN_StartDate" />
+          <ScalarProperty Name="POL_Policy_CN_No" ColumnName="POL_Policy_CN_No" />
+          <ScalarProperty Name="GEN_Acc_Location" ColumnName="GEN_Acc_Location" />
+          <ScalarProperty Name="GEN_Acc_Time" ColumnName="GEN_Acc_Time" />
+          <ScalarProperty Name="GEN_VehicleDescription" ColumnName="GEN_VehicleDescription" />
+          <ScalarProperty Name="GEN_Insured_ContactNo" ColumnName="GEN_Insured_ContactNo" />
+          <ScalarProperty Name="GEN_Insured_Name" ColumnName="GEN_Insured_Name" />
+          <ScalarProperty Name="GEN_OriginalTimeReported" ColumnName="GEN_OriginalTimeReported" />
+          <ScalarProperty Name="GEN_TimeReported" ColumnName="GEN_TimeReported" />
+          <ScalarProperty Name="GEN_Caller_ContactNo" ColumnName="GEN_Caller_ContactNo" />
+          <ScalarProperty Name="GEN_Caller_Name" ColumnName="GEN_Caller_Name" />
+          <ScalarProperty Name="GEN_VehicleNo" ColumnName="GEN_VehicleNo" />
+          <ScalarProperty Name="IsOriginal" ColumnName="IsOriginal" />
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="ImageCount" ColumnName="ImageCount" />
+          <ScalarProperty Name="TimeVisited" ColumnName="TimeVisited" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="VisitType" ColumnName="VisitType" />
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_UserDetails">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_UserDetails">
+        <MappingFragment StoreEntitySet="vw_UserDetails">
+          <ScalarProperty Name="PreviousRoleChangedDate" ColumnName="PreviousRoleChangedDate" />
+          <ScalarProperty Name="PreviousRoleId" ColumnName="PreviousRoleId" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="SecondaryEmail" ColumnName="SecondaryEmail" />
+          <ScalarProperty Name="ContactNo2" ColumnName="ContactNo2" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="DataAccessLevel" ColumnName="DataAccessLevel" />
+          <ScalarProperty Name="EPFNo" ColumnName="EPFNo" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="PrimaryEmail" ColumnName="PrimaryEmail" />
+          <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserGUID" ColumnName="UserGUID" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_UserLoginDetails">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_UserLoginDetails">
+        <MappingFragment StoreEntitySet="vw_UserLoginDetails">
+          <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+          <ScalarProperty Name="PreviousRoleChangedDate" ColumnName="PreviousRoleChangedDate" />
+          <ScalarProperty Name="PreviousRoleId" ColumnName="PreviousRoleId" />
+          <ScalarProperty Name="PrimaryEmail" ColumnName="PrimaryEmail" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="DataAccessLevel" ColumnName="DataAccessLevel" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserGUID" ColumnName="UserGUID" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VisitDetailEntities">
+      <EntityTypeMapping TypeName="MotorClaimModel.VisitDetailEntity">
+        <MappingFragment StoreEntitySet="VisitDetails">
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="EngineNo" ColumnName="EngineNo" />
+          <ScalarProperty Name="ChassyNo" ColumnName="ChassyNo" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_VisitDetails">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_VisitDetails">
+        <MappingFragment StoreEntitySet="vw_VisitDetails">
+          <ScalarProperty Name="EngineNo" ColumnName="EngineNo" />
+          <ScalarProperty Name="ChassyNo" ColumnName="ChassyNo" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedByFullName" ColumnName="CreatedByFullName" />
+          <ScalarProperty Name="IsOriginal" ColumnName="IsOriginal" />
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="ImageCount" ColumnName="ImageCount" />
+          <ScalarProperty Name="TimeVisited" ColumnName="TimeVisited" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="VisitType" ColumnName="VisitType" />
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Applications">
+      <EntityTypeMapping TypeName="MotorClaimModel.aspnet_Applications">
+        <MappingFragment StoreEntitySet="aspnet_Applications">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Paths">
+      <EntityTypeMapping TypeName="MotorClaimModel.aspnet_Paths">
+        <MappingFragment StoreEntitySet="aspnet_Paths">
+          <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_PersonalizationAllUsers">
+      <EntityTypeMapping TypeName="MotorClaimModel.aspnet_PersonalizationAllUsers">
+        <MappingFragment StoreEntitySet="aspnet_PersonalizationAllUsers">
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_PersonalizationPerUser">
+      <EntityTypeMapping TypeName="MotorClaimModel.aspnet_PersonalizationPerUser">
+        <MappingFragment StoreEntitySet="aspnet_PersonalizationPerUser">
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Profile">
+      <EntityTypeMapping TypeName="MotorClaimModel.aspnet_Profile">
+        <MappingFragment StoreEntitySet="aspnet_Profile">
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+          <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+          <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_SchemaVersions">
+      <EntityTypeMapping TypeName="MotorClaimModel.aspnet_SchemaVersions">
+        <MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+          <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+          <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+          <ScalarProperty Name="Feature" ColumnName="Feature" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_WebEvent_Events">
+      <EntityTypeMapping TypeName="MotorClaimModel.aspnet_WebEvent_Events">
+        <MappingFragment StoreEntitySet="aspnet_WebEvent_Events">
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="ExceptionType" ColumnName="ExceptionType" />
+          <ScalarProperty Name="RequestUrl" ColumnName="RequestUrl" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="ApplicationVirtualPath" ColumnName="ApplicationVirtualPath" />
+          <ScalarProperty Name="ApplicationPath" ColumnName="ApplicationPath" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="EventDetailCode" ColumnName="EventDetailCode" />
+          <ScalarProperty Name="EventCode" ColumnName="EventCode" />
+          <ScalarProperty Name="EventOccurrence" ColumnName="EventOccurrence" />
+          <ScalarProperty Name="EventSequence" ColumnName="EventSequence" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="EventTime" ColumnName="EventTime" />
+          <ScalarProperty Name="EventTimeUtc" ColumnName="EventTimeUtc" />
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Old_DR_Items">
+      <EntityTypeMapping TypeName="MotorClaimModel.Old_DR_Items">
+        <MappingFragment StoreEntitySet="Old_DR_Items">
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_Applications">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_aspnet_Applications">
+        <MappingFragment StoreEntitySet="vw_aspnet_Applications">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_Profiles">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_aspnet_Profiles">
+        <MappingFragment StoreEntitySet="vw_aspnet_Profiles">
+          <ScalarProperty Name="DataSize" ColumnName="DataSize" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_Roles">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_aspnet_Roles">
+        <MappingFragment StoreEntitySet="vw_aspnet_Roles">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_Users">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_aspnet_Users">
+        <MappingFragment StoreEntitySet="vw_aspnet_Users">
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_UsersInRoles">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_aspnet_UsersInRoles">
+        <MappingFragment StoreEntitySet="vw_aspnet_UsersInRoles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_WebPartState_Paths">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_aspnet_WebPartState_Paths">
+        <MappingFragment StoreEntitySet="vw_aspnet_WebPartState_Paths">
+          <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_WebPartState_Shared">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_aspnet_WebPartState_Shared">
+        <MappingFragment StoreEntitySet="vw_aspnet_WebPartState_Shared">
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="DataSize" ColumnName="DataSize" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_WebPartState_User">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_aspnet_WebPartState_User">
+        <MappingFragment StoreEntitySet="vw_aspnet_WebPartState_User">
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="DataSize" ColumnName="DataSize" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_IronLogger_AuditLogs_GetLogs">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_IronLogger_AuditLogs_GetLogs">
+        <MappingFragment StoreEntitySet="vw_IronLogger_AuditLogs_GetLogs">
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="Params" ColumnName="Params" />
+          <ScalarProperty Name="AccessIP" ColumnName="AccessIP" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Module" ColumnName="Module" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="RefId" ColumnName="RefId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EventStatus" ColumnName="EventStatus" />
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VisitParams">
+      <EntityTypeMapping TypeName="MotorClaimModel.VisitParam">
+        <MappingFragment StoreEntitySet="VisitParams">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ParamKey" ColumnName="ParamKey" />
+          <ScalarProperty Name="ParamTypeId" ColumnName="ParamTypeId" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_TO_Performance">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_TO_Performance">
+        <MappingFragment StoreEntitySet="vw_TO_Performance">
+          <ScalarProperty Name="SecondaryAssignedDate" ColumnName="SecondaryAssignedDate" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="CompletedDate" ColumnName="CompletedDate" />
+          <ScalarProperty Name="AssignedDate" ColumnName="AssignedDate" />
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+          <ScalarProperty Name="EPFNo" ColumnName="EPFNo" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="TOCode" ColumnName="TOCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_OutstandingJobs">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_OutstandingJobs">
+        <MappingFragment StoreEntitySet="vw_OutstandingJobs">
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="AssignedDateTime" ColumnName="AssignedDateTime" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="VehicleNumber" ColumnName="VehicleNumber" />
+          <ScalarProperty Name="CSRCode" ColumnName="CSRCode" />
+          <ScalarProperty Name="CSRLastName" ColumnName="CSRLastName" />
+          <ScalarProperty Name="CSRFirstName" ColumnName="CSRFirstName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_AssignedJobs">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_AssignedJobs">
+        <MappingFragment StoreEntitySet="vw_AssignedJobs">
+          <ScalarProperty Name="AssignedDateTime" ColumnName="AssignedDateTime" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="VehicleNumber" ColumnName="VehicleNumber" />
+          <ScalarProperty Name="CSRCode" ColumnName="CSRCode" />
+          <ScalarProperty Name="CSRLastName" ColumnName="CSRLastName" />
+          <ScalarProperty Name="CSRFirstName" ColumnName="CSRFirstName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Holidays">
+      <EntityTypeMapping TypeName="MotorClaimModel.Holiday">
+        <MappingFragment StoreEntitySet="Holidays">
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="HolidayId" ColumnName="HolidayId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AssignedJobs">
+      <EntityTypeMapping TypeName="MotorClaimModel.AssignedJob">
+        <MappingFragment StoreEntitySet="AssignedJobs">
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="AssignedDateTime" ColumnName="AssignedDateTime" />
+          <ScalarProperty Name="VehicleNumber" ColumnName="VehicleNumber" />
+          <ScalarProperty Name="CSRCode" ColumnName="CSRCode" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="AssignedJobId" ColumnName="AssignedJobId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_SAForm_GeneralNew">
+      <EntityTypeMapping TypeName="MotorClaimModel.vw_SAForm_GeneralNew">
+        <MappingFragment StoreEntitySet="vw_SAForm_GeneralNew">
+          <ScalarProperty Name="TORegion" ColumnName="TORegion" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="ProcessingRegionId" ColumnName="ProcessingRegionId" />
+          <ScalarProperty Name="OTH_SiteEstimation" ColumnName="OTH_SiteEstimation" />
+          <ScalarProperty Name="ClaimFormImgCount" ColumnName="ClaimFormImgCount" />
+          <ScalarProperty Name="PrintedDate" ColumnName="PrintedDate" />
+          <ScalarProperty Name="PrintedBranch" ColumnName="PrintedBranch" />
+          <ScalarProperty Name="EPFNo" ColumnName="EPFNo" />
+          <ScalarProperty Name="ProcessingBranchName" ColumnName="ProcessingBranchName" />
+          <ScalarProperty Name="OTH_ProcessingBranchId" ColumnName="OTH_ProcessingBranchId" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="GEN_Acc_Location" ColumnName="GEN_Acc_Location" />
+          <ScalarProperty Name="GEN_Acc_Time" ColumnName="GEN_Acc_Time" />
+          <ScalarProperty Name="GEN_VehicleDescription" ColumnName="GEN_VehicleDescription" />
+          <ScalarProperty Name="GEN_Insured_ContactNo" ColumnName="GEN_Insured_ContactNo" />
+          <ScalarProperty Name="GEN_Insured_Name" ColumnName="GEN_Insured_Name" />
+          <ScalarProperty Name="GEN_OriginalTimeReported" ColumnName="GEN_OriginalTimeReported" />
+          <ScalarProperty Name="GEN_TimeReported" ColumnName="GEN_TimeReported" />
+          <ScalarProperty Name="GEN_Caller_ContactNo" ColumnName="GEN_Caller_ContactNo" />
+          <ScalarProperty Name="GEN_Caller_Name" ColumnName="GEN_Caller_Name" />
+          <ScalarProperty Name="GEN_VehicleNo" ColumnName="GEN_VehicleNo" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="OTH_Approx_RepairCost" ColumnName="OTH_Approx_RepairCost" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsOriginal" ColumnName="IsOriginal" />
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="ImageCount" ColumnName="ImageCount" />
+          <ScalarProperty Name="TimeVisited" ColumnName="TimeVisited" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="VisitType" ColumnName="VisitType" />
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SettingEntities">
+      <EntityTypeMapping TypeName="MotorClaimModel.SettingEntity">
+        <MappingFragment StoreEntitySet="Settings">
+          <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="SettingId" ColumnName="SettingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SAForms_GetMissingImagesNew" FunctionName="MotorClaimModel.Store.SAForms_GetMissingImagesNew">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.SAForms_GetMissingImagesNew_Results">
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="OfficerCode" ColumnName="OfficerCode" />
+          <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+          <ScalarProperty Name="C1" ColumnName="1" />
+          <ScalarProperty Name="C2" ColumnName="2" />
+          <ScalarProperty Name="C3" ColumnName="3" />
+          <ScalarProperty Name="C4" ColumnName="4" />
+          <ScalarProperty Name="C5" ColumnName="5" />
+          <ScalarProperty Name="C6" ColumnName="6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SAForms_GetOnsiteEstimation" FunctionName="MotorClaimModel.Store.SAForms_GetOnsiteEstimation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.SAForms_GetOnsiteEstimation_Result">
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="TotalJobs" ColumnName="TotalJobs" />
+          <ScalarProperty Name="EstimatedJobs" ColumnName="EstimatedJobs" />
+          <ScalarProperty Name="Ratio" ColumnName="Ratio" />
+          <ScalarProperty Name="TOCode" ColumnName="TOCode" />
+          <ScalarProperty Name="EPFNo" ColumnName="EPFNo" />
+          <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetJobsCount" FunctionName="MotorClaimModel.Store.GetJobsCount" />
+    <FunctionImportMapping FunctionImportName="GetJobs" FunctionName="MotorClaimModel.Store.GetJobs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.GetJobs_Result">
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VisitType" ColumnName="VisitType" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="TimeVisited" ColumnName="TimeVisited" />
+          <ScalarProperty Name="ImageCount" ColumnName="ImageCount" />
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="IsOriginal" ColumnName="IsOriginal" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="OTH_Approx_RepairCost" ColumnName="OTH_Approx_RepairCost" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="GEN_VehicleNo" ColumnName="GEN_VehicleNo" />
+          <ScalarProperty Name="GEN_Caller_Name" ColumnName="GEN_Caller_Name" />
+          <ScalarProperty Name="GEN_Caller_ContactNo" ColumnName="GEN_Caller_ContactNo" />
+          <ScalarProperty Name="GEN_TimeReported" ColumnName="GEN_TimeReported" />
+          <ScalarProperty Name="GEN_OriginalTimeReported" ColumnName="GEN_OriginalTimeReported" />
+          <ScalarProperty Name="GEN_Insured_Name" ColumnName="GEN_Insured_Name" />
+          <ScalarProperty Name="GEN_Insured_ContactNo" ColumnName="GEN_Insured_ContactNo" />
+          <ScalarProperty Name="GEN_VehicleDescription" ColumnName="GEN_VehicleDescription" />
+          <ScalarProperty Name="GEN_Acc_Time" ColumnName="GEN_Acc_Time" />
+          <ScalarProperty Name="GEN_Acc_Location" ColumnName="GEN_Acc_Location" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="OTH_ProcessingBranchId" ColumnName="OTH_ProcessingBranchId" />
+          <ScalarProperty Name="ProcessingBranchName" ColumnName="ProcessingBranchName" />
+          <ScalarProperty Name="EPFNo" ColumnName="EPFNo" />
+          <ScalarProperty Name="PrintedBranch" ColumnName="PrintedBranch" />
+          <ScalarProperty Name="PrintedDate" ColumnName="PrintedDate" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="ClaimFormImgCount" ColumnName="ClaimFormImgCount" />
+          <ScalarProperty Name="OTH_SiteEstimation" ColumnName="OTH_SiteEstimation" />
+          <ScalarProperty Name="ProcessingRegionId" ColumnName="ProcessingRegionId" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetOutstandingJobs" FunctionName="MotorClaimModel.Store.GetOutstandingJobs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.GetOutstandingJobs_Result">
+          <ScalarProperty Name="CSRCode" ColumnName="CSRCode" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="VehicleNumber" ColumnName="VehicleNumber" />
+          <ScalarProperty Name="AssignedDateTime" ColumnName="AssignedDateTime" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTOPerformance" FunctionName="MotorClaimModel.Store.GetTOPerformance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.GetTOPerformance_Result1">
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="UserEPFNo" ColumnName="UserEPFNo" />
+          <ScalarProperty Name="TotalNoOfJobs" ColumnName="TotalNoOfJobs" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SAForms_GetOnsiteEstimationCount" FunctionName="MotorClaimModel.Store.SAForms_GetOnsiteEstimationCount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.SAForms_GetOnsiteEstimationCount_Result">
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="UserEPFNo" ColumnName="UserEPFNo" />
+          <ScalarProperty Name="TotalJobs" ColumnName="TotalJobs" />
+          <ScalarProperty Name="EstimatedJobs" ColumnName="EstimatedJobs" />
+          <ScalarProperty Name="Ratio" ColumnName="Ratio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetPerformanceHours" FunctionName="MotorClaimModel.Store.GetPerformanceHours">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.GetPerformanceHours_Result1">
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="AssignedDate" ColumnName="AssignedDate" />
+          <ScalarProperty Name="CompletedDate" ColumnName="CompletedDate" />
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+          <ScalarProperty Name="HRSSpent" ColumnName="HRSSpent" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetUserCount" FunctionName="MotorClaimModel.Store.GetUserCount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.GetUserCount_Result">
+          <ScalarProperty Name="TotalUserCount" ColumnName="TotalUserCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetUsers" FunctionName="MotorClaimModel.Store.GetUsers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.GetUsers_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserGUID" ColumnName="UserGUID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+          <ScalarProperty Name="PrimaryEmail" ColumnName="PrimaryEmail" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="EPFNo" ColumnName="EPFNo" />
+          <ScalarProperty Name="DataAccessLevel" ColumnName="DataAccessLevel" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ContactNo2" ColumnName="ContactNo2" />
+          <ScalarProperty Name="SecondaryEmail" ColumnName="SecondaryEmail" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="PreviousRoleId" ColumnName="PreviousRoleId" />
+          <ScalarProperty Name="PreviousRoleChangedDate" ColumnName="PreviousRoleChangedDate" />
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SAForms_GetJobsWithNoImages" FunctionName="MotorClaimModel.Store.SAForms_GetJobsWithNoImages">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.SAForms_GetJobsWithNoImages_Result">
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="OfficerCode" ColumnName="OfficerCode" />
+          <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+          <ScalarProperty Name="C1" ColumnName="1" />
+          <ScalarProperty Name="C2" ColumnName="2" />
+          <ScalarProperty Name="C3" ColumnName="3" />
+          <ScalarProperty Name="C4" ColumnName="4" />
+          <ScalarProperty Name="C5" ColumnName="5" />
+          <ScalarProperty Name="C6" ColumnName="6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetOutstandingJobs_Paginated" FunctionName="MotorClaimModel.Store.GetOutstandingJobs_Paginated">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.GetOutstandingJobsPaginated_Result">
+          <ScalarProperty Name="AssignedDateTime" ColumnName="AssignedDateTime" />
+          <ScalarProperty Name="CSRCode" ColumnName="CSRCode" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="VehicleNumber" ColumnName="VehicleNumber" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetOutstandingJobs_Count" FunctionName="MotorClaimModel.Store.GetOutstandingJobs_Count" />
+    <FunctionImportMapping FunctionImportName="GetPhotoAvailability_ARINew" FunctionName="MotorClaimModel.Store.GetPhotoAvailability_ARINew">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.GetPhotoAvailability_ARINew_Result">
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+          <ScalarProperty Name="OfficerCode" ColumnName="OfficerCode" />
+          <ScalarProperty Name="EPFNo" ColumnName="EPFNo" />
+          <ScalarProperty Name="VisitDateTime" ColumnName="VisitDateTime" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="C5" ColumnName="5" />
+          <ScalarProperty Name="C20" ColumnName="20" />
+          <ScalarProperty Name="C21" ColumnName="21" />
+          <ScalarProperty Name="TotalAvailable" ColumnName="TotalAvailable" />
+          <ScalarProperty Name="TotalImages" ColumnName="TotalImages" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetPhotoAvailability_Paginated_ARINew" FunctionName="MotorClaimModel.Store.GetPhotoAvailability_Paginated_ARINew">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.GetPhotoAvailability_Paginated_ARINew_Result">
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+          <ScalarProperty Name="OfficerCode" ColumnName="OfficerCode" />
+          <ScalarProperty Name="EPFNo" ColumnName="EPFNo" />
+          <ScalarProperty Name="VisitedDateTime" ColumnName="VisitedDateTime" />
+          <ScalarProperty Name="C5" ColumnName="5" />
+          <ScalarProperty Name="C20" ColumnName="20" />
+          <ScalarProperty Name="C21" ColumnName="21" />
+          <ScalarProperty Name="TotalAvailable" ColumnName="TotalAvailable" />
+          <ScalarProperty Name="TotalImages" ColumnName="TotalImages" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetPhotoAvailability_Paginated_SANew" FunctionName="MotorClaimModel.Store.GetPhotoAvailability_Paginated_SANew">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.GetPhotoAvailability_Paginated_SANew_Result">
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+          <ScalarProperty Name="OfficerCode" ColumnName="OfficerCode" />
+          <ScalarProperty Name="EPFNo" ColumnName="EPFNo" />
+          <ScalarProperty Name="AssignedDateTime" ColumnName="AssignedDateTime" />
+          <ScalarProperty Name="C3" ColumnName="3" />
+          <ScalarProperty Name="C4" ColumnName="4" />
+          <ScalarProperty Name="C5" ColumnName="5" />
+          <ScalarProperty Name="TotalAvailable" ColumnName="TotalAvailable" />
+          <ScalarProperty Name="TotalImages" ColumnName="TotalImages" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetPhotoAvailability_SANew" FunctionName="MotorClaimModel.Store.GetPhotoAvailability_SANew">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.GetPhotoAvailability_SANew_Result">
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+          <ScalarProperty Name="OfficerCode" ColumnName="OfficerCode" />
+          <ScalarProperty Name="EPFNo" ColumnName="EPFNo" />
+          <ScalarProperty Name="AssignedDateTime" ColumnName="AssignedDateTime" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="C3" ColumnName="3" />
+          <ScalarProperty Name="C4" ColumnName="4" />
+          <ScalarProperty Name="C5" ColumnName="5" />
+          <ScalarProperty Name="TotalAvailable" ColumnName="TotalAvailable" />
+          <ScalarProperty Name="TotalImages" ColumnName="TotalImages" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetParticularJob" FunctionName="MotorClaimModel.Store.GetParticularJob">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MotorClaimModel.GetParticularJob_Result">
+          <ScalarProperty Name="VisitId" ColumnName="VisitId" />
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+          <ScalarProperty Name="VisitType" ColumnName="VisitType" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="TimeVisited" ColumnName="TimeVisited" />
+          <ScalarProperty Name="ImageCount" ColumnName="ImageCount" />
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="IsOriginal" ColumnName="IsOriginal" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="OTH_Approx_RepairCost" ColumnName="OTH_Approx_RepairCost" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="GEN_VehicleNo" ColumnName="GEN_VehicleNo" />
+          <ScalarProperty Name="GEN_Caller_Name" ColumnName="GEN_Caller_Name" />
+          <ScalarProperty Name="GEN_Caller_ContactNo" ColumnName="GEN_Caller_ContactNo" />
+          <ScalarProperty Name="GEN_TimeReported" ColumnName="GEN_TimeReported" />
+          <ScalarProperty Name="GEN_OriginalTimeReported" ColumnName="GEN_OriginalTimeReported" />
+          <ScalarProperty Name="GEN_Insured_Name" ColumnName="GEN_Insured_Name" />
+          <ScalarProperty Name="GEN_Insured_ContactNo" ColumnName="GEN_Insured_ContactNo" />
+          <ScalarProperty Name="GEN_VehicleDescription" ColumnName="GEN_VehicleDescription" />
+          <ScalarProperty Name="GEN_Acc_Time" ColumnName="GEN_Acc_Time" />
+          <ScalarProperty Name="GEN_Acc_Location" ColumnName="GEN_Acc_Location" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="OTH_ProcessingBranchId" ColumnName="OTH_ProcessingBranchId" />
+          <ScalarProperty Name="ProcessingBranchName" ColumnName="ProcessingBranchName" />
+          <ScalarProperty Name="EPFNo" ColumnName="EPFNo" />
+          <ScalarProperty Name="PrintedBranch" ColumnName="PrintedBranch" />
+          <ScalarProperty Name="PrintedDate" ColumnName="PrintedDate" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="ClaimFormImgCount" ColumnName="ClaimFormImgCount" />
+          <ScalarProperty Name="OTH_SiteEstimation" ColumnName="OTH_SiteEstimation" />
+          <ScalarProperty Name="ProcessingRegionId" ColumnName="ProcessingRegionId" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

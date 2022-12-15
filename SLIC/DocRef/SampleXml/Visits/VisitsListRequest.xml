@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Request>
+  <Data>
+
+    <FeildList>
+      <jobNo>j1001</jobNo>
+      <Visit>
+        <VisitNo>
+          v1001
+        </VisitNo>
+        <VisitType>
+          ARI
+        </VisitType>
+      </Visit>
+      <Visit>
+        <VisitNo>
+          v1002
+        </VisitNo>
+        <VisitType>
+          DR
+        </VisitType>
+      </Visit>
+      <Visit>
+        <VisitNo>
+          v1003
+        </VisitNo>
+        <VisitType>
+          Supplymentary
+        </VisitType>
+      </Visit>
+      <Visit>
+        <VisitNo>
+          v1004
+        </VisitNo>
+        <VisitType>
+          Seen
+        </VisitType>
+      </Visit>
+    </FeildList>
+
+  </Data>
+</Request>
