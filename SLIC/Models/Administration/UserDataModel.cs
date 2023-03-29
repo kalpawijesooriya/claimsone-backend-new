@@ -112,7 +112,7 @@ namespace com.IronOne.SLIC2.Models.Administration
 
         [Required]
         [DisplayName("EPF no")]
-        [StringLength(4, MinimumLength = 4, ErrorMessage = "The {0} must be {1} characters.")]    
+        [StringLength(5, MinimumLength = 5, ErrorMessage = "The {0} must be {1} characters.")]    
         public string EPFNo { get; set; }
 
         /*[DropdownValidation(ErrorMessage = "Please select data access level")]

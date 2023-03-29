@@ -82,7 +82,7 @@ namespace com.IronOne.IronUtils
                 {
                     //  throw;
                 }
- 
+                mailMsg.From = new MailAddress("support@motorclaim.lk", "MotorClaim");
                 client.Host = ConfigurationManager.AppSettings["smtp_host"].ToString(); //Set your smtp host address
                 client.Port = int.Parse(ConfigurationManager.AppSettings["smtp_port"].ToString()); // Set your smtp port address
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;

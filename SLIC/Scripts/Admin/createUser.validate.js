@@ -39,7 +39,7 @@ function ValidateCreateUserForm() {
                 required: { depends: requiredWhen }
             },
             EPFNo: {
-                rangelength: [0, 4],
+                rangelength: [0, 5],
                 required: true
             },
             FirstName: {              
@@ -84,7 +84,7 @@ function ValidateCreateUserForm() {
         },
         messages: {         
             EPFNo: {
-                rangelength: "Please enter only 4 characters"           
+                rangelength: "Please enter only 5 characters"           
             }
         },
         focusCleanup: false,
@@ -128,7 +128,7 @@ function ValidateUpdateUserForm() {
                 required: true
             },
             EPFNo: {
-                rangelength: [0, 4],
+                rangelength: [0, 5],
                 required: true
             },
             FirstName: {               
@@ -164,7 +164,7 @@ function ValidateUpdateUserForm() {
         }, 
         messages: {
             EPFNo: {
-                rangelength: "Please enter only 4 characters"
+                rangelength: "Please enter only 5 characters"
             }
         },
         focusCleanup: false,
