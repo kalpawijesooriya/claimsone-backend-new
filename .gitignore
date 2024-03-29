@@ -3,12 +3,12 @@
 SLIC/obj/Debug/**
 IronUtils/bin/Debug/**
 IronUtils/obj/Debug/**
-Logger/**
-SLIC/bin/Logger.dll
-SLIC/bin/Logger.pdb
+//Logger/**
+//SLIC/bin/Logger.dll
+//SLIC/bin/Logger.pdb
 SLIC/bin/SLIC2.dll
 SLIC/bin/SLIC2.pdb
 SLIC/bin/com.IronOne.IronUtils.dll
 SLIC/bin/com.IronOne.IronUtils.pdb
 SLIC2.suo
-SLIC/Logs/**
+//SLIC/Logs/**

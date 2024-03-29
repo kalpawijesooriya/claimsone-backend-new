@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AuditLogs" xml:space="preserve">
+    <value>CREATE TABLE [dbo].[AuditLogs](
+	[EventId] [bigint] IDENTITY(1,1) NOT NULL,
+	[EventStatus] [varchar](25) NOT NULL,
+	[Description] [varchar](max) NULL,
+	[RefId] [int] NULL,
+	[Date] [datetime] NULL,
+	[UserName] [nvarchar](100) NULL,
+	[Module] [varchar](100) NOT NULL,
+	[Action] [varchar](100) NOT NULL,
+	[AccessType] [nvarchar](100) NOT NULL,
+	[AccessIP] [nvarchar](200) NOT NULL,
+	[Params] [nvarchar](max) NOT NULL,
+	[Info1] [nvarchar](500) NULL,
+	[Info2] [nvarchar](250) NULL,
+	[Info3] [int] NULL,
+ CONSTRAINT [PK_AuditLogs] PRIMARY KEY CLUSTERED 
+(
+	[EventId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+ALTER TABLE [dbo].[AuditLogs] ADD  CONSTRAINT [DF_AuditLogs_Date]  DEFAULT (getdate()) FOR [Date]</value>
+  </data>
+  <data name="IronLogger_AuditLogs_AddLog" xml:space="preserve">
+    <value>CREATE PROCEDURE [dbo].[IronLogger_AuditLogs_AddLog]
+        @eventStatus		varchar(25),
+        @desciption			varchar(MAX),
+        @refId				int,
+        @userName			nvarchar(100),
+        @module				varchar(100),
+        @action				varchar(100),
+        @accessType			nvarchar(100),
+        @accessIP			nvarchar(200),
+        @param				nvarchar(MAX)
+AS
+BEGIN
+    INSERT
+        dbo.AuditLogs
+        (
+            EventStatus,
+            [Description],
+            RefId,
+            UserName,
+            Module,
+            [Action],
+            AccessType,
+            AccessIP,
+            Params
+        )
+    VALUES
+    (
+        @eventStatus,
+        @desciption,
+        @refId,
+        @userName,
+        @module,
+        @action,
+        @accessType,
+        @accessIP,
+        @param
+    )
+END</value>
+  </data>
+  <data name="IronLogger_AuditLogs_GetLog" xml:space="preserve">
+    <value>CREATE PROCEDURE [dbo].[IronLogger_AuditLogs_GetLog]
+		@EventId			INT
+AS
+BEGIN
+
+SELECT * FROM AuditLogs
+WHERE EventId = @EventId
+
+END</value>
+  </data>
+  <data name="IronLogger_AuditLogs_GetLogs" xml:space="preserve">
+    <value>CREATE PROCEDURE [dbo].[IronLogger_AuditLogs_GetLogs]
+        @ModuleName			varchar(100),
+        @ActionName			varchar(100),
+        @AccessType			nvarchar(100),
+        @AccessIP			nvarchar(200),
+        @UserName			nvarchar(100),
+        --@RefID				int,
+        @EventStatus		varchar(25),
+        @DateFrom			datetime,
+        @DateTo				datetime,
+        @Description		varchar(MAX),
+        @Params				nvarchar(MAX),
+        
+		@orderByCol			VARCHAR(50),		
+		@isAscending		BIT,
+		@StartIndex			INT	= 1,
+		@pageSize			INT	= 10,
+		@rowCount			INT OUTPUT 
+AS
+BEGIN
+
+DECLARE @T TABLE(EventId int, Module varchar(100), [Action] varchar(100), AccessType nvarchar(100), AccessIP nvarchar(200), UserName nvarchar(100), RefID int, EventStatus varchar(25), [Date] datetime, [Description] varchar(MAX), Params nvarchar(MAX))
+
+INSERT INTO @T SELECT EventId, Module, [Action], AccessType, AccessIP, UserName, RefID, EventStatus, [Date], [Description], Params FROM AuditLogs
+          WHERE Module LIKE @ModuleName + '%' 
+          AND [Action] LIKE @ActionName + '%' 
+          AND AccessType LIKE @AccessType + '%' 
+          AND AccessIP LIKE @AccessIP + '%' 
+          AND UserName LIKE @UserName + '%' 
+          AND EventStatus LIKE @EventStatus + '%' 
+          AND [Date] &gt; @DateFrom
+          AND [Date] &lt; @DateTo
+          AND [Description] LIKE @Description + '%'
+          AND Params LIKE @Params + '%'
+
+SELECT EventId, Module, [Action], AccessType, AccessIP, UserName, RefID, EventStatus, [Date], [Description], Params
+FROM    ( SELECT    ROW_NUMBER() OVER ( ORDER BY 
+		CASE WHEN @isAscending=1 THEN 
+			CASE WHEN @orderByCol='EventId' THEN EventId END 
+		END ASC,
+		CASE WHEN @isAscending=1 THEN 
+			CASE WHEN @orderByCol='EventStatus' THEN EventStatus
+				WHEN @orderByCol='Description' THEN [Description]
+			END
+		END ASC,
+		CASE WHEN @isAscending=1 THEN 
+			CASE WHEN @orderByCol='RefId' THEN RefId END
+		END ASC,
+		CASE WHEN @isAscending=1 THEN 
+			CASE WHEN @orderByCol='Date' THEN [Date] END
+		END ASC,
+		CASE WHEN @isAscending=1 THEN 
+			CASE WHEN @orderByCol='UserName' THEN UserName
+				WHEN @orderByCol='Module' THEN Module
+				WHEN @orderByCol='Action' THEN [Action]
+				WHEN @orderByCol='AccessType' THEN AccessType
+				WHEN @orderByCol='AccessIP' THEN AccessIP
+				WHEN @orderByCol='Params' THEN Params
+			END
+		END	ASC, 
+		
+		CASE WHEN @isAscending=0 THEN 
+			CASE WHEN @orderByCol='EventId' THEN EventId END 
+		END DESC,
+		CASE WHEN @isAscending=0 THEN 
+			CASE WHEN @orderByCol='EventStatus' THEN EventStatus
+				WHEN @orderByCol='Description' THEN [Description]
+			END
+		END DESC,
+		CASE WHEN @isAscending=0 THEN 
+			CASE WHEN @orderByCol='RefId' THEN RefId END
+		END DESC,
+		CASE WHEN @isAscending=0 THEN 
+			CASE WHEN @orderByCol='Date' THEN [Date] END
+		END DESC,
+		CASE WHEN @isAscending=0 THEN 
+			CASE WHEN @orderByCol='UserName' THEN UserName
+				WHEN @orderByCol='Module' THEN Module
+				WHEN @orderByCol='Action' THEN [Action]
+				WHEN @orderByCol='AccessType' THEN AccessType
+				WHEN @orderByCol='AccessIP' THEN AccessIP
+				WHEN @orderByCol='Params' THEN Params
+			END
+		END	DESC ) AS RowNum, *
+          FROM  @T AS RT
+        ) AS RowConstrainedResult
+WHERE   RowNum &gt;= @StartIndex AND RowNum &lt; @StartIndex + @pageSize
+ORDER BY RowNum
+
+SELECT @rowCount = COUNT(*) FROM @T
+
+END</value>
+  </data>
+  <data name="vw_IronLogger_AuditLogs_GetLogs" xml:space="preserve">
+    <value>CREATE VIEW [dbo].[vw_IronLogger_AuditLogs_GetLogs]
+AS
+SELECT     TOP (100) PERCENT EventId, EventStatus, Description, RefId, Date, UserName, Module, Action, AccessType, AccessIP, Params, Info1, Info2, Info3
+FROM         dbo.AuditLogs
+ORDER BY EventId DESC</value>
+  </data>
+</root>

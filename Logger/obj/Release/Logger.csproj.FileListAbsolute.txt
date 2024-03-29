@@ -1,0 +1,6 @@
+G:\Atheek\Current\claimsone-backend-new\Logger\bin\Release\Logger.dll
+G:\Atheek\Current\claimsone-backend-new\Logger\bin\Release\Logger.pdb
+G:\Atheek\Current\claimsone-backend-new\Logger\obj\Release\com.IronOne.Logger.DBResources.resources
+G:\Atheek\Current\claimsone-backend-new\Logger\obj\Release\Logger.csproj.GenerateResource.Cache
+G:\Atheek\Current\claimsone-backend-new\Logger\obj\Release\Logger.dll
+G:\Atheek\Current\claimsone-backend-new\Logger\obj\Release\Logger.pdb

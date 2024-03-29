@@ -1,0 +1,74 @@
+D:\Workspace-VS-2010-InfoSense\ClaimsOne\SLIC2\Web\Logger\bin\Debug\Logger.dll
+D:\Workspace-VS-2010-InfoSense\ClaimsOne\SLIC2\Web\Logger\bin\Debug\Logger.pdb
+D:\Workspace-VS-2010-InfoSense\ClaimsOne\SLIC2\Web\Logger\obj\Debug\com.IronOne.Logger.DBResources.resources
+D:\Workspace-VS-2010-InfoSense\ClaimsOne\SLIC2\Web\Logger\obj\Debug\Logger.csproj.GenerateResource.Cache
+D:\Workspace-VS-2010-InfoSense\ClaimsOne\SLIC2\Web\Logger\obj\Debug\Logger.dll
+D:\Workspace-VS-2010-InfoSense\ClaimsOne\SLIC2\Web\Logger\obj\Debug\Logger.pdb
+C:\Users\Ellipsis-Dell-006\Desktop\claimsone-backend-new\Logger\bin\Debug\Logger.dll
+C:\Users\Ellipsis-Dell-006\Desktop\claimsone-backend-new\Logger\bin\Debug\Logger.pdb
+C:\Users\Ellipsis-Dell-006\Desktop\claimsone-backend-new\Logger\obj\Debug\com.IronOne.Logger.DBResources.resources
+C:\Users\Ellipsis-Dell-006\Desktop\claimsone-backend-new\Logger\obj\Debug\Logger.csproj.GenerateResource.Cache
+C:\Users\Ellipsis-Dell-006\Desktop\claimsone-backend-new\Logger\obj\Debug\Logger.dll
+C:\Users\Ellipsis-Dell-006\Desktop\claimsone-backend-new\Logger\obj\Debug\Logger.pdb
+G:\Atheek\Current\claimsone-backend-new\Logger\bin\Debug\Logger.dll
+G:\Atheek\Current\claimsone-backend-new\Logger\bin\Debug\Logger.pdb
+G:\Atheek\Current\claimsone-backend-new\Logger\obj\Debug\com.IronOne.Logger.DBResources.resources
+G:\Atheek\Current\claimsone-backend-new\Logger\obj\Debug\Logger.csproj.GenerateResource.Cache
+G:\Atheek\Current\claimsone-backend-new\Logger\obj\Debug\Logger.dll
+G:\Atheek\Current\claimsone-backend-new\Logger\obj\Debug\Logger.pdb
+D:\Atheek\ClaimsOne\Backup\06102019\claimsone-backend-new\Logger\bin\Debug\Logger.dll
+D:\Atheek\ClaimsOne\Backup\06102019\claimsone-backend-new\Logger\bin\Debug\Logger.pdb
+D:\Atheek\ClaimsOne\Backup\06102019\claimsone-backend-new\Logger\obj\Debug\com.IronOne.Logger.DBResources.resources
+D:\Atheek\ClaimsOne\Backup\06102019\claimsone-backend-new\Logger\obj\Debug\Logger.csproj.GenerateResource.Cache
+D:\Atheek\ClaimsOne\Backup\06102019\claimsone-backend-new\Logger\obj\Debug\Logger.dll
+D:\Atheek\ClaimsOne\Backup\06102019\claimsone-backend-new\Logger\obj\Debug\Logger.pdb
+D:\Atheek\ClaimsOne\Backup\06102019 - Deployed on UAT\claimsone-backend-new\Logger\bin\Debug\Logger.dll
+D:\Atheek\ClaimsOne\Backup\06102019 - Deployed on UAT\claimsone-backend-new\Logger\bin\Debug\Logger.pdb
+D:\Atheek\ClaimsOne\Backup\06102019 - Deployed on UAT\claimsone-backend-new\Logger\obj\Debug\com.IronOne.Logger.DBResources.resources
+D:\Atheek\ClaimsOne\Backup\06102019 - Deployed on UAT\claimsone-backend-new\Logger\obj\Debug\Logger.csproj.GenerateResource.Cache
+D:\Atheek\ClaimsOne\Backup\06102019 - Deployed on UAT\claimsone-backend-new\Logger\obj\Debug\Logger.dll
+D:\Atheek\ClaimsOne\Backup\06102019 - Deployed on UAT\claimsone-backend-new\Logger\obj\Debug\Logger.pdb
+D:\Atheek\ClaimsOne\Backup\06102019 - Deployed on UAT + TO Permision\claimsone-backend-new\Logger\bin\Debug\Logger.dll
+D:\Atheek\ClaimsOne\Backup\06102019 - Deployed on UAT + TO Permision\claimsone-backend-new\Logger\bin\Debug\Logger.pdb
+D:\Atheek\ClaimsOne\Backup\06102019 - Deployed on UAT + TO Permision\claimsone-backend-new\Logger\obj\Debug\com.IronOne.Logger.DBResources.resources
+D:\Atheek\ClaimsOne\Backup\06102019 - Deployed on UAT + TO Permision\claimsone-backend-new\Logger\obj\Debug\Logger.csproj.GenerateResource.Cache
+D:\Atheek\ClaimsOne\Backup\06102019 - Deployed on UAT + TO Permision\claimsone-backend-new\Logger\obj\Debug\Logger.dll
+D:\Atheek\ClaimsOne\Backup\06102019 - Deployed on UAT + TO Permision\claimsone-backend-new\Logger\obj\Debug\Logger.pdb
+C:\Users\Atheek\Desktop\claimsone-backend-new\Logger\bin\Debug\Logger.dll
+C:\Users\Atheek\Desktop\claimsone-backend-new\Logger\bin\Debug\Logger.pdb
+C:\Users\Atheek\Desktop\claimsone-backend-new\Logger\obj\Debug\com.IronOne.Logger.DBResources.resources
+C:\Users\Atheek\Desktop\claimsone-backend-new\Logger\obj\Debug\Logger.csproj.GenerateResource.Cache
+C:\Users\Atheek\Desktop\claimsone-backend-new\Logger\obj\Debug\Logger.dll
+C:\Users\Atheek\Desktop\claimsone-backend-new\Logger\obj\Debug\Logger.pdb
+D:\Atheek\ClaimsOne\Current\claimsone-backend-new\Logger\bin\Debug\Logger.dll
+D:\Atheek\ClaimsOne\Current\claimsone-backend-new\Logger\bin\Debug\Logger.pdb
+D:\Atheek\ClaimsOne\Current\claimsone-backend-new\Logger\obj\Debug\com.IronOne.Logger.DBResources.resources
+D:\Atheek\ClaimsOne\Current\claimsone-backend-new\Logger\obj\Debug\Logger.csproj.GenerateResource.Cache
+D:\Atheek\ClaimsOne\Current\claimsone-backend-new\Logger\obj\Debug\Logger.dll
+D:\Atheek\ClaimsOne\Current\claimsone-backend-new\Logger\obj\Debug\Logger.pdb
+D:\Atheek\ClaimsOne\Current\claimsone-backend-new\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache
+D:\kalpa\claimsone-backend-new\Logger\bin\Debug\Logger.dll
+D:\kalpa\claimsone-backend-new\Logger\bin\Debug\Logger.pdb
+D:\kalpa\claimsone-backend-new\Logger\obj\Debug\com.IronOne.Logger.DBResources.resources
+D:\kalpa\claimsone-backend-new\Logger\obj\Debug\Logger.csproj.GenerateResource.cache
+D:\kalpa\claimsone-backend-new\Logger\obj\Debug\Logger.dll
+D:\kalpa\claimsone-backend-new\Logger\obj\Debug\Logger.pdb
+D:\kalpa\ClamsOne\claimsone-backend-new\Logger\bin\Debug\Logger.dll
+D:\kalpa\ClamsOne\claimsone-backend-new\Logger\bin\Debug\Logger.pdb
+D:\kalpa\ClamsOne\claimsone-backend-new\Logger\obj\Debug\com.IronOne.Logger.DBResources.resources
+D:\kalpa\ClamsOne\claimsone-backend-new\Logger\obj\Debug\Logger.csproj.GenerateResource.Cache
+D:\kalpa\ClamsOne\claimsone-backend-new\Logger\obj\Debug\Logger.dll
+D:\kalpa\ClamsOne\claimsone-backend-new\Logger\obj\Debug\Logger.pdb
+G:\projects\Ellipsis\SLIC\ClamsOne\claimsone-backend-new\Logger\bin\Debug\Logger.dll
+G:\projects\Ellipsis\SLIC\ClamsOne\claimsone-backend-new\Logger\bin\Debug\Logger.pdb
+G:\projects\Ellipsis\SLIC\ClamsOne\claimsone-backend-new\Logger\obj\Debug\com.IronOne.Logger.DBResources.resources
+G:\projects\Ellipsis\SLIC\ClamsOne\claimsone-backend-new\Logger\obj\Debug\Logger.csproj.GenerateResource.Cache
+G:\projects\Ellipsis\SLIC\ClamsOne\claimsone-backend-new\Logger\obj\Debug\Logger.dll
+G:\projects\Ellipsis\SLIC\ClamsOne\claimsone-backend-new\Logger\obj\Debug\Logger.pdb
+D:\projects\Ellipsis\SLIC\ClamsOne\claimsone-backend-new\Logger\bin\Debug\Logger.dll
+D:\projects\Ellipsis\SLIC\ClamsOne\claimsone-backend-new\Logger\bin\Debug\Logger.pdb
+D:\projects\Ellipsis\SLIC\ClamsOne\claimsone-backend-new\Logger\obj\Debug\com.IronOne.Logger.DBResources.resources
+D:\projects\Ellipsis\SLIC\ClamsOne\claimsone-backend-new\Logger\obj\Debug\Logger.csproj.GenerateResource.Cache
+D:\projects\Ellipsis\SLIC\ClamsOne\claimsone-backend-new\Logger\obj\Debug\Logger.dll
+D:\projects\Ellipsis\SLIC\ClamsOne\claimsone-backend-new\Logger\obj\Debug\Logger.pdb
+D:\projects\Ellipsis\SLIC\ClamsOne\claimsone-backend-new\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache

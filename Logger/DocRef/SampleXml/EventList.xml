@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Events>
+  <MotorClaim.dbo.vw_IronLogger_AuditLogs_GetLogs>
+    <EventId>1</EventId>
+    <EventStatus>Success</EventStatus>
+    <Description></Description>
+    <RefId>0</RefId>
+    <Date>2013-02-27T11:26:31.810</Date>
+    <UserName>aaa</UserName>
+    <Module>LogOnController</Module>
+    <Action>LogOff</Action>
+    <AccessType>WEB</AccessType>
+    <AccessIP>::1</AccessIP>
+    <Params></Params>
+  </MotorClaim.dbo.vw_IronLogger_AuditLogs_GetLogs>
+  <MotorClaim.dbo.vw_IronLogger_AuditLogs_GetLogs>
+    <EventId>2</EventId>
+    <EventStatus>Failure</EventStatus>
+    <Description>Incorrect usename or password</Description>
+    <RefId>0</RefId>
+    <Date>2013-02-27T12:05:27.560</Date>
+    <UserName></UserName>
+    <Module>LogOnController</Module>
+    <Action>LogOn</Action>
+    <AccessType>WEB</AccessType>
+    <AccessIP>::1</AccessIP>
+    <Params>User name:aaa,Return Url: </Params>
+  </MotorClaim.dbo.vw_IronLogger_AuditLogs_GetLogs>
+</Events>
