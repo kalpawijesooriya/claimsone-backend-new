@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ClaimsOneLiveModelStoreContainer" CdmEntityContainer="ClaimsOneLiveEntities">
+    <EntitySetMapping Name="AssignedJobs">
+      <EntityTypeMapping TypeName="ClaimsOneLiveModel.AssignedJob">
+        <MappingFragment StoreEntitySet="AssignedJobs">
+          <ScalarProperty Name="AssignedJobId" ColumnName="AssignedJobId" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="CSRCode" ColumnName="CSRCode" />
+          <ScalarProperty Name="VehicleNumber" ColumnName="VehicleNumber" />
+          <ScalarProperty Name="AssignedDateTime" ColumnName="AssignedDateTime" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Holidays">
+      <EntityTypeMapping TypeName="ClaimsOneLiveModel.Holiday">
+        <MappingFragment StoreEntitySet="Holidays">
+          <ScalarProperty Name="HolidayId" ColumnName="HolidayId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

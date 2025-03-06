@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ClaimsOneLiveModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityType Name="AssignedJobs">
+          <Key>
+            <PropertyRef Name="AssignedJobId" />
+          </Key>
+          <Property Name="AssignedJobId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="JobNumber" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="CSRCode" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="VehicleNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="AssignedDateTime" Type="datetime" />
+          <Property Name="Info1" Type="nvarchar" MaxLength="250" />
+          <Property Name="Info2" Type="nvarchar" MaxLength="250" />
+          <Property Name="Info3" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="Holidays">
+          <Key>
+            <PropertyRef Name="HolidayId" />
+          </Key>
+          <Property Name="HolidayId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="Info1" Type="nvarchar" MaxLength="250" />
+          <Property Name="Info2" Type="nvarchar" MaxLength="250" />
+          <Property Name="Info3" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityContainer Name="ClaimsOneLiveModelStoreContainer">
+          <EntitySet Name="AssignedJobs" EntityType="Self.AssignedJobs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Holidays" EntityType="Self.Holidays" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ClaimsOneLiveModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityType Name="AssignedJob">
+          <Key>
+            <PropertyRef Name="AssignedJobId" />
+          </Key>
+          <Property Name="AssignedJobId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="JobNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CSRCode" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VehicleNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AssignedDateTime" Type="DateTime" Precision="3" />
+          <Property Name="Info1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Info2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Info3" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Holiday">
+          <Key>
+            <PropertyRef Name="HolidayId" />
+          </Key>
+          <Property Name="HolidayId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Info1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Info2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Info3" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="ClaimsOneLiveEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AssignedJobs" EntityType="Self.AssignedJob" />
+          <EntitySet Name="Holidays" EntityType="Self.Holiday" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ClaimsOneLiveModelStoreContainer" CdmEntityContainer="ClaimsOneLiveEntities">
+          <EntitySetMapping Name="AssignedJobs">
+            <EntityTypeMapping TypeName="ClaimsOneLiveModel.AssignedJob">
+              <MappingFragment StoreEntitySet="AssignedJobs">
+                <ScalarProperty Name="AssignedJobId" ColumnName="AssignedJobId" />
+                <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+                <ScalarProperty Name="CSRCode" ColumnName="CSRCode" />
+                <ScalarProperty Name="VehicleNumber" ColumnName="VehicleNumber" />
+                <ScalarProperty Name="AssignedDateTime" ColumnName="AssignedDateTime" />
+                <ScalarProperty Name="Info1" ColumnName="Info1" />
+                <ScalarProperty Name="Info2" ColumnName="Info2" />
+                <ScalarProperty Name="Info3" ColumnName="Info3" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Holidays">
+            <EntityTypeMapping TypeName="ClaimsOneLiveModel.Holiday">
+              <MappingFragment StoreEntitySet="Holidays">
+                <ScalarProperty Name="HolidayId" ColumnName="HolidayId" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Info1" ColumnName="Info1" />
+                <ScalarProperty Name="Info2" ColumnName="Info2" />
+                <ScalarProperty Name="Info3" ColumnName="Info3" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ClaimsOneEntityDataModel">
+        <EntityTypeShape EntityType="ClaimsOneLiveModel.AssignedJob" Width="1.5" PointX="0.75" PointY="0.75" Height="2.5571907552083335" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClaimsOneLiveModel.Holiday" Width="1.5" PointX="2.75" PointY="0.75" Height="1.9802864583333335" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
